@@ -28,5 +28,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^index/add/$', IndexAddView.as_view(), name='index-add'),
     re_path(r'^index/delete/$', IndexDeleteView.as_view(), name='index-delete'),
-    path('status/', include('health_check.api.urls')),
+    path('status/', include('health_check.api.urls')),\
+    path('schema/', schema_view, name='schema'),
 ]
