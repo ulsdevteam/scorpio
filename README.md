@@ -1,45 +1,47 @@
-# nebula
-A toolkit for [Project Electron](http://projectelectron.rockarch.org/) microservices, built with Django 2.0/Postgres/Python 3.6.
+# scorpio
 
-## What's here
+A microservice application to merge and index Collections, Objects, Agents and Terms.
 
-- `.travis.yml` - Travis CI configuration (useful when you push code to GitHub)
-- `Dockerfile` - Docker container configuration
-- `docker-compose.yml` - Docker Compose configuration
-- `entrypoint.sh` - A script which runs after the container starts up. If you want to add default objects or users, this is a good place to do it.
-- `requirements.txt` - Python package requirements
-- `wait-for-it.sh` - Makes the Django server wait until the Postgres service is up before attempting to start.
+scorpio is part of [Project Electron](https://github.com/RockefellerArchiveCenter/project_electron), an initiative to build sustainable, open and user-centered infrastructure for the archival management of digital records at the [Rockefeller Archive Center](http://rockarch.org/).
 
-## Requirements
+[![Build Status](https://travis-ci.org/RockefellerArchiveCenter/scorpio.svg?branch=master)](https://travis-ci.org/RockefellerArchiveCenter/scorpio)
 
-Using this repo requires having [Docker](https://store.docker.com/search?type=edition&offering=community) installed.
+## Setup
 
-## Getting started
+Install [git](https://git-scm.com/) and clone the repository
 
-Clone the repository to a new directory:
+    $ git clone git@github.com:RockefellerArchiveCenter/scorpio.git
 
-    $ git clone git@github.com:RockefellerArchiveCenter/nebula.git new_project
+Install [Docker](https://store.docker.com/search?type=edition&offering=community) and run docker-compose from the root directory
 
-Move to the root directory of the repository:
-
-    cd new_project/
-
-Create a new Django project by running `django-admin.py` in the Docker container, replacing "new_project" with the name of the new service you are building:
-
-    docker-compose run web django-admin.py startproject new_project .
-
-Uncomment the `entrypoint` key in `docker-compose.yml`, and still in the root directory, run docker-compose:
-
+    $ cd scorpio
     $ docker-compose up
 
-Once the application starts successfully, you should be able to access it in your browser at `http://localhost:8000`
+Once the application starts successfully, you should be able to access the application in your browser at `http://localhost:8000`
 
-When you're done, shut down docker-compose:
+When you're done, shut down docker-compose
 
     $ docker-compose down
 
-Before pushing code, remember to change your remotes!
+Or, if you want to remove all data
+
+    $ docker-compose down -v
+
+## Services
+
+Coming soon...
+
+
+### Routes
+
+Coming soon...
+
+
+### ArchivesSpace configuration
+
+Coming soon...
+
 
 ## License
 
-Code is released under an MIT License, as all your code should be. See [LICENSE](LICENSE) for details.
+This code is released under an [MIT License](LICENSE).

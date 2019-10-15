@@ -1,11 +1,7 @@
-Django==2.0.10
-mysqlclient
+Django
 djangorestframework
-djangorestframework-jwt
-coreapi
-django_cron
 health-check
-ArchivesSnake
-structlog
-uuid
 psycopg2-binary
+django-elasticsearch-dsl
+django-elasticsearch-dsl-drf
+git+https://github.com/RockefellerArchiveCenter/rac_es#egg=rac_es
