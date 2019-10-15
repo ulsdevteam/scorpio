@@ -12,4 +12,6 @@ ELASTICSEARCH = {
     "host": "elasticsearch",
 }
 
+STATIC_URL = '/indexer/static/'
+
 ALLOWED_HOSTS = ['localhost', 'scorpio-web']
