@@ -9,7 +9,9 @@ DATABASES = {
 }
 
 ELASTICSEARCH = {
-    "host": "elasticsearch",
+    'default': {
+        'hosts': ['elasticsearch:9200']
+    },
 }
 
 STATIC_URL = '/indexer/static/'

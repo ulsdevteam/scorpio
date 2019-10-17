@@ -1,27 +1,45 @@
+from asterism.views import prepare_response
 from rest_framework.views import APIView
 
 from .indexers import Indexer
+from .mergers import AgentMerger, CollectionMerger, ObjectMerger, TermMerger
+
+MERGERS = {
+    "agent": AgentMerger,
+    "collection": CollectionMerger,
+    "object": ObjectMerger,
+    "term": TermMerger
+}
 
 
-class IndexAddView(APIView):
+class IndexView(APIView):
+    def post(self, request, format=None):
+        # enable bulk
+        data = request.data.get('data')
+        try:
+            resp = getattr(Indexer, self.method)(data)
+            return Response(prepare_response(resp, data.id), status=200)
+        except Exception as e:
+            return Response(prepare_response(resp, data.id), status=500)
+
+
+class IndexAddView(IndexView):
     """Adds a data object to index."""
-
-    def post(self, request, format=None):
-        data = request.data.get('data')
-        try:
-            resp = Indexer().add_single(data)
-            return Response({"detail": resp}, status=200)
-        except Exception as e:
-            return Response({"detail": str(e)}, status=500)
+    method = 'add'
 
 
-class IndexDeleteView(APIView):
+class IndexDeleteView(IndexView):
     """Deletes a data object from index."""
+    method = 'delete'
 
+
+class MergeView(APIView):
+    """Merges transformed data objects."""
     def post(self, request, format=None):
         data = request.data.get('data')
         try:
-            resp = Indexer().delete_single(data)
-            return Response({"detail": resp}, status=200)
+            merger = MERGERS[data.type]
+            resp = merger.merge(data)
+            return Response(prepare_response(resp, data.id), status=200)
         except Exception as e:
-            return Response({"detail": str(e)}, status=500)
+            return Response(prepare_response(resp, data.id), status=500)

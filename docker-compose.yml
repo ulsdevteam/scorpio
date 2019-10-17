@@ -5,11 +5,15 @@ services:
     image: postgres:10.4
     volumes:
       - scorpiodbvolume:/var/lib/postgresql/data/
+    networks:
+      - microservices
   scorpio-web:
     build: .
     entrypoint: /code/entrypoint.sh
     volumes:
       - .:/code
+    networks:
+      - microservices
     ports:
       - "8000:8000"
     depends_on:

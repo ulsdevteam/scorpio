@@ -1,40 +1,41 @@
 import json
 import shortuuid
 
-from elasticsearch import Elasticsearch
-from elasticsearch_dsl import Search
+from elasticsearch_dsl import connections, Search
+from rac_es.documents import Agent, Collection, Object, Term
 
 from scorpio import config
+
+TYPES = {
+    "agent": Agent,
+    "collection": Collection,
+    "object": Object,
+    "term": Term
+}
 
 
 class Indexer:
 
     def __init__(self):
-        self.client = Elasticsearch([config.ELASTICSEARCH['host']])
+        connections.create_connection(hosts=settings.ELASTICSEARCH['default']['hosts'], timeout=60)
 
-    def generate_id(self):
-        return shortuuid.uuid()
+    def data_to_json(self, data):
+        if isinstance(data, str):
+            data = json.loads(data)
+        return data
+
+    def get_doc_cls(self, data):
+        return TYPES[json['type']]
 
     def add(self, data):
-        if isinstance(data, str):
-            data = json.loads(data)
-        identifier = [i['identifier'] for i in data['external_identifiers'] if i['source'] == 'archivesspace'][0]
-        s = Search(using=self.client).query('match_phrase', external_identifiers__identifier=identifier)
-        response = s.execute()
-        if response.hits.total == 1:
-            es_id = response[0].meta.id
-        else:
-            es_id = self.generate_id()
-        # TODO: better type handling
-        # TODO: handle cases where there is more than one hit
-        return self.client.index(index=data.get('$').lstrip('transformer.resources.').lower(),
-                                 doc_type='_doc', id=es_id, body=data, refresh=True)
+        json = data_to_json(data)
+        doc_cls = get_doc_cls(data)
+        document = doc_cls(**json)
+        document.meta.id = json['id']
+        document.save()
 
     def delete(self, data):
-        if isinstance(data, str):
-            data = json.loads(data)
-        identifier = [i['identifier'] for i in data['external_identifiers'] if i['source'] == 'archivesspace'][0]
-        # TODO: better type handling
-        s = Search(using=self.client, index=data.get('$').lstrip('transformer.resources.').lower()).query('match_phrase', external_identifiers__identifier=identifier)
-        response = s.delete()
-        return response
+        json = data_to_json(data)
+        doc_cls = get_doc_cls(data)
+        document = doc_cls.get(id=json['_id'])
+        document.delete()
