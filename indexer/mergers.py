@@ -1,5 +1,7 @@
-from elasticsearch_dsl import connections, Search
 from rac_es.documents import Agent, Collection, Object, Term
+
+from .helpers import generate_identifier
+from .models import DataObject
 
 
 class BaseMerger:
@@ -16,21 +18,20 @@ class BaseMerger:
      """
 
     def __init__(self):
-        if not self.document:
-            raise Exception("Missing required `document` property on self")
+        if not self.type:
+            raise Exception("Missing required `type` property on self")
         if not (self.single_source_fields and self.multi_source_fields):
             raise Exception("Both `single_source_fields` and `multi_source_fields` properties are required on self.")
         if not isinstance(self.single_source_fields, dict):
             raise Exception("`self.single_source_fields` property should be a dictionary")
         if not isinstance(self.multi_source_fields, list):
             raise Exception("`self.multi_source_fields` property should be a list")
-        self.client = connections.create_connection(hosts=settings.ELASTICSEARCH['default']['hosts'], timeout=60)
-        self.search = self.document.search(using=self.client)
 
-    def find_matches(self, source_id):
-        queryset = self.search.query()
-        queryset = queryset.filter('match_phrase', **{'source_id': source_id})
-        return queryset.execute().hits
+    def find_matches(self, source, identifier):
+        return DataObject.objects.filter(type=self.type,
+                                         data__external_identifiers__source=source,
+                                         data__external_identifiers__identifier=identifier)
+
 
     def apply_single_source_merges(self, transformed, match, source):
         """Replaces fields that have only one possible source and match the
@@ -54,38 +55,42 @@ class BaseMerger:
            if they exist, or simply passes on the transformed object if no
            matches are found."""
         for identifier in object.external_identifiers:
-            matches = self.find_matches("{}_{}".format(identifier.source, identifier.identifier))
+            matches = self.find_matches(identifier.source, identifier.identifier)
             if len(matches):
                 for match in matches:
-                    single_merge = self.apply_single_source_merges(object, match, identifier.source)
+                    single_merge = self.apply_single_source_merges(object, match.data, identifier.source)
                     multi_merge = self.apply_multi_source_merges(object, single_merge, identifier.source)
-                    #self.persist(multi)
+                    match.data = multi_merge
+                    match.indexed = False
+                    match.save()
             else:
-                pass
-                # create Elasticsearch identifier
-                # self.persist(object)
+                doc = DataObject({"es_id": generate_identifier(),
+                                  "data": object,
+                                  "type": self.type,
+                                  "indexed": False})
+                doc.save()
 
 
 class AgentMerger(BaseMerger):
     """Merges transformed Agents data"""
-    document = Agent
+    type = 'agent'
     single_source_fields = {"archivesspace": [], "cartographer": []}
     multi_source_fields = []
 
 
 class CollectionMerger(BaseMerger):
-    document = Collection
+    type = 'collection'
     single_source_fields = {"archivesspace": [], "cartographer": []}
     multi_source_fields = []
 
 
 class ObjectMerger(BaseMerger):
-    document = Object
+    type = 'object'
     single_source_fields = {"archivesspace": [], "cartographer": []}
     multi_source_fields = []
 
 
 class TermMerger(BaseMerger):
-    document = Term
+    type = 'term'
     single_source_fields = {"archivesspace": [], "cartographer": []}
     multi_source_fields = []

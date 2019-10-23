@@ -13,11 +13,11 @@ MERGERS = {
 
 
 class IndexView(APIView):
+    """Add data to or delete data from an index"""
     def post(self, request, format=None):
-        # enable bulk
-        data = request.data.get('data')
+        clean = True if request.GET.get('clean') else False
         try:
-            resp = getattr(Indexer, self.method)(data)
+            resp = getattr(Indexer, self.method)(clean)
             return Response(prepare_response(resp, data.id), status=200)
         except Exception as e:
             return Response(prepare_response(resp, data.id), status=500)
