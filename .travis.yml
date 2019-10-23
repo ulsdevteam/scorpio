@@ -13,7 +13,7 @@ before_install:
   - cp scorpio/config.py.example scorpio/config.py
   - docker-compose up -d
   - sleep 20s
-  - docker-compose exec argo-web pip install coverage
+  - docker-compose exec scorpio-web pip install coverage
 install: true
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
@@ -22,5 +22,5 @@ before_script:
 script:
   - docker-compose exec scorpio-web coverage run manage.py test
 after_script:
-  - docker-compose exec argo-web coverage xml
+  - docker-compose exec scorpio-web coverage xml
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
