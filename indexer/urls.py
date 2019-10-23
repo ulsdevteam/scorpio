@@ -17,10 +17,11 @@ from django.contrib import admin
 from django.urls import include, path
 from rest_framework.schemas import get_schema_view
 
-from .views import IndexAddView, IndexDeleteView, MergeView
+from .views import DataObjectViewSet, IndexAddView, IndexDeleteView, MergeView
 from .routers import ScorpioRouter
 
 router = ScorpioRouter()
+router.register(r'objects', DataObjectViewSet, basename='objects')
 schema_view = get_schema_view(
       title="Scorpio API",
       description="Endpoints for Scorpio microservice application.",

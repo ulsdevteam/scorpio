@@ -1,8 +1,11 @@
 from asterism.views import prepare_response
 from rest_framework.views import APIView
+from rest_framework.viewsets import ModelViewSet
 
 from .indexers import Indexer
+from .models import DataObject
 from .mergers import AgentMerger, CollectionMerger, ObjectMerger, TermMerger
+from .serializers import DataObjectSerializer
 
 MERGERS = {
     "agent": AgentMerger,
@@ -43,3 +46,9 @@ class MergeView(APIView):
             return Response(prepare_response(resp, data.id), status=200)
         except Exception as e:
             return Response(prepare_response(resp, data.id), status=500)
+
+
+class DataObjectViewSet(ModelViewSet):
+    model = DataObject
+    queryset = DataObject.objects.all()
+    serializer_class = DataObjectSerializer
