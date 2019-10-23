@@ -21,9 +21,9 @@ class IndexView(APIView):
         clean = True if request.GET.get('clean') else False
         try:
             resp = getattr(Indexer, self.method)(clean)
-            return Response(prepare_response(resp, data.id), status=200)
+            return Response(prepare_response(resp), status=200)
         except Exception as e:
-            return Response(prepare_response(resp, data.id), status=500)
+            return Response(prepare_response(resp), status=500)
 
 
 class IndexAddView(IndexView):

@@ -4,6 +4,9 @@ from .helpers import generate_identifier
 from .models import DataObject
 
 
+class MergeError(Exception): pass
+
+
 class BaseMerger:
     """
     Base merger class. Should be subclassed by object-specific mergers which
@@ -20,18 +23,12 @@ class BaseMerger:
     def __init__(self):
         if not self.type:
             raise Exception("Missing required `type` property on self")
-        if not (self.single_source_fields and self.multi_source_fields):
+        if not (hasattr(self, 'single_source_fields') and hasattr(self, 'multi_source_fields')):
             raise Exception("Both `single_source_fields` and `multi_source_fields` properties are required on self.")
         if not isinstance(self.single_source_fields, dict):
             raise Exception("`self.single_source_fields` property should be a dictionary")
         if not isinstance(self.multi_source_fields, list):
             raise Exception("`self.multi_source_fields` property should be a list")
-
-    def find_matches(self, source, identifier):
-        return DataObject.objects.filter(type=self.type,
-                                         data__external_identifiers__source=source,
-                                         data__external_identifiers__identifier=identifier)
-
 
     def apply_single_source_merges(self, transformed, match, source):
         """Replaces fields that have only one possible source and match the
@@ -54,21 +51,30 @@ class BaseMerger:
         """Main merge function. Merges transformed object into matched objects
            if they exist, or simply passes on the transformed object if no
            matches are found."""
-        for identifier in object.external_identifiers:
-            matches = self.find_matches(identifier.source, identifier.identifier)
-            if len(matches):
-                for match in matches:
-                    single_merge = self.apply_single_source_merges(object, match.data, identifier.source)
-                    multi_merge = self.apply_multi_source_merges(object, single_merge, identifier.source)
-                    match.data = multi_merge
-                    match.indexed = False
-                    match.save()
-            else:
-                doc = DataObject({"es_id": generate_identifier(),
-                                  "data": object,
-                                  "type": self.type,
-                                  "indexed": False})
-                doc.save()
+        try:
+            merged_ids = []
+            for identifier in object['external_identifiers']:
+                matches = DataObject.find_matches(identifier['source'],
+                                                  identifier['identifier'],
+                                                  initial_queryset=DataObject.objects.filter(type=self.type))
+                if len(matches):
+                    for match in matches:
+                        single_merge = self.apply_single_source_merges(object, match.data, identifier['source'])
+                        multi_merge = self.apply_multi_source_merges(object, single_merge, identifier['source'])
+                        match.data = multi_merge
+                        match.indexed = False
+                        match.save()
+                        merged_ids.append(match.es_id)
+                else:
+                    es_id = generate_identifier()
+                    doc = DataObject.objects.create(es_id=es_id,
+                                                    data=object,
+                                                    type=self.type,
+                                                    indexed=False)
+                    merged_ids.append(es_id)
+            return merged_ids
+        except Exception as e:
+            raise MergeError("Error merging ")
 
 
 class AgentMerger(BaseMerger):

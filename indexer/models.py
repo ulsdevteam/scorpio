@@ -20,3 +20,13 @@ class DataObject(models.Model):
     indexed = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
+
+    @classmethod
+    def find_matches(self, source, identifier, initial_queryset=None):
+        matches = []
+        initial_queryset = initial_queryset if initial_queryset else self.objects.all()
+        for obj in initial_queryset:
+            for id_obj in obj.data['external_identifiers']:
+                if (id_obj['source'] == source and id_obj['identifier'] == identifier):
+                    matches.append(obj)
+        return matches

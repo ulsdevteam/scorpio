@@ -118,6 +118,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+FIXTURE_DIRS = [os.path.join(BASE_DIR, 'fixtures')]
+
 AUTH_USER_MODEL = 'indexer.User'
 
 REST_FRAMEWORK = {
