@@ -2,9 +2,10 @@ import os
 import json
 
 from django.test import TestCase
+from django.urls import reverse
 from elasticsearch_dsl import connections, Search, Index, utils
 from rac_es.documents import Agent, BaseDescriptionComponent, Collection, Object, Term
-from rest_framework.test import APIRequestFactory
+from rest_framework.test import APIClient
 
 from .helpers import generate_identifier
 from .indexers import Indexer, TYPES
@@ -18,9 +19,12 @@ class TestMergerToIndex(TestCase):
     fixtures = ['initial_state.json']
 
     def setUp(self):
-        self.factory = APIRequestFactory()
-        # TODO: create and connect to test index
+        self.client = APIClient()
         connections.create_connection(hosts=settings.ELASTICSEARCH['default']['hosts'], timeout=60)
+        try:
+            BaseDescriptionComponent._index.delete()
+        except Exception as e:
+            print(e)
         BaseDescriptionComponent.init()
         self.object_len = len(DataObject.objects.all())
 
@@ -31,28 +35,24 @@ class TestMergerToIndex(TestCase):
                 for f in os.listdir(os.path.join(settings.BASE_DIR, 'fixtures', dir)):
                     with open(os.path.join(settings.BASE_DIR, 'fixtures', dir, f), 'r') as jf:
                         instance = json.load(jf)
-                        merger = MERGERS[instance.get('type')]()
-                        merged = merger.merge(instance)
+                        request = self.client.post(reverse("merge"), instance, format='json')
+                        self.assertEqual(request.status_code, 200)
         self.assertEqual(self.object_len, len(DataObject.objects.all()))
         # check field values
         # check valid against jsonschema - or should this be baked into merger?
 
     def index_objects(self):
-        # TODO: pass connection to test ES index
-        indexed = Indexer().add()
-        self.assertNotEqual(indexed, False)
-        self.assertEqual(self.object_len, len(indexed[1]))
-        # TODO: test number of objects in index
+        request = self.client.post(reverse("index-add"))
+        self.assertEqual(request.status_code, 200)
+        self.assertEqual(self.object_len, request.data['count'])
+        self.assertEqual(self.object_len, BaseDescriptionComponent.search().count())
 
     def delete_objects(self):
-        # TODO: pass connection to test ES index
         for obj in DataObject.objects.all():
             for id_obj in obj.data['external_identifiers']:
-                deleted = Indexer().delete(id_obj['source'], id_obj['identifier'])
-                self.assertNotEqual(deleted, False)
-        # TODO: test number of objects in index
-
-    # TODO: test views
+                request = self.client.post(reverse("index-delete"), {"source": id_obj['source'], "identifier": id_obj['identifier']})
+                self.assertEqual(request.status_code, 200)
+        self.assertEqual(0, BaseDescriptionComponent.search().count())
 
     def test_process(self):
         self.merge_objects()

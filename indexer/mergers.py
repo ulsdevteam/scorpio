@@ -72,7 +72,7 @@ class BaseMerger:
                                                     type=self.type,
                                                     indexed=False)
                     merged_ids.append(es_id)
-            return merged_ids
+            return ("Object merged", merged_ids)
         except Exception as e:
             raise MergeError("Error merging ")
 
