@@ -19,11 +19,13 @@ class TestMergerToIndex(TestCase):
 
     def setUp(self):
         self.factory = APIRequestFactory()
+        # TODO: create and connect to test index
         connections.create_connection(hosts=settings.ELASTICSEARCH['default']['hosts'], timeout=60)
         BaseDescriptionComponent.init()
         self.object_len = len(DataObject.objects.all())
 
     def merge_objects(self):
+        # TODO: better set of objects to be merged
         for dir in os.listdir(os.path.join(settings.BASE_DIR, 'fixtures')):
             if os.path.isdir(os.path.join(settings.BASE_DIR, 'fixtures', dir)):
                 for f in os.listdir(os.path.join(settings.BASE_DIR, 'fixtures', dir)):
@@ -36,15 +38,19 @@ class TestMergerToIndex(TestCase):
         # check valid against jsonschema - or should this be baked into merger?
 
     def index_objects(self):
+        # TODO: pass connection to test ES index
         indexed = Indexer().add()
         self.assertNotEqual(indexed, False)
         self.assertEqual(self.object_len, len(indexed[1]))
+        # TODO: test number of objects in index
 
     def delete_objects(self):
+        # TODO: pass connection to test ES index
         for obj in DataObject.objects.all():
             for id_obj in obj.data['external_identifiers']:
                 deleted = Indexer().delete(id_obj['source'], id_obj['identifier'])
                 self.assertNotEqual(deleted, False)
+        # TODO: test number of objects in index
 
     # TODO: test views
 
