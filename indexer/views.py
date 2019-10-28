@@ -49,7 +49,7 @@ class MergeView(APIView):
             resp = merger.merge(request.data)
             return Response(prepare_response(resp), status=200)
         except Exception as e:
-            return Response(prepare_response(resp), status=500)
+            return Response(prepare_response(e), status=500)
 
 
 class DataObjectViewSet(ModelViewSet):

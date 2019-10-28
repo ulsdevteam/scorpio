@@ -23,7 +23,8 @@ class Indexer:
         self.connection = connections.create_connection(hosts=settings.ELASTICSEARCH['default']['hosts'], timeout=60)
 
     def prepare_data(self, type, data):
-        doc = TYPES[type](**data.data)
+        doc = TYPES[type]()
+        doc.source = data.data
         doc.meta.id = data.es_id
         return doc.to_dict(True)
 

@@ -4,7 +4,8 @@ from .helpers import generate_identifier
 from .models import DataObject
 
 
-class MergeError(Exception): pass
+class MergeError(Exception):
+    pass
 
 
 class BaseMerger:
@@ -24,27 +25,31 @@ class BaseMerger:
         if not self.type:
             raise Exception("Missing required `type` property on self")
         if not (hasattr(self, 'single_source_fields') and hasattr(self, 'multi_source_fields')):
-            raise Exception("Both `single_source_fields` and `multi_source_fields` properties are required on self.")
+            raise Exception(
+                "Both `single_source_fields` and `multi_source_fields` properties are required on self.")
         if not isinstance(self.single_source_fields, dict):
-            raise Exception("`self.single_source_fields` property should be a dictionary")
+            raise Exception(
+                "`self.single_source_fields` property should be a dictionary")
         if not isinstance(self.multi_source_fields, list):
-            raise Exception("`self.multi_source_fields` property should be a list")
+            raise Exception(
+                "`self.multi_source_fields` property should be a list")
 
     def apply_single_source_merges(self, transformed, match, source):
         """Replaces fields that have only one possible source and match the
            incoming object's source."""
         for field in self.single_source_fields[source]:
-            match[field] = transformed[field]
+            match[field] = transformed.get(field)
         return match
 
     def apply_multi_source_merges(self, transformed, match, source):
         """Merge multi-source fields by removing matching nested objects and then
            adding new nested objects."""
         for field in self.multi_source_fields:
-            for field_obj in match[field]:
-                if field_obj.source == source:
-                    match[field].remove(field_obj)
-            match[field].append(transformed[field])
+            if match.get(field):
+                for field_obj in match[field]:
+                    if field_obj.get('source') == source:
+                        match[field].remove(field_obj)
+                match[field].append(transformed[field])
         return match
 
     def merge(self, object):
@@ -59,8 +64,10 @@ class BaseMerger:
                                                   initial_queryset=DataObject.objects.filter(type=self.type))
                 if len(matches):
                     for match in matches:
-                        single_merge = self.apply_single_source_merges(object, match.data, identifier['source'])
-                        multi_merge = self.apply_multi_source_merges(object, single_merge, identifier['source'])
+                        single_merge = self.apply_single_source_merges(
+                            object, match.data, identifier['source'])
+                        multi_merge = self.apply_multi_source_merges(
+                            object, single_merge, identifier['source'])
                         match.data = multi_merge
                         match.indexed = False
                         match.save()
@@ -74,29 +81,32 @@ class BaseMerger:
                     merged_ids.append(es_id)
             return ("Object merged", merged_ids)
         except Exception as e:
-            raise MergeError("Error merging ")
+            raise MergeError("Error merging: {}".format(e))
 
 
 class AgentMerger(BaseMerger):
     """Merges transformed Agents data"""
     type = 'agent'
-    single_source_fields = {"archivesspace": [], "cartographer": []}
-    multi_source_fields = []
+    single_source_fields = {"archivesspace": [
+        "title", "agent_type", "collections", "objects"], "wikidata": ["description"]}
+    multi_source_fields = ["dates", "notes"]
 
 
 class CollectionMerger(BaseMerger):
     type = 'collection'
-    single_source_fields = {"archivesspace": [], "cartographer": []}
-    multi_source_fields = []
+    single_source_fields = {"archivesspace": [
+        "title", "level", "dates", "creators", "languages", "extents", "notes", "agents", "terms", "rights_statements"]}
+    multi_source_fields = ["parent", "children",  "ancestors"]  # TODO: check if this is right!
 
 
 class ObjectMerger(BaseMerger):
     type = 'object'
-    single_source_fields = {"archivesspace": [], "cartographer": []}
-    multi_source_fields = []
+    single_source_fields = {"archivesspace": [
+        "title", "dates", "languages", "extents", "notes", "agents", "terms", "rights_statements"]}
+    multi_source_fields = ["parent", "ancestors", "tree_position"]  # TODO: check if this is right!
 
 
 class TermMerger(BaseMerger):
     type = 'term'
-    single_source_fields = {"archivesspace": [], "cartographer": []}
+    single_source_fields = {"archivesspace": ["title", "term_type"]}
     multi_source_fields = []
