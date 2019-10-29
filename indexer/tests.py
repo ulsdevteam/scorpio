@@ -29,7 +29,6 @@ class TestMergerToIndex(TestCase):
         self.object_len = len(DataObject.objects.all())
 
     def merge_objects(self):
-        # TODO: better set of objects to be merged
         for dir in os.listdir(os.path.join(settings.BASE_DIR, 'fixtures')):
             if os.path.isdir(os.path.join(settings.BASE_DIR, 'fixtures', dir)):
                 for f in os.listdir(os.path.join(settings.BASE_DIR, 'fixtures', dir)):
@@ -38,8 +37,6 @@ class TestMergerToIndex(TestCase):
                         request = self.client.post(reverse("merge"), instance, format='json')
                         self.assertEqual(request.status_code, 200)
         self.assertEqual(self.object_len, len(DataObject.objects.all()))
-        # check field values
-        # check valid against jsonschema - or should this be baked into merger?
 
     def index_objects(self):
         request = self.client.post(reverse("index-add"))
