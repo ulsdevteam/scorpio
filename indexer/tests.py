@@ -3,15 +3,12 @@ import json
 
 from django.test import TestCase
 from django.urls import reverse
-from elasticsearch_dsl import connections, Search, Index, utils
-from rac_es.documents import Agent, BaseDescriptionComponent, Collection, Object, Term
+from elasticsearch.exceptions import NotFoundError
+from elasticsearch_dsl import connections
+from rac_es.documents import BaseDescriptionComponent
 from rest_framework.test import APIClient
 
-from .helpers import generate_identifier
-from .indexers import Indexer, TYPES
-from .mergers import BaseMerger
 from .models import DataObject
-from .views import IndexAddView, IndexDeleteView, MergeView, MERGERS
 from scorpio import settings
 
 
@@ -23,8 +20,8 @@ class TestMergerToIndex(TestCase):
         connections.create_connection(hosts=settings.ELASTICSEARCH['default']['hosts'], timeout=60)
         try:
             BaseDescriptionComponent._index.delete()
-        except Exception as e:
-            print(e)
+        except NotFoundError:
+            pass
         BaseDescriptionComponent.init()
         self.object_len = len(DataObject.objects.all())
 
