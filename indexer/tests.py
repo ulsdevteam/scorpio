@@ -26,10 +26,10 @@ class TestMergerToIndex(TestCase):
         self.object_len = len(DataObject.objects.all())
 
     def merge_objects(self):
-        for dir in os.listdir(os.path.join(settings.BASE_DIR, 'fixtures')):
-            if os.path.isdir(os.path.join(settings.BASE_DIR, 'fixtures', dir)):
-                for f in os.listdir(os.path.join(settings.BASE_DIR, 'fixtures', dir)):
-                    with open(os.path.join(settings.BASE_DIR, 'fixtures', dir, f), 'r') as jf:
+        for dir in os.listdir(os.path.join(settings.BASE_DIR, 'fixtures', 'queued')):
+            if os.path.isdir(os.path.join(settings.BASE_DIR, 'fixtures', 'queued', dir)):
+                for f in os.listdir(os.path.join(settings.BASE_DIR, 'fixtures', 'queued', dir)):
+                    with open(os.path.join(settings.BASE_DIR, 'fixtures', 'queued', dir, f), 'r') as jf:
                         instance = json.load(jf)
                         request = self.client.post(reverse("merge"), instance, format='json')
                         self.assertEqual(request.status_code, 200)
