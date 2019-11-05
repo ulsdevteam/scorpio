@@ -4,7 +4,7 @@ chardet==3.0.4
 clinner==1.12.3
 colorlog==3.2.0
 DateTime==4.3
-Django==2.2.6
+Django==2.2.7
 django-elasticsearch-dsl==7.0.0
 django-elasticsearch-dsl-drf==0.20.3
 django-nine==0.2.2
