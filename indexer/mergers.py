@@ -1,4 +1,5 @@
 from rac_es.documents import Agent, Collection, Object, Term
+from silk.profiling.profiler import silk_profile
 
 from .helpers import generate_identifier
 from .models import DataObject
@@ -34,6 +35,7 @@ class BaseMerger:
             raise Exception(
                 "`self.multi_source_fields` property should be a list")
 
+    @silk_profile()
     def apply_single_source_merges(self, transformed, match, source):
         """Replaces fields that have only one possible source and match the
            incoming object's source."""
@@ -41,6 +43,7 @@ class BaseMerger:
             match[field] = transformed.get(field)
         return match
 
+    @silk_profile()
     def apply_multi_source_merges(self, transformed, match, source):
         """Merge multi-source fields by removing matching nested objects and then
            adding new nested objects. Match lists are traversed in reverse order
@@ -54,6 +57,7 @@ class BaseMerger:
                     match[field].append(f)
         return match
 
+    @silk_profile()
     def merge(self, object):
         """Main merge function. Merges transformed object into matched objects
            if they exist, or simply passes on the transformed object if no

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'health_check',
     'indexer',
+    'silk',
 ]
 
 MIDDLEWARE = [
@@ -51,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'silk.middleware.SilkyMiddleware',
 ]
 
 ROOT_URLCONF = 'scorpio.urls'
@@ -129,3 +131,6 @@ REST_FRAMEWORK = {
 
 # Elasticsearch configuration
 ELASTICSEARCH = CF.ELASTICSEARCH
+
+# Silk Profiling
+SILKY_PYTHON_PROFILER = CF.SILKY_PYTHON_PROFILER

@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.contrib.postgres.fields import JSONField
+from silk.profiling.profiler import silk_profile
 
 
 class User(AbstractUser):
@@ -22,6 +23,7 @@ class DataObject(models.Model):
     last_modified = models.DateTimeField(auto_now=True)
 
     @classmethod
+    @silk_profile()
     def find_matches(self, source, identifier, initial_queryset=None):
         matches = []
         initial_queryset = initial_queryset if initial_queryset else self.objects.all()
