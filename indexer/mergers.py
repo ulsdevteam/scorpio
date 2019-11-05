@@ -43,13 +43,15 @@ class BaseMerger:
 
     def apply_multi_source_merges(self, transformed, match, source):
         """Merge multi-source fields by removing matching nested objects and then
-           adding new nested objects."""
+           adding new nested objects. Match lists are traversed in reverse order
+           so that all list items are acted on."""
         for field in self.multi_source_fields:
             if match.get(field):
-                for field_obj in match[field]:
+                for field_obj in reversed(match[field]):
                     if field_obj.get('source') == source:
                         match[field].remove(field_obj)
-                match[field].append(transformed[field])
+                for f in transformed[field]:
+                    match[field].append(f)
         return match
 
     def merge(self, object):

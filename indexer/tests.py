@@ -8,6 +8,7 @@ from elasticsearch_dsl import connections
 from rac_es.documents import BaseDescriptionComponent
 from rest_framework.test import APIClient
 
+from .mergers import AgentMerger, CollectionMerger, ObjectMerger, TermMerger
 from .models import DataObject
 from scorpio import settings
 
@@ -25,6 +26,23 @@ class TestMergerToIndex(TestCase):
         BaseDescriptionComponent.init()
         self.object_len = len(DataObject.objects.all())
 
+    def check_merged_values(self, transformed_data, merged_data):
+        MERGERS = {
+            "agent": AgentMerger,
+            "collection": CollectionMerger,
+            "object": ObjectMerger,
+            "term": TermMerger
+        }
+        merger = MERGERS[merged_data['type']]
+        for identifier in transformed_data['external_identifiers']:
+            source = identifier['source']
+            for field in merger.single_source_fields[source]:
+                self.assertEqual(transformed_data.get(field), merged_data.get(field))
+            for field in merger.multi_source_fields:
+                transformed_objs = [obj for obj in transformed_data.get(field) if obj['source'] == source]
+                merged_objs = [obj for obj in merged_data.get(field) if obj['source'] == source]
+                self.assertEqual(transformed_objs, merged_objs)
+
     def merge_objects(self):
         for dir in os.listdir(os.path.join(settings.BASE_DIR, 'fixtures', 'queued')):
             if os.path.isdir(os.path.join(settings.BASE_DIR, 'fixtures', 'queued', dir)):
@@ -32,6 +50,8 @@ class TestMergerToIndex(TestCase):
                     with open(os.path.join(settings.BASE_DIR, 'fixtures', 'queued', dir, f), 'r') as jf:
                         instance = json.load(jf)
                         request = self.client.post(reverse("merge"), instance, format='json')
+                        merged = DataObject.objects.get(es_id=request.data['objects'][0])
+                        self.check_merged_values(instance, merged.data)
                         self.assertEqual(request.status_code, 200)
         self.assertEqual(self.object_len, len(DataObject.objects.all()))
 
