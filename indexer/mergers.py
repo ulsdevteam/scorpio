@@ -96,14 +96,14 @@ class CollectionMerger(BaseMerger):
     type = 'collection'
     single_source_fields = {"archivesspace": [
         "title", "level", "dates", "creators", "languages", "extents", "notes", "agents", "terms", "rights_statements"]}
-    multi_source_fields = ["children",  "ancestors"]
+    multi_source_fields = []
 
 
 class ObjectMerger(BaseMerger):
     type = 'object'
     single_source_fields = {"archivesspace": [
         "title", "dates", "languages", "extents", "notes", "agents", "terms", "rights_statements"]}
-    multi_source_fields = ["ancestors"]
+    multi_source_fields = []
 
 
 class TermMerger(BaseMerger):
