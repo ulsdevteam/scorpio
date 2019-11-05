@@ -1,6 +1,7 @@
 from elasticsearch_dsl import connections
 from elasticsearch.helpers import streaming_bulk
 from rac_es.documents import Agent, Collection, Object, Term
+from silk.profiling.profiler import silk_profile
 
 from .models import DataObject
 
@@ -28,6 +29,7 @@ class Indexer:
         doc.meta.id = data.es_id
         return doc.to_dict(True)
 
+    @silk_profile()
     def add(self, clean=False, **kwargs):
         indexed_ids = []
         for type in TYPES:
@@ -45,6 +47,7 @@ class Indexer:
                     indexed_ids.append(result["_id"])
         return ("Indexing complete", indexed_ids)
 
+    @silk_profile()
     def delete(self, source, identifier, **kwargs):
         deleted_ids = []
         matches = DataObject.find_matches(source, identifier)

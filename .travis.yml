@@ -12,7 +12,7 @@ before_install:
   - sudo mv docker-compose /usr/local/bin
   - cp scorpio/config.py.example scorpio/config.py
   - docker-compose up -d
-  - sleep 20s
+  - sleep 10s
   - docker-compose exec scorpio-web pip install coverage
 install: true
 before_script:
