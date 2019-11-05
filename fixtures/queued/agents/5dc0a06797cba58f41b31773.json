@@ -1,0 +1,50 @@
+{
+  "index": 6,
+  "id": "5dc0a06797cba58f41b31773",
+  "title": "Jerri Hood",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "Consectetur culpa qui magna ad ex aute veniam anim Lorem consectetur ad veniam irure. Aliquip irure ipsum deserunt duis voluptate. Adipisicing ullamco do velit veniam voluptate veniam velit ad non elit nulla do. Esse ut ex aute enim proident qui sit quis ad nisi deserunt. Irure consectetur laborum do proident tempor amet veniam culpa do.",
+  "dates": [
+    {
+      "begin": "1924-12-12",
+      "end": "1969-06-27",
+      "expression": "Dec 12th, 1924 - Jun 27th, 1969",
+      "type": "bulk",
+      "label": "other",
+      "source": "wikipedia"
+    },
+    {
+      "begin": "1920-10-03",
+      "end": "2005-04-20",
+      "expression": "Oct 3rd, 1920 - Apr 20th, 2005",
+      "type": "bulk",
+      "label": "modified",
+      "source": "wikipedia"
+    }
+  ],
+  "notes": [
+    {
+      "type": "altformavail",
+      "title": "ullamco minim ut",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "excepteur est dolor nisi dolore pariatur",
+            "excepteur eu nisi occaecat cillum ipsum",
+            "proident ipsum irure proident officia sint",
+            "esse laborum anim sunt dolore excepteur"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/6"
+    }
+  ]
+}

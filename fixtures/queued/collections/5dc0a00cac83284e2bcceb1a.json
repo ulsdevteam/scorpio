@@ -1,0 +1,243 @@
+{
+  "index": 4,
+  "id": "5dc0a00cac83284e2bcceb1a",
+  "title": "Commodo exercitation aliquip sit qui aute dolore amet sunt et ea dolore ut.",
+  "type": "collection",
+  "level": "series",
+  "dates": [
+    {
+      "begin": "1943-04-08",
+      "end": "1997-06-23",
+      "expression": "Apr 8th, 1943 - Jun 23rd, 1997",
+      "type": "inclusive",
+      "label": "event"
+    },
+    {
+      "begin": "1913-07-25",
+      "end": "1985-06-03",
+      "expression": "Jul 25th, 1913 - Jun 3rd, 1985",
+      "type": "single",
+      "label": "publication"
+    },
+    {
+      "begin": "1930-06-28",
+      "end": "1981-12-11",
+      "expression": "Jun 28th, 1930 - Dec 11th, 1981",
+      "type": "bulk",
+      "label": "broadcast"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/2"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "3.35",
+      "type": "files"
+    }
+  ],
+  "notes": [
+    {
+      "type": "dimensions",
+      "title": "dolor velit et",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "quis nisi consectetur do eiusmod ad",
+            "laboris enim aliqua adipisicing et deserunt",
+            "aliquip duis Lorem irure amet do",
+            "laboris ex sint irure elit anim",
+            "aliquip eu aliqua enim officia adipisicing"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "restrictions",
+      "title": "do aliquip dolore",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "commodo dolore occaecat laboris esse velit",
+            "minim amet fugiat commodo in do",
+            "laborum non excepteur tempor sunt voluptate"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "otherfindaid",
+      "title": "excepteur cillum Lorem",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "labore ea consectetur ullamco cillum mollit",
+            "ex cillum incididunt laborum aliqua velit",
+            "anim ad velit id sint consequat",
+            "sint fugiat occaecat Lorem adipisicing ut",
+            "laborum eu dolor nisi consequat sunt"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "phystech",
+      "title": "fugiat nulla adipisicing",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "consequat voluptate qui aute ad ex",
+            "laboris ea nulla aliquip ea in",
+            "magna nostrud excepteur duis aute consequat",
+            "proident consequat ut enim qui ipsum"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "minim aute irure consectetur eiusmod Lorem",
+            "quis laborum dolor dolore dolor aute",
+            "velit et magna officia laborum ipsum"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/48"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "English",
+      "identifier": "eng"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "eng"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a00c3049bc5f7693056e",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "license",
+      "rights_status": "copyrighted",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "quis",
+      "jurisdiction": "FR",
+      "notes": [],
+      "rights_granted": [
+        {
+          "act": "replicate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": []
+        },
+        {
+          "act": "modify",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "id": "5dc0a00c2eca7898ceaeb2dc",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "statute",
+      "rights_status": "copyrighted",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "unknown",
+      "other_basis": "est",
+      "jurisdiction": "FR",
+      "notes": [],
+      "rights_granted": [
+        {
+          "act": "migrate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": [
+            {
+              "type": "additional_information",
+              "title": "proident et ut",
+              "source": "wikidata",
+              "subnotes": [
+                {
+                  "type": "orderedlist",
+                  "content": [
+                    "officia in ipsum est id eu"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/26"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/4"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/47"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/4"
+    }
+  ]
+}

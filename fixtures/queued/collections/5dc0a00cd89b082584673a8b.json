@@ -1,0 +1,133 @@
+{
+  "index": 6,
+  "id": "5dc0a00cd89b082584673a8b",
+  "title": "Aute pariatur non eu aute veniam officia eiusmod minim.",
+  "type": "collection",
+  "level": "subgrp",
+  "dates": [
+    {
+      "begin": "1939-08-19",
+      "end": "1971-09-13",
+      "expression": "Aug 19th, 1939 - Sep 13th, 1971",
+      "type": "inclusive",
+      "label": "publication"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/27"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "5.28",
+      "type": "volumes"
+    },
+    {
+      "value": "2.88",
+      "type": "microform reels"
+    }
+  ],
+  "notes": [
+    {
+      "type": "accruals",
+      "title": "sint irure excepteur",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "fugiat et ad anim tempor ex",
+            "velit enim et occaecat voluptate et",
+            "qui in cillum id duis ullamco",
+            "et laborum pariatur sunt ut laborum"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "nulla dolore laboris qui adipisicing aliqua",
+            "veniam laborum ex quis esse esse"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "amet ut ad ipsum in et",
+            "cillum culpa incididunt voluptate ea amet"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rights_statement",
+      "title": "anim dolor ea",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "non ipsum magna dolore exercitation anim",
+            "dolore sint do aliqua sit magna"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [],
+  "agents": [],
+  "languages": [
+    {
+      "expression": "Spanish",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/24"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/36"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/27"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/20"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/6"
+    }
+  ]
+}

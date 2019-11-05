@@ -1,0 +1,59 @@
+{
+  "index": 19,
+  "id": "5dc0a0672345bda406df64fe",
+  "title": "Keri Collins",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "In esse sit mollit laboris labore exercitation qui aliqua esse. Officia est proident est consectetur et in ea aliqua magna dolore enim esse. Fugiat tempor consectetur do minim duis eiusmod. Enim laboris ullamco laboris quis ex non non cupidatat culpa aliquip cupidatat. Cupidatat Lorem in laboris irure minim ea.",
+  "dates": [
+    {
+      "begin": "1956-02-23",
+      "end": "1994-08-04",
+      "expression": "Feb 23rd, 1956 - Aug 4th, 1994",
+      "type": "single",
+      "label": "existence",
+      "source": "wikipedia"
+    },
+    {
+      "begin": "1932-12-09",
+      "end": "1971-08-17",
+      "expression": "Dec 9th, 1932 - Aug 17th, 1971",
+      "type": "bulk",
+      "label": "existence",
+      "source": "wikipedia"
+    }
+  ],
+  "notes": [
+    {
+      "type": "extension",
+      "title": "enim commodo aliquip",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "eiusmod eiusmod velit sint mollit quis",
+            "ipsum aliquip mollit id eiusmod elit",
+            "velit non ad fugiat magna dolor"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "dolor ut commodo eiusmod duis duis",
+            "sunt minim excepteur do culpa incididunt",
+            "irure voluptate tempor laborum ut velit",
+            "consectetur qui enim magna labore occaecat",
+            "velit reprehenderit fugiat et nulla nostrud"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/19"
+    }
+  ]
+}

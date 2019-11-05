@@ -1,0 +1,218 @@
+{
+  "index": 11,
+  "id": "5dc0a00c170c254c739fb15d",
+  "title": "Fugiat incididunt amet sit officia sint anim ad.",
+  "type": "collection",
+  "level": "otherLevel",
+  "dates": [
+    {
+      "begin": "1915-06-27",
+      "end": "1984-01-18",
+      "expression": "Jun 27th, 1915 - Jan 18th, 1984",
+      "type": "bulk",
+      "label": "existence"
+    },
+    {
+      "begin": "1919-12-13",
+      "end": "1989-01-14",
+      "expression": "Dec 13th, 1919 - Jan 14th, 1989",
+      "type": "single",
+      "label": "deaccession"
+    },
+    {
+      "begin": "1925-08-07",
+      "end": "1995-04-18",
+      "expression": "Aug 7th, 1925 - Apr 18th, 1995",
+      "type": "bulk",
+      "label": "usage"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/10"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "7.71",
+      "type": "volumes"
+    }
+  ],
+  "notes": [
+    {
+      "type": "restrictions",
+      "title": "labore qui irure",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "ipsum culpa tempor ipsum labore magna"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "velit ullamco cupidatat occaecat consectetur consectetur",
+            "amet aliquip dolore ex consectetur ex",
+            "fugiat ea sit officia Lorem aliqua",
+            "consectetur deserunt laboris nisi anim ea",
+            "in nisi ea sit aliquip veniam"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "userestrict",
+      "title": "ad adipisicing eu",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "proident deserunt nisi est ullamco reprehenderit",
+            "ea magna aute consequat cillum enim",
+            "laborum magna deserunt qui ex exercitation"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "enim velit consectetur occaecat nostrud magna",
+            "dolor aute elit et duis nisi",
+            "aliqua non cillum do ullamco sit"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/36"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/21"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/44"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/41"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/8"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/50"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Esperanto",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a00c8833be82f8db7061",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "statute",
+      "rights_status": "unknown",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "unknown",
+      "other_basis": "adipisicing",
+      "jurisdiction": "CN",
+      "notes": [
+        {
+          "type": "restrictions",
+          "title": "adipisicing non qui",
+          "source": "wikidata",
+          "subnotes": [
+            {
+              "type": "text",
+              "content": [
+                "ipsum esse culpa laboris consectetur quis",
+                "cillum ea consequat eu velit cillum",
+                "enim duis ut do Lorem in"
+              ]
+            }
+          ]
+        }
+      ],
+      "rights_granted": [
+        {
+          "act": "modify",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/7"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/36"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/11"
+    }
+  ]
+}

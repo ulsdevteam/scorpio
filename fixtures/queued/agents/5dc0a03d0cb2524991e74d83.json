@@ -1,0 +1,47 @@
+{
+  "index": 16,
+  "id": "5dc0a03d0cb2524991e74d83",
+  "title": "Diaz Foundation",
+  "type": "agent",
+  "agent_type": "organization",
+  "description": "Ullamco commodo labore irure ex irure voluptate veniam pariatur labore amet do labore labore ad. Excepteur non occaecat laborum Lorem dolore amet pariatur nisi esse ipsum excepteur culpa deserunt qui. Excepteur cillum occaecat et culpa id voluptate sit nulla qui. Consectetur est deserunt enim sunt anim adipisicing aliqua incididunt. Reprehenderit ea elit eiusmod voluptate laboris.",
+  "dates": [
+    {
+      "begin": "1917-05-27",
+      "end": "2004-01-07",
+      "expression": "May 27th, 1917 - Jan 7th, 2004",
+      "type": "bulk",
+      "label": "agent_relation",
+      "source": "archivesspace"
+    },
+    {
+      "begin": "1926-12-22",
+      "end": "1996-11-01",
+      "expression": "Dec 22nd, 1926 - Nov 1st, 1996",
+      "type": "inclusive",
+      "label": "publication",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "odd",
+      "title": "labore qui qui",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "pariatur reprehenderit anim duis laborum occaecat"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_organization/16"
+    }
+  ]
+}

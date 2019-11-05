@@ -1,0 +1,54 @@
+{
+  "index": 18,
+  "id": "5dc0a03d675609571278a936",
+  "title": "Cross Foundation",
+  "type": "agent",
+  "agent_type": "organization",
+  "description": "Culpa ex commodo eu commodo culpa irure exercitation dolor ad ex ipsum do ad voluptate. Velit qui magna mollit exercitation minim nisi officia eu tempor voluptate amet cillum ullamco. Aute duis quis reprehenderit occaecat eu duis. Consectetur pariatur exercitation do sit proident Lorem ad duis tempor nisi consequat magna ex. Deserunt eiusmod sit velit et et ipsum Lorem laboris eu ea fugiat.",
+  "dates": [
+    {
+      "begin": "1941-12-20",
+      "end": "1991-07-19",
+      "expression": "Dec 20th, 1941 - Jul 19th, 1991",
+      "type": "single",
+      "label": "event",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "extent",
+      "title": "aliqua do minim",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "do anim ut magna dolor exercitation",
+            "incididunt fugiat eu ad eiusmod aute",
+            "et non anim consequat ipsum ea"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "tempor Lorem in ut ex ut"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "velit ullamco pariatur id laborum commodo",
+            "consectetur et aliqua nisi non cillum"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_organization/18"
+    }
+  ]
+}

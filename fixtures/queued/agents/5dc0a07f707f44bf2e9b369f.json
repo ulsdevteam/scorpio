@@ -1,0 +1,72 @@
+{
+  "index": 46,
+  "id": "5dc0a07f707f44bf2e9b369f",
+  "title": "Osborne family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Voluptate consequat ullamco adipisicing minim id non mollit ut minim aliqua. Laborum fugiat nisi proident consectetur sunt laborum incididunt aute excepteur deserunt. Minim exercitation laborum Lorem ea in do irure. Mollit nostrud voluptate eiusmod consequat ea enim aliqua veniam.",
+  "dates": [
+    {
+      "begin": "1947-01-26",
+      "end": "2011-04-28",
+      "expression": "Jan 26th, 1947 - Apr 28th, 2011",
+      "type": "single",
+      "label": "modified",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "restrictions",
+      "title": "anim dolore eu",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "occaecat sit sint aliquip aliqua ut",
+            "Lorem quis eiusmod nostrud reprehenderit do",
+            "reprehenderit veniam veniam eiusmod aliqua exercitation"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "eiusmod non laborum consequat aliquip esse",
+            "aute sunt laborum adipisicing culpa et",
+            "adipisicing ad occaecat adipisicing laboris qui",
+            "aliquip qui culpa officia dolor duis",
+            "fugiat non ex cupidatat ex tempor"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "id aliquip duis quis deserunt sint"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "appraisal",
+      "title": "fugiat in Lorem",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "ad labore anim pariatur magna enim",
+            "velit et ea commodo labore nisi",
+            "nisi et Lorem reprehenderit dolore tempor"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/46"
+    }
+  ]
+}

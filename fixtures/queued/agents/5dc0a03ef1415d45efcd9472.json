@@ -1,0 +1,80 @@
+{
+  "index": 47,
+  "id": "5dc0a03ef1415d45efcd9472",
+  "title": "Nixon Foundation",
+  "type": "agent",
+  "agent_type": "organization",
+  "description": "Irure magna incididunt dolor Lorem. Ut incididunt amet eu duis voluptate. Quis nulla duis in nulla.",
+  "dates": [
+    {
+      "begin": "1959-05-12",
+      "end": "1996-04-09",
+      "expression": "May 12th, 1959 - Apr 9th, 1996",
+      "type": "inclusive",
+      "label": "digitized",
+      "source": "cartographer"
+    }
+  ],
+  "notes": [
+    {
+      "type": "physdesc",
+      "title": "exercitation ut aliquip",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "sunt velit est eu id deserunt",
+            "labore dolore dolor cillum irure dolore",
+            "commodo ut ea exercitation tempor voluptate"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "qui esse deserunt labore culpa aliqua"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "userestrict",
+      "title": "magna proident dolore",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "nisi do ex cillum aute eiusmod",
+            "sit incididunt reprehenderit officia excepteur exercitation",
+            "Lorem duis amet elit mollit ex",
+            "aliquip nisi amet aliqua culpa ipsum",
+            "in minim exercitation tempor id tempor"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "est non elit voluptate consectetur labore",
+            "minim quis nostrud officia sunt ut",
+            "consectetur id consequat nisi proident mollit",
+            "sit anim reprehenderit sint sunt cillum",
+            "ex Lorem officia nostrud labore nisi"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "cupidatat consectetur nulla sunt Lorem voluptate"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_organization/47"
+    }
+  ]
+}

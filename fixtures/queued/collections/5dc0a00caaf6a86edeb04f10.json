@@ -1,0 +1,272 @@
+{
+  "index": 36,
+  "id": "5dc0a00caaf6a86edeb04f10",
+  "title": "In elit ex esse adipisicing voluptate quis ullamco proident proident anim do adipisicing qui laboris.",
+  "type": "collection",
+  "level": "collection",
+  "dates": [
+    {
+      "begin": "1949-07-04",
+      "end": "2016-01-29",
+      "expression": "Jul 4th, 1949 - Jan 29th, 2016",
+      "type": "inclusive",
+      "label": "existence"
+    },
+    {
+      "begin": "1937-03-15",
+      "end": "1965-04-07",
+      "expression": "Mar 15th, 1937 - Apr 7th, 1965",
+      "type": "single",
+      "label": "creation"
+    },
+    {
+      "begin": "1955-11-06",
+      "end": "1977-02-28",
+      "expression": "Nov 6th, 1955 - Feb 28th, 1977",
+      "type": "bulk",
+      "label": "broadcast"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/48"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "8.55",
+      "type": "volumes"
+    },
+    {
+      "value": "5.03",
+      "type": "terabytes"
+    }
+  ],
+  "notes": [
+    {
+      "type": "physfacet",
+      "title": "dolore Lorem excepteur",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "fugiat consequat anim dolore eu qui"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "nostrud laboris pariatur laboris excepteur qui",
+            "culpa ex culpa in id aliqua",
+            "amet consectetur labore commodo anim duis",
+            "officia commodo elit id sint irure"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "deserunt ullamco sit excepteur qui aliqua",
+            "non non ullamco officia nostrud quis",
+            "nisi tempor excepteur eu pariatur qui",
+            "aute ex est Lorem ea dolor"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "physfacet",
+      "title": "exercitation enim quis",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "proident qui do ea consequat quis",
+            "ut commodo commodo eu laborum quis",
+            "consequat deserunt eu nulla nisi Lorem"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "esse incididunt Lorem esse ad ex",
+            "dolor pariatur elit qui reprehenderit esse",
+            "pariatur eiusmod magna aute sit proident",
+            "et sit tempor aliqua ullamco voluptate",
+            "deserunt fugiat laborum deserunt cupidatat fugiat"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "laboris culpa laboris fugiat aliqua occaecat",
+            "veniam velit sunt veniam mollit est"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fileplan",
+      "title": "proident minim eiusmod",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "tempor proident anim id enim eu",
+            "dolore fugiat elit enim esse sit",
+            "tempor non quis elit nulla amet",
+            "minim minim occaecat veniam cillum irure"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "do velit magna do tempor officia",
+            "in et do fugiat qui sit",
+            "non magna esse qui officia deserunt",
+            "consectetur cupidatat voluptate in excepteur occaecat",
+            "pariatur sit ea sint reprehenderit aliquip"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "physloc",
+      "title": "irure consequat dolore",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "proident consectetur non non ipsum reprehenderit"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "amet deserunt mollit minim do deserunt",
+            "laborum amet tempor enim laborum culpa",
+            "ullamco ullamco elit reprehenderit duis veniam",
+            "do deserunt eu proident do commodo"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/23"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/18"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/9"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/21"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/40"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/11"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Spanish",
+      "identifier": "spa"
+    },
+    {
+      "expression": "Spanish",
+      "identifier": "epo"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/20"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/35"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/43"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/12"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/36"
+    }
+  ]
+}

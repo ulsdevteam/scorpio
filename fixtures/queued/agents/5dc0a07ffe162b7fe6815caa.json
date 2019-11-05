@@ -1,0 +1,60 @@
+{
+  "index": 12,
+  "id": "5dc0a07ffe162b7fe6815caa",
+  "title": "Webster family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Sit in et et eiusmod voluptate labore minim dolore eiusmod aliqua et laboris laboris. Commodo excepteur officia nisi non voluptate voluptate voluptate duis ipsum Lorem ut. Adipisicing elit quis mollit eiusmod. Velit aute deserunt velit tempor do quis excepteur eiusmod anim laboris laboris. Adipisicing id voluptate incididunt laboris ad voluptate.",
+  "dates": [
+    {
+      "begin": "1957-12-11",
+      "end": "2008-10-25",
+      "expression": "Dec 11th, 1957 - Oct 25th, 2008",
+      "type": "bulk",
+      "label": "other",
+      "source": "archivesspace"
+    }
+  ],
+  "notes": [
+    {
+      "type": "restrictions",
+      "title": "nulla ipsum commodo",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "magna ut magna mollit aliquip excepteur",
+            "non nisi ex irure aliquip velit"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "et ullamco enim Lorem laboris amet",
+            "exercitation id laborum proident adipisicing cupidatat",
+            "duis ipsum esse et deserunt enim",
+            "sit elit esse officia est aliqua",
+            "nisi amet pariatur cillum esse laboris"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "sit aliqua consectetur occaecat proident in",
+            "amet amet id reprehenderit adipisicing amet",
+            "deserunt tempor quis nostrud voluptate amet",
+            "deserunt adipisicing sit elit fugiat ipsum",
+            "veniam commodo culpa cillum nisi ad"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/12"
+    }
+  ]
+}

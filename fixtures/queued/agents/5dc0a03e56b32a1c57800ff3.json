@@ -1,0 +1,77 @@
+{
+  "index": 45,
+  "id": "5dc0a03e56b32a1c57800ff3",
+  "title": "Ayala Foundation",
+  "type": "agent",
+  "agent_type": "organization",
+  "description": "Lorem nostrud officia elit enim do incididunt quis ad. Anim aliquip tempor ipsum non fugiat irure amet enim nisi consequat in ipsum fugiat. Proident irure anim anim non laborum minim. Ut sit officia exercitation occaecat. Mollit nulla reprehenderit et fugiat velit. Aliqua in aute cupidatat fugiat id reprehenderit nostrud ullamco ut. Voluptate cillum anim et nostrud.",
+  "dates": [
+    {
+      "begin": "1957-01-20",
+      "end": "2001-06-08",
+      "expression": "Jan 20th, 1957 - Jun 8th, 2001",
+      "type": "inclusive",
+      "label": "usage",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "rights_statement",
+      "title": "sunt officia non",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "aliquip nisi fugiat quis labore deserunt",
+            "occaecat excepteur duis laboris officia commodo"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "quis laborum voluptate esse ad anim"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "legalstatus",
+      "title": "aliquip adipisicing qui",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "cupidatat quis eu enim ipsum deserunt",
+            "sunt aliqua in duis sit do",
+            "veniam deserunt dolor cillum qui velit",
+            "duis deserunt veniam velit dolor reprehenderit",
+            "ex quis ullamco reprehenderit laboris culpa"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "anim occaecat quis exercitation voluptate excepteur",
+            "incididunt veniam excepteur voluptate et Lorem",
+            "in eu laboris labore adipisicing aliquip"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "elit sit qui deserunt ullamco aliqua"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_organization/45"
+    }
+  ]
+}

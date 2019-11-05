@@ -1,0 +1,74 @@
+{
+  "index": 36,
+  "id": "5dc0a0674a0095df3f3252cf",
+  "title": "Marcy Sharpe",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "Id eu ad esse anim tempor consectetur est. Aliqua incididunt anim esse eiusmod consequat occaecat ea pariatur fugiat amet eu nisi laborum. Velit qui fugiat enim voluptate irure labore. Nulla sit Lorem aliqua cillum veniam nisi veniam reprehenderit eiusmod. Est cupidatat consequat Lorem velit dolor commodo. Do dolore ad nisi dolore ipsum consequat nostrud.",
+  "dates": [
+    {
+      "begin": "1943-11-13",
+      "end": "1989-02-19",
+      "expression": "Nov 13th, 1943 - Feb 19th, 1989",
+      "type": "single",
+      "label": "publication",
+      "source": "wikipedia"
+    },
+    {
+      "begin": "1917-02-22",
+      "end": "1960-02-25",
+      "expression": "Feb 22nd, 1917 - Feb 25th, 1960",
+      "type": "single",
+      "label": "agent_relation",
+      "source": "wikipedia"
+    }
+  ],
+  "notes": [
+    {
+      "type": "separatedmaterial",
+      "title": "sunt ullamco deserunt",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "cupidatat amet veniam enim cillum nostrud",
+            "labore elit Lorem occaecat do adipisicing",
+            "cillum aliqua esse tempor sint sunt"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "extension",
+      "title": "eu cupidatat reprehenderit",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "elit consequat irure excepteur ipsum quis",
+            "elit veniam sunt qui eu exercitation",
+            "veniam dolor cillum aliquip enim qui",
+            "nostrud anim occaecat in officia velit",
+            "ullamco sit officia minim dolor quis"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "nisi fugiat quis labore dolor ex",
+            "exercitation consectetur ipsum pariatur enim reprehenderit",
+            "nostrud ea tempor deserunt consectetur do"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/36"
+    }
+  ]
+}

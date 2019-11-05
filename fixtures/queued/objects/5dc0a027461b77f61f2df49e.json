@@ -1,0 +1,223 @@
+{
+  "index": 27,
+  "id": "5dc0a027461b77f61f2df49e",
+  "title": "Cillum proident do ad laborum non.",
+  "type": "object",
+  "dates": [
+    {
+      "begin": "1958-04-11",
+      "end": "2010-07-31",
+      "expression": "Apr 11th, 1958 - Jul 31st, 2010",
+      "type": "bulk",
+      "label": "publication"
+    }
+  ],
+  "extents": [
+    {
+      "value": "6.36",
+      "type": "volumes"
+    },
+    {
+      "value": "4.21",
+      "type": "linear_feet"
+    }
+  ],
+  "notes": [
+    {
+      "type": "acquinfo",
+      "title": "consectetur laborum excepteur",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "do ex et ipsum veniam adipisicing",
+            "exercitation officia elit excepteur est culpa"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "arrangement",
+      "title": "cupidatat labore eiusmod",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "quis consectetur aliquip deserunt culpa ad"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "appraisal",
+      "title": "id occaecat id",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "cupidatat occaecat voluptate cillum sunt consequat",
+            "velit do occaecat cillum elit laborum",
+            "eiusmod nostrud ullamco nostrud aliquip ullamco"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "title": "aliquip ipsum et",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "et non enim aliqua sint velit",
+            "cupidatat laboris eiusmod occaecat mollit amet",
+            "cupidatat consectetur consectetur sint sit nulla",
+            "labore eu Lorem velit incididunt quis"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "proident eiusmod officia reprehenderit excepteur ullamco",
+            "pariatur anim elit cupidatat fugiat sunt",
+            "irure labore commodo ipsum enim voluptate"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "commodo voluptate deserunt dolor ut esse"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/24"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/14"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/12"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/27"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "English",
+      "identifier": "eng"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a027594585ed9da1690b",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "other",
+      "rights_status": "unknown",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "occaecat",
+      "jurisdiction": "FR",
+      "notes": [],
+      "rights_granted": [
+        {
+          "act": "replicate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": [
+            {
+              "type": "type_note",
+              "title": "dolor id adipisicing",
+              "source": "archivesspace",
+              "subnotes": [
+                {
+                  "type": "text",
+                  "content": [
+                    "irure sunt minim deserunt ipsum voluptate",
+                    "reprehenderit labore consectetur ad sunt labore",
+                    "dolor incididunt culpa enim reprehenderit nisi",
+                    "excepteur in labore commodo dolore anim"
+                  ]
+                },
+                {
+                  "type": "definedlist",
+                  "content": [
+                    "sunt exercitation excepteur commodo anim laboris",
+                    "ipsum ex amet et occaecat magna",
+                    "sit irure sit eiusmod enim minim",
+                    "est occaecat pariatur ad elit consequat"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/20"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/41"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/44"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/archival_objects/27"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "index": 37,
+  "id": "5dc0a07ffd3e14af94cc6fb0",
+  "title": "Mcbride family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Lorem cupidatat ex ad labore ipsum ullamco do labore consequat sint est excepteur aliqua nisi. Incididunt irure ex sunt consequat est voluptate. Eiusmod aute eiusmod ex labore anim consectetur Lorem consequat ipsum cillum. Tempor do consequat officia culpa consequat in deserunt nulla mollit. Adipisicing enim laborum amet aute. Eiusmod elit tempor et tempor do aliqua nostrud consequat nulla culpa cupidatat mollit veniam.",
+  "dates": [
+    {
+      "begin": "1959-10-31",
+      "end": "1974-11-15",
+      "expression": "Oct 31st, 1959 - Nov 15th, 1974",
+      "type": "single",
+      "label": "existence",
+      "source": "wikipedia"
+    },
+    {
+      "begin": "1951-10-18",
+      "end": "1960-01-26",
+      "expression": "Oct 18th, 1951 - Jan 26th, 1960",
+      "type": "single",
+      "label": "deaccession",
+      "source": "archivesspace"
+    }
+  ],
+  "notes": [
+    {
+      "type": "separatedmaterial",
+      "title": "incididunt commodo ex",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "commodo anim tempor veniam ad incididunt",
+            "reprehenderit cillum qui excepteur sunt nostrud",
+            "mollit sit aliquip tempor velit laborum",
+            "excepteur adipisicing incididunt officia adipisicing magna"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "et laboris proident ipsum culpa voluptate",
+            "eiusmod culpa Lorem dolor amet dolore",
+            "tempor anim sit fugiat et nostrud",
+            "labore labore ea irure occaecat quis",
+            "laborum voluptate voluptate velit mollit enim"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/37"
+    }
+  ]
+}

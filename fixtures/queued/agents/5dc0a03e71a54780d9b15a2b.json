@@ -1,0 +1,49 @@
+{
+  "index": 33,
+  "id": "5dc0a03e71a54780d9b15a2b",
+  "title": "Brewer Foundation",
+  "type": "agent",
+  "agent_type": "organization",
+  "description": "Nulla minim eiusmod ex cupidatat tempor Lorem ad Lorem enim labore mollit occaecat. Incididunt ex proident culpa nostrud officia deserunt fugiat consequat. Labore est ex voluptate anim excepteur sit aliquip dolor deserunt aliquip consectetur et. Magna commodo veniam veniam laboris. Dolore culpa duis aute adipisicing enim aliquip id qui elit cupidatat fugiat duis minim Lorem. Commodo aute veniam exercitation consectetur proident aliqua aliquip deserunt. Veniam aliqua non veniam labore id qui velit elit sint qui esse est deserunt.",
+  "dates": [
+    {
+      "begin": "1935-01-14",
+      "end": "1974-11-04",
+      "expression": "Jan 14th, 1935 - Nov 4th, 1974",
+      "type": "inclusive",
+      "label": "record_keeping",
+      "source": "wikipedia"
+    },
+    {
+      "begin": "1934-09-02",
+      "end": "1962-05-12",
+      "expression": "Sep 2nd, 1934 - May 12th, 1962",
+      "type": "inclusive",
+      "label": "copyright",
+      "source": "wikipedia"
+    }
+  ],
+  "notes": [
+    {
+      "type": "odd",
+      "title": "labore ea ea",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "magna enim ad quis ut reprehenderit",
+            "magna pariatur adipisicing magna Lorem velit",
+            "cupidatat exercitation dolore dolore consectetur exercitation"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_organization/33"
+    }
+  ]
+}

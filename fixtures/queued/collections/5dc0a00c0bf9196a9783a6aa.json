@@ -1,0 +1,256 @@
+{
+  "index": 26,
+  "id": "5dc0a00c0bf9196a9783a6aa",
+  "title": "Eiusmod nostrud tempor magna duis ipsum laboris id ipsum culpa commodo cupidatat quis excepteur labore.",
+  "type": "collection",
+  "level": "series",
+  "dates": [
+    {
+      "begin": "1916-01-26",
+      "end": "2005-12-23",
+      "expression": "Jan 26th, 1916 - Dec 23rd, 2005",
+      "type": "bulk",
+      "label": "other"
+    },
+    {
+      "begin": "1915-02-19",
+      "end": "2008-07-29",
+      "expression": "Feb 19th, 1915 - Jul 29th, 2008",
+      "type": "single",
+      "label": "creation"
+    },
+    {
+      "begin": "1955-09-04",
+      "end": "2002-10-24",
+      "expression": "Sep 4th, 1955 - Oct 24th, 2002",
+      "type": "inclusive",
+      "label": "copyright"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/45"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "9.12",
+      "type": "record cartons"
+    }
+  ],
+  "notes": [],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/2"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/19"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/1"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/11"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/33"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/12"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/3"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/39"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/14"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "English",
+      "identifier": "epo"
+    },
+    {
+      "expression": "English",
+      "identifier": "eng"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a00c53f979c47561193b",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "copyright",
+      "rights_status": "public domain",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "nostrud",
+      "jurisdiction": "FR",
+      "notes": [
+        {
+          "type": "restrictions",
+          "title": "et ipsum mollit",
+          "source": "cartographer",
+          "subnotes": [
+            {
+              "type": "definedlist",
+              "content": [
+                "exercitation consequat officia dolor consequat magna",
+                "cupidatat cupidatat minim proident ad qui",
+                "aute consequat tempor exercitation ipsum duis"
+              ]
+            }
+          ]
+        }
+      ],
+      "rights_granted": [
+        {
+          "act": "replicate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": [
+            {
+              "type": "rights_statement_act",
+              "title": "elit tempor culpa",
+              "source": "cartographer",
+              "subnotes": [
+                {
+                  "type": "definedlist",
+                  "content": [
+                    "esse labore fugiat tempor labore fugiat",
+                    "exercitation cupidatat commodo minim eiusmod nulla",
+                    "ut officia exercitation labore magna sint",
+                    "laborum veniam tempor excepteur nulla sit"
+                  ]
+                },
+                {
+                  "type": "definedlist",
+                  "content": [
+                    "velit cillum sint cillum est cillum",
+                    "laborum non mollit commodo tempor qui",
+                    "ad ipsum in officia sunt sunt",
+                    "consequat duis consequat excepteur aute velit"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "act": "use",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/12"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/19"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/45"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/38"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/28"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/26"
+    }
+  ]
+}

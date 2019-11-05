@@ -1,0 +1,86 @@
+{
+  "index": 20,
+  "id": "5dc0a07f65fe294d45b8b6ff",
+  "title": "Melton family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Voluptate magna irure tempor incididunt aute cillum eu pariatur est magna pariatur irure qui. Tempor enim commodo sunt pariatur mollit fugiat eiusmod et consequat minim mollit minim voluptate. Pariatur sit tempor duis amet magna culpa.",
+  "dates": [
+    {
+      "begin": "1939-04-17",
+      "end": "1968-06-26",
+      "expression": "Apr 17th, 1939 - Jun 26th, 1968",
+      "type": "bulk",
+      "label": "broadcast",
+      "source": "wikipedia"
+    },
+    {
+      "begin": "1934-09-07",
+      "end": "2001-09-03",
+      "expression": "Sep 7th, 1934 - Sep 3rd, 2001",
+      "type": "inclusive",
+      "label": "record_keeping",
+      "source": "wikipedia"
+    }
+  ],
+  "notes": [
+    {
+      "type": "bioghist",
+      "title": "velit mollit duis",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "enim occaecat non ullamco nisi elit"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "dolor amet excepteur laboris tempor adipisicing"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "commodo id commodo eu eiusmod duis",
+            "irure sunt anim velit ea dolor",
+            "dolor nisi cupidatat cupidatat nostrud velit",
+            "magna Lorem labore id duis exercitation"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "relatedmaterial",
+      "title": "deserunt magna adipisicing",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "dolor excepteur pariatur nisi culpa consequat",
+            "labore aute quis dolore voluptate velit"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "anim ad enim aute deserunt dolor",
+            "culpa sint duis adipisicing fugiat magna",
+            "occaecat consectetur labore cupidatat consequat enim",
+            "duis laborum sit occaecat officia in",
+            "in ea excepteur veniam velit esse"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/20"
+    }
+  ]
+}

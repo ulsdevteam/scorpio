@@ -1,0 +1,47 @@
+{
+  "index": 21,
+  "id": "5dc0a07f01f648897a4b66de",
+  "title": "Vinson family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Elit mollit aliqua aute ea magna labore laboris. Exercitation veniam culpa non qui nisi veniam minim officia occaecat occaecat adipisicing. Ad duis nulla proident mollit nisi et anim incididunt sint elit aute dolor. Duis ipsum et elit esse ad reprehenderit commodo elit est. Tempor magna dolore qui tempor fugiat fugiat velit reprehenderit fugiat nisi est nisi. Exercitation duis magna nisi consequat mollit reprehenderit aliqua est eiusmod ipsum sunt.",
+  "dates": [
+    {
+      "begin": "1947-11-20",
+      "end": "1969-08-17",
+      "expression": "Nov 20th, 1947 - Aug 17th, 1969",
+      "type": "inclusive",
+      "label": "digitized",
+      "source": "cartographer"
+    }
+  ],
+  "notes": [
+    {
+      "type": "scopecontent",
+      "title": "aliqua veniam Lorem",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "excepteur in exercitation commodo amet ipsum",
+            "ut et Lorem officia non dolor"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "ut pariatur nulla non aliqua eiusmod",
+            "aute eu laborum veniam enim est"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/21"
+    }
+  ]
+}

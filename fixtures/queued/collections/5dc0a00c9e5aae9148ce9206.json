@@ -1,0 +1,209 @@
+{
+  "index": 5,
+  "id": "5dc0a00c9e5aae9148ce9206",
+  "title": "Ipsum sint eu magna sint elit non consequat fugiat occaecat ad consequat elit.",
+  "type": "collection",
+  "level": "subgrp",
+  "dates": [
+    {
+      "begin": "1924-12-05",
+      "end": "1984-01-08",
+      "expression": "Dec 5th, 1924 - Jan 8th, 1984",
+      "type": "inclusive",
+      "label": "publication"
+    },
+    {
+      "begin": "1951-09-09",
+      "end": "1974-07-09",
+      "expression": "Sep 9th, 1951 - Jul 9th, 1974",
+      "type": "single",
+      "label": "other"
+    },
+    {
+      "begin": "1957-11-30",
+      "end": "1971-01-23",
+      "expression": "Nov 30th, 1957 - Jan 23rd, 1971",
+      "type": "single",
+      "label": "event"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/18"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/37"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "4.88",
+      "type": "photographic_prints"
+    },
+    {
+      "value": "5.01",
+      "type": "document box(es)"
+    }
+  ],
+  "notes": [
+    {
+      "type": "materials",
+      "title": "ullamco adipisicing quis",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "occaecat labore excepteur sint esse cillum",
+            "nostrud nostrud cupidatat culpa minim ex",
+            "qui ipsum commodo ad deserunt nostrud"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "veniam labore velit reprehenderit reprehenderit fugiat"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "esse enim aliqua proident anim occaecat",
+            "sit dolor nisi culpa nisi voluptate"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/40"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/12"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/23"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/4"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/38"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/42"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/36"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "English",
+      "identifier": "spa"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "eng"
+    }
+  ],
+  "rights_statements": [],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/11"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/1"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/44"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/22"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/4"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/5"
+    }
+  ]
+}

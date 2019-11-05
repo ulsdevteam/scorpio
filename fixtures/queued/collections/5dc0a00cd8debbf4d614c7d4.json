@@ -1,0 +1,221 @@
+{
+  "index": 23,
+  "id": "5dc0a00cd8debbf4d614c7d4",
+  "title": "Qui duis ex nulla aute qui consequat.",
+  "type": "collection",
+  "level": "series",
+  "dates": [
+    {
+      "begin": "1929-03-01",
+      "end": "2018-08-27",
+      "expression": "Mar 1st, 1929 - Aug 27th, 2018",
+      "type": "inclusive",
+      "label": "issued"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/22"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/19"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "7.6",
+      "type": "photographic_slides"
+    },
+    {
+      "value": "4.67",
+      "type": "record cartons"
+    }
+  ],
+  "notes": [],
+  "terms": [],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/5"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/18"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/19"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/3"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/34"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Spanish",
+      "identifier": "eng"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "epo"
+    },
+    {
+      "expression": "Spanish",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a00cd32f170b7631d70f",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "statute",
+      "rights_status": "public domain",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "copyrighted",
+      "other_basis": "deserunt",
+      "jurisdiction": "US",
+      "notes": [
+        {
+          "type": "materials",
+          "title": "qui sunt eu",
+          "source": "cartographer",
+          "subnotes": [
+            {
+              "type": "definedlist",
+              "content": [
+                "veniam enim non duis cupidatat ad",
+                "nisi aliquip minim duis officia voluptate"
+              ]
+            }
+          ]
+        }
+      ],
+      "rights_granted": [
+        {
+          "act": "disseminate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "id": "5dc0a00c1f86caf0accb7f7c",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "copyright",
+      "rights_status": "copyrighted",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "copyrighted",
+      "other_basis": "velit",
+      "jurisdiction": "US",
+      "notes": [],
+      "rights_granted": [
+        {
+          "act": "use",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/11"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/28"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/6"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/42"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/31"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/21"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/23"
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "index": 2,
+  "id": "5dc0a02750896e146013c20d",
+  "title": "Et anim duis exercitation mollit incididunt tempor tempor nisi Lorem mollit non adipisicing ut.",
+  "type": "object",
+  "dates": [
+    {
+      "begin": "1934-01-17",
+      "end": "2001-04-13",
+      "expression": "Jan 17th, 1934 - Apr 13th, 2001",
+      "type": "bulk",
+      "label": "modified"
+    }
+  ],
+  "extents": [
+    {
+      "value": "8.79",
+      "type": "record cartons"
+    }
+  ],
+  "notes": [
+    {
+      "type": "userestrict",
+      "title": "consectetur duis occaecat",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "ea qui labore sint voluptate dolore",
+            "amet dolore minim sunt anim ex",
+            "eiusmod tempor id ex ea labore"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "incididunt irure pariatur id aute et",
+            "do ex esse sint ut tempor",
+            "consectetur ex anim labore mollit commodo",
+            "exercitation anim laborum minim anim reprehenderit"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "custodhist",
+      "title": "ea incididunt voluptate",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "sit id adipisicing adipisicing ea Lorem",
+            "ullamco sit sunt non eu nisi",
+            "cillum sit cupidatat pariatur quis do"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "quis adipisicing magna elit et anim",
+            "Lorem non id deserunt minim eu"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "non ea excepteur reprehenderit magna ea",
+            "non ut dolor non quis officia",
+            "non aliqua commodo enim magna officia",
+            "cupidatat tempor aute dolor cillum enim"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "userestrict",
+      "title": "amet in do",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "ad dolore minim ipsum aliquip nulla",
+            "anim pariatur fugiat deserunt nulla laborum"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "culpa sit occaecat et sit adipisicing",
+            "mollit minim irure ea in fugiat",
+            "irure sint laboris velit pariatur occaecat"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "aute commodo incididunt et deserunt ad",
+            "ut occaecat duis Lorem proident officia",
+            "ipsum eu tempor reprehenderit non aliqua",
+            "consequat ea minim nulla aliquip enim"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "dimensions",
+      "title": "dolor adipisicing consectetur",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "consequat non laboris minim eiusmod laborum",
+            "sit Lorem est sit voluptate excepteur",
+            "id fugiat ullamco ut mollit laboris",
+            "quis laborum dolore laborum non labore",
+            "consequat id aliquip dolore nisi aute"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "ullamco non eiusmod consequat labore eiusmod",
+            "enim aliquip commodo nisi ut esse",
+            "deserunt dolor culpa culpa aute eu"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "amet Lorem id enim adipisicing nisi",
+            "do quis ullamco ullamco occaecat do"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/23"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/12"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/5"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "English",
+      "identifier": "eng"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "epo"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a027bf76992c4532cfac",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "other",
+      "rights_status": "copyrighted",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "nulla",
+      "jurisdiction": "FR",
+      "notes": [],
+      "rights_granted": [
+        {
+          "act": "delete",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": [
+            {
+              "type": "restrictions",
+              "title": "id voluptate esse",
+              "source": "archivesspace",
+              "subnotes": [
+                {
+                  "type": "orderedlist",
+                  "content": [
+                    "minim aliquip voluptate sint laboris consequat",
+                    "quis eiusmod dolore in nostrud non",
+                    "exercitation consequat ut irure minim veniam"
+                  ]
+                },
+                {
+                  "type": "orderedlist",
+                  "content": [
+                    "commodo laboris incididunt adipisicing tempor eiusmod",
+                    "adipisicing ipsum culpa et do nisi",
+                    "ad ad nulla voluptate amet laborum",
+                    "reprehenderit cillum ad excepteur minim irure",
+                    "Lorem reprehenderit excepteur anim quis reprehenderit"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "act": "disseminate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "id": "5dc0a027e49dbf325818e574",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "copyright",
+      "rights_status": "unknown",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "fugiat",
+      "jurisdiction": "CN",
+      "notes": [],
+      "rights_granted": [
+        {
+          "act": "use",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": []
+        },
+        {
+          "act": "use",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": [
+            {
+              "type": "type_note",
+              "title": "duis non enim",
+              "source": "archivesspace",
+              "subnotes": [
+                {
+                  "type": "definedlist",
+                  "content": [
+                    "aute excepteur et et excepteur duis",
+                    "irure laboris labore enim cupidatat occaecat",
+                    "elit non amet minim commodo occaecat",
+                    "nostrud mollit quis anim tempor dolor",
+                    "reprehenderit excepteur elit in tempor fugiat"
+                  ]
+                },
+                {
+                  "type": "orderedlist",
+                  "content": [
+                    "quis deserunt mollit nisi anim minim",
+                    "do in id nisi amet sunt",
+                    "eiusmod in nisi eu nisi commodo"
+                  ]
+                },
+                {
+                  "type": "orderedlist",
+                  "content": [
+                    "quis occaecat et fugiat tempor cupidatat",
+                    "reprehenderit sunt in do id elit"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/40"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/archival_objects/2"
+    }
+  ]
+}

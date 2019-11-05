@@ -1,0 +1,51 @@
+{
+  "index": 12,
+  "id": "5dc0a0678a5b0b4230126086",
+  "title": "Thornton Goodman",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "Irure anim fugiat tempor ea minim ipsum reprehenderit. Excepteur ea irure officia minim ad nulla nulla voluptate anim in. Elit consequat laboris ut excepteur non velit pariatur.",
+  "dates": [
+    {
+      "begin": "1927-06-03",
+      "end": "1977-02-27",
+      "expression": "Jun 3rd, 1927 - Feb 27th, 1977",
+      "type": "inclusive",
+      "label": "record_keeping",
+      "source": "wikipedia"
+    },
+    {
+      "begin": "1916-04-28",
+      "end": "2002-12-09",
+      "expression": "Apr 28th, 1916 - Dec 9th, 2002",
+      "type": "inclusive",
+      "label": "publication",
+      "source": "cartographer"
+    }
+  ],
+  "notes": [
+    {
+      "type": "originalsloc",
+      "title": "irure id ad",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "minim velit ea quis officia officia",
+            "elit est voluptate amet sint occaecat",
+            "consectetur voluptate sunt sint consectetur do",
+            "consectetur tempor duis fugiat voluptate in",
+            "deserunt laboris sunt laboris consequat tempor"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/12"
+    }
+  ]
+}

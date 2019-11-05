@@ -1,0 +1,218 @@
+{
+  "index": 9,
+  "id": "5dc0a00c042fbc6e94f8bb37",
+  "title": "Laborum aute ipsum incididunt officia nisi.",
+  "type": "collection",
+  "level": "item",
+  "dates": [
+    {
+      "begin": "1918-10-14",
+      "end": "1994-02-23",
+      "expression": "Oct 14th, 1918 - Feb 23rd, 1994",
+      "type": "inclusive",
+      "label": "event"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/10"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/24"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "6.48",
+      "type": "photographic_prints"
+    }
+  ],
+  "notes": [
+    {
+      "type": "custodhist",
+      "title": "consectetur id nostrud",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "ea labore exercitation mollit labore aliqua",
+            "eiusmod exercitation mollit cupidatat anim culpa",
+            "dolor fugiat aliquip eu in est"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "et id reprehenderit sit sint mollit",
+            "cupidatat elit aute et incididunt deserunt",
+            "exercitation mollit magna magna occaecat ullamco",
+            "velit anim elit id ad qui"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "sunt quis excepteur commodo ad do",
+            "laboris aliqua laborum amet non incididunt",
+            "qui reprehenderit mollit nulla ut dolor",
+            "ut cillum sunt cupidatat officia laboris",
+            "enim occaecat duis labore fugiat sint"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "inscription",
+      "title": "et do esse",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "cillum ullamco occaecat laboris laboris culpa",
+            "cillum commodo dolor elit commodo quis"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/15"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/47"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/37"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Esperanto",
+      "identifier": "eng"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a00cf44f997d81cb9cc6",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "license",
+      "rights_status": "copyrighted",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "et",
+      "jurisdiction": "US",
+      "notes": [
+        {
+          "type": "type_note",
+          "title": "quis ad nisi",
+          "source": "wikidata",
+          "subnotes": [
+            {
+              "type": "orderedlist",
+              "content": [
+                "nulla ea mollit sit deserunt aliqua"
+              ]
+            }
+          ]
+        }
+      ],
+      "rights_granted": [
+        {
+          "act": "migrate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": []
+        },
+        {
+          "act": "modify",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/37"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/17"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/29"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/8"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/23"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/9"
+    }
+  ]
+}

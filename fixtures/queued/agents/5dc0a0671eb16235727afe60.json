@@ -1,0 +1,40 @@
+{
+  "index": 18,
+  "id": "5dc0a0671eb16235727afe60",
+  "title": "Oneal Chambers",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "Aute nostrud sit cillum dolor sunt eiusmod. Adipisicing ex cillum quis non nisi amet. Minim esse id officia labore cupidatat nisi ad eu do laboris adipisicing ut. Occaecat cupidatat ea do pariatur fugiat anim est sunt.",
+  "dates": [
+    {
+      "begin": "1958-01-05",
+      "end": "1983-11-23",
+      "expression": "Jan 5th, 1958 - Nov 23rd, 1983",
+      "type": "inclusive",
+      "label": "modified",
+      "source": "archivesspace"
+    }
+  ],
+  "notes": [
+    {
+      "type": "userestrict",
+      "title": "fugiat anim culpa",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "minim cupidatat cillum veniam exercitation non",
+            "mollit exercitation aliquip est Lorem adipisicing"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/18"
+    }
+  ]
+}

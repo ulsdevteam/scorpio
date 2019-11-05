@@ -1,0 +1,50 @@
+{
+  "index": 40,
+  "id": "5dc0a03eeeef73a50d91a795",
+  "title": "Long Foundation",
+  "type": "agent",
+  "agent_type": "organization",
+  "description": "Do nisi deserunt veniam do cupidatat velit voluptate amet. Nulla nisi ut excepteur incididunt dolor dolore labore enim irure cupidatat aliqua. Nulla ad et commodo amet incididunt cillum ut nisi. Dolor irure ullamco ea sint aliqua in laboris nulla magna ut tempor. Deserunt cillum cupidatat in veniam aute ad ad.",
+  "dates": [
+    {
+      "begin": "1948-06-09",
+      "end": "1983-10-07",
+      "expression": "Jun 9th, 1948 - Oct 7th, 1983",
+      "type": "single",
+      "label": "usage",
+      "source": "wikidata"
+    },
+    {
+      "begin": "1959-01-08",
+      "end": "1986-11-04",
+      "expression": "Jan 8th, 1959 - Nov 4th, 1986",
+      "type": "bulk",
+      "label": "existence",
+      "source": "wikipedia"
+    }
+  ],
+  "notes": [
+    {
+      "type": "langmaterial",
+      "title": "proident nulla aliquip",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "nostrud minim elit fugiat anim dolor",
+            "qui labore ex aliqua esse mollit",
+            "aute quis Lorem do dolor cillum",
+            "dolore id ad voluptate irure exercitation"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_organization/40"
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "index": 17,
+  "id": "5dc0a00c6e6c5320d9b4be77",
+  "title": "Ipsum irure magna deserunt adipisicing mollit cillum mollit nulla amet velit occaecat cupidatat.",
+  "type": "collection",
+  "level": "subseries",
+  "dates": [
+    {
+      "begin": "1947-10-01",
+      "end": "1990-08-27",
+      "expression": "Oct 1st, 1947 - Aug 27th, 1990",
+      "type": "bulk",
+      "label": "deaccession"
+    },
+    {
+      "begin": "1950-02-07",
+      "end": "1997-05-09",
+      "expression": "Feb 7th, 1950 - May 9th, 1997",
+      "type": "single",
+      "label": "digitized"
+    },
+    {
+      "begin": "1957-01-30",
+      "end": "1987-01-01",
+      "expression": "Jan 30th, 1957 - Jan 1st, 1987",
+      "type": "single",
+      "label": "agent_relation"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/28"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "6.37",
+      "type": "gigabytes"
+    }
+  ],
+  "notes": [
+    {
+      "type": "phystech",
+      "title": "in enim deserunt",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "sunt enim non qui cillum nostrud",
+            "consequat occaecat eu quis mollit ut",
+            "non excepteur culpa culpa elit ea",
+            "nostrud ipsum et mollit aliquip pariatur",
+            "et proident irure nostrud culpa elit"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "duis mollit ut dolore magna pariatur",
+            "amet cillum aliquip commodo laboris qui"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "acquinfo",
+      "title": "eu deserunt ad",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "pariatur ad ut et pariatur fugiat"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "ipsum ea anim sit pariatur consectetur",
+            "incididunt incididunt quis sunt fugiat magna",
+            "in ad dolor enim cupidatat ut"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "otherfindaid",
+      "title": "mollit laborum non",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "do culpa ex ipsum non nostrud",
+            "eu incididunt consequat consectetur fugiat ex",
+            "dolor aliquip ex dolore incididunt anim",
+            "magna cillum labore dolore incididunt aute"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/43"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/43"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/21"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/44"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/37"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Esperanto",
+      "identifier": "eng"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "spa"
+    },
+    {
+      "expression": "English",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a00c5ef761c2a975ca08",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "other",
+      "rights_status": "copyrighted",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "et",
+      "jurisdiction": "US",
+      "notes": [],
+      "rights_granted": [
+        {
+          "act": "use",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": [
+            {
+              "type": "materials",
+              "title": "duis nulla est",
+              "source": "wikidata",
+              "subnotes": [
+                {
+                  "type": "orderedlist",
+                  "content": [
+                    "eiusmod non occaecat anim commodo officia",
+                    "consequat culpa qui laborum amet duis",
+                    "commodo in consectetur aliquip quis id",
+                    "consequat laborum consectetur ut duis consequat",
+                    "consectetur magna dolore consequat magna nisi"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": [
+                    "dolore ullamco tempor duis quis sunt",
+                    "irure duis veniam ad officia pariatur",
+                    "veniam officia dolore elit do commodo",
+                    "do velit esse nostrud elit nisi"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5dc0a00c1b4c9002063459ba",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "statute",
+      "rights_status": "copyrighted",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "minim",
+      "jurisdiction": "FR",
+      "notes": [],
+      "rights_granted": [
+        {
+          "act": "modify",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": [
+            {
+              "type": "restrictions",
+              "title": "minim mollit laboris",
+              "source": "archivesspace",
+              "subnotes": [
+                {
+                  "type": "orderedlist",
+                  "content": [
+                    "adipisicing aliquip excepteur aliquip ut sint",
+                    "minim minim aliquip ea laboris ullamco",
+                    "consectetur enim reprehenderit sit in consequat"
+                  ]
+                },
+                {
+                  "type": "orderedlist",
+                  "content": [
+                    "ipsum veniam ipsum eiusmod esse qui",
+                    "enim velit deserunt esse consequat adipisicing",
+                    "ex eiusmod reprehenderit laboris deserunt anim",
+                    "aliqua veniam laborum aute irure nisi",
+                    "do cillum fugiat tempor ipsum elit"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "act": "disseminate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": [
+            {
+              "type": "restrictions",
+              "title": "officia magna do",
+              "source": "wikidata",
+              "subnotes": [
+                {
+                  "type": "orderedlist",
+                  "content": [
+                    "sint laborum incididunt nulla dolor eu",
+                    "aliqua culpa ex dolor sit non",
+                    "officia magna do mollit in minim",
+                    "laborum non amet voluptate eiusmod consectetur",
+                    "amet labore quis Lorem amet commodo"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/4"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/40"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/17"
+    }
+  ]
+}

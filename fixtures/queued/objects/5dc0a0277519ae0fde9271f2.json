@@ -1,0 +1,243 @@
+{
+  "index": 23,
+  "id": "5dc0a0277519ae0fde9271f2",
+  "title": "Non nostrud in sit quis aliquip.",
+  "type": "object",
+  "dates": [
+    {
+      "begin": "1928-06-03",
+      "end": "1977-09-11",
+      "expression": "Jun 3rd, 1928 - Sep 11th, 1977",
+      "type": "single",
+      "label": "deaccession"
+    },
+    {
+      "begin": "1952-11-05",
+      "end": "2001-06-18",
+      "expression": "Nov 5th, 1952 - Jun 18th, 2001",
+      "type": "bulk",
+      "label": "copyright"
+    }
+  ],
+  "extents": [
+    {
+      "value": "5.38",
+      "type": "record cartons"
+    }
+  ],
+  "notes": [
+    {
+      "type": "permissions",
+      "title": "veniam anim Lorem",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "aliqua reprehenderit laborum Lorem do excepteur"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "duis quis laborum labore eiusmod eu",
+            "pariatur dolore culpa irure culpa occaecat",
+            "duis nulla aute adipisicing aliqua laboris"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/17"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/3"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Esperanto",
+      "identifier": "spa"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "epo"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "epo"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a0278923a302f601ad6b",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "copyright",
+      "rights_status": "public domain",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "ullamco",
+      "jurisdiction": "CN",
+      "notes": [
+        {
+          "type": "permissions",
+          "title": "labore sit amet",
+          "source": "archivesspace",
+          "subnotes": [
+            {
+              "type": "text",
+              "content": [
+                "Lorem mollit consequat ad incididunt eu",
+                "magna dolore laboris pariatur mollit elit"
+              ]
+            }
+          ]
+        }
+      ],
+      "rights_granted": [
+        {
+          "act": "disseminate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": [
+            {
+              "type": "rights_statement_act",
+              "title": "velit commodo elit",
+              "source": "wikidata",
+              "subnotes": [
+                {
+                  "type": "text",
+                  "content": [
+                    "eu veniam dolore culpa nostrud exercitation",
+                    "qui sunt occaecat commodo eiusmod ad"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": [
+                    "dolor veniam sit eiusmod adipisicing est",
+                    "ex reprehenderit mollit laborum voluptate cupidatat",
+                    "mollit do nostrud laborum proident minim",
+                    "magna dolor sunt aliqua veniam proident"
+                  ]
+                },
+                {
+                  "type": "definedlist",
+                  "content": [
+                    "mollit elit quis velit ex duis",
+                    "dolor aliqua reprehenderit minim anim do"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "act": "delete",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "id": "5dc0a027fee91b37601709bb",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "license",
+      "rights_status": "unknown",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "reprehenderit",
+      "jurisdiction": "US",
+      "notes": [],
+      "rights_granted": [
+        {
+          "act": "use",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": []
+        },
+        {
+          "act": "modify",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": [
+            {
+              "type": "additional_information",
+              "title": "in cillum culpa",
+              "source": "cartographer",
+              "subnotes": [
+                {
+                  "type": "definedlist",
+                  "content": [
+                    "culpa duis aliqua deserunt adipisicing fugiat"
+                  ]
+                },
+                {
+                  "type": "orderedlist",
+                  "content": [
+                    "veniam consectetur in sunt dolor laboris",
+                    "nostrud pariatur laborum ex velit duis",
+                    "laboris officia aute eu ea id"
+                  ]
+                },
+                {
+                  "type": "orderedlist",
+                  "content": [
+                    "veniam deserunt do consequat et quis",
+                    "ad mollit sit nisi pariatur fugiat"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/30"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/14"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/archival_objects/23"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "index": 26,
+  "id": "5dc0a0673b4ee413875a7bf7",
+  "title": "Burnett Hayden",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "Id elit Lorem deserunt duis incididunt occaecat cupidatat pariatur laborum. Eiusmod qui duis elit ex fugiat aute magna deserunt. Aliqua mollit cupidatat et qui ex adipisicing duis. Do deserunt id Lorem ullamco anim non labore ad amet commodo exercitation magna aliqua voluptate.",
+  "dates": [
+    {
+      "begin": "1934-03-31",
+      "end": "1983-11-27",
+      "expression": "Mar 31st, 1934 - Nov 27th, 1983",
+      "type": "single",
+      "label": "copyright",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "index",
+      "title": "occaecat laborum veniam",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "reprehenderit anim mollit laborum ipsum amet"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "index",
+      "title": "in nulla consectetur",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "dolor id culpa officia do et",
+            "ipsum dolor mollit irure ad aliqua",
+            "cupidatat veniam officia ex excepteur esse",
+            "nisi ad sint ea eu eu"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/26"
+    }
+  ]
+}

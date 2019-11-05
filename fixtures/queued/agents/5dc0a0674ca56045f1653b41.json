@@ -1,0 +1,57 @@
+{
+  "index": 8,
+  "id": "5dc0a0674ca56045f1653b41",
+  "title": "Best Rosa",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "Laborum mollit aliqua aute amet anim mollit. Magna nisi sint elit sit adipisicing minim ea adipisicing. Exercitation officia enim ut eu sit eu nostrud do in. Eu minim excepteur veniam eiusmod id dolore occaecat esse esse magna incididunt deserunt officia culpa. Quis duis laborum irure pariatur cupidatat nostrud Lorem magna laborum.",
+  "dates": [
+    {
+      "begin": "1938-07-25",
+      "end": "1966-07-09",
+      "expression": "Jul 25th, 1938 - Jul 9th, 1966",
+      "type": "single",
+      "label": "digitized",
+      "source": "cartographer"
+    },
+    {
+      "begin": "1914-06-27",
+      "end": "2004-09-24",
+      "expression": "Jun 27th, 1914 - Sep 24th, 2004",
+      "type": "inclusive",
+      "label": "record_keeping",
+      "source": "archivesspace"
+    }
+  ],
+  "notes": [
+    {
+      "type": "rights_statement_act",
+      "title": "officia anim ea",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "dolore qui veniam sit mollit voluptate",
+            "esse sit et incididunt duis nisi",
+            "eu dolor exercitation ipsum id reprehenderit",
+            "ex excepteur est excepteur sit dolor"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "sint reprehenderit fugiat cillum in culpa",
+            "aute eiusmod laborum est sit dolore"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/8"
+    }
+  ]
+}

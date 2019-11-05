@@ -1,0 +1,51 @@
+{
+  "index": 19,
+  "id": "5dc0a03d84525d9d16b01525",
+  "title": "Ferrell Foundation",
+  "type": "agent",
+  "agent_type": "organization",
+  "description": "Qui anim adipisicing labore voluptate sunt. Consequat cillum magna sint excepteur duis est reprehenderit est sunt esse nulla cupidatat enim. Qui ullamco et labore ea.",
+  "dates": [
+    {
+      "begin": "1945-08-17",
+      "end": "1987-04-19",
+      "expression": "Aug 17th, 1945 - Apr 19th, 1987",
+      "type": "single",
+      "label": "deaccession",
+      "source": "wikidata"
+    },
+    {
+      "begin": "1952-02-19",
+      "end": "1971-12-19",
+      "expression": "Feb 19th, 1952 - Dec 19th, 1971",
+      "type": "inclusive",
+      "label": "digitized",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "fileplan",
+      "title": "labore et excepteur",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "duis exercitation pariatur cillum occaecat laboris",
+            "adipisicing est voluptate proident aliquip ea",
+            "sint veniam ipsum duis eiusmod qui",
+            "reprehenderit adipisicing ea nulla reprehenderit id",
+            "ad minim ea in adipisicing laborum"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_organization/19"
+    }
+  ]
+}

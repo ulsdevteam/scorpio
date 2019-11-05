@@ -1,0 +1,205 @@
+{
+  "index": 12,
+  "id": "5dc0a00ca46d441e7618e039",
+  "title": "Commodo voluptate enim do anim Lorem non officia non magna aliquip nostrud incididunt.",
+  "type": "collection",
+  "level": "collection",
+  "dates": [
+    {
+      "begin": "1957-07-14",
+      "end": "1971-01-01",
+      "expression": "Jul 14th, 1957 - Jan 1st, 1971",
+      "type": "single",
+      "label": "existence"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/6"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "4.66",
+      "type": "gigabytes"
+    }
+  ],
+  "notes": [
+    {
+      "type": "accruals",
+      "title": "Lorem aliquip culpa",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "ea cillum ullamco nisi anim duis",
+            "tempor non est commodo anim anim",
+            "in officia magna amet in dolore"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "et est anim magna culpa commodo",
+            "velit eiusmod Lorem Lorem mollit culpa"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/6"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/12"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/16"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/13"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/22"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/25"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/24"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/20"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Esperanto",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a00ce3c5ee331c9e8fcd",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "copyright",
+      "rights_status": "public domain",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "incididunt",
+      "jurisdiction": "US",
+      "notes": [
+        {
+          "type": "restrictions",
+          "title": "incididunt deserunt non",
+          "source": "archivesspace",
+          "subnotes": [
+            {
+              "type": "text",
+              "content": [
+                "ad laborum exercitation esse quis nisi",
+                "mollit minim veniam proident ullamco deserunt",
+                "qui enim cupidatat velit nulla pariatur",
+                "sint esse ullamco laborum consectetur fugiat"
+              ]
+            }
+          ]
+        }
+      ],
+      "rights_granted": [
+        {
+          "act": "delete",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/34"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/24"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/5"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/12"
+    }
+  ]
+}

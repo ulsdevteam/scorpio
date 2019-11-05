@@ -1,0 +1,276 @@
+{
+  "index": 14,
+  "id": "5dc0a00c7a1519d3348afb52",
+  "title": "Sint mollit amet excepteur dolor sit adipisicing dolor labore.",
+  "type": "collection",
+  "level": "subgrp",
+  "dates": [
+    {
+      "begin": "1928-07-13",
+      "end": "1963-01-23",
+      "expression": "Jul 13th, 1928 - Jan 23rd, 1963",
+      "type": "single",
+      "label": "existence"
+    },
+    {
+      "begin": "1920-09-14",
+      "end": "1965-11-20",
+      "expression": "Sep 14th, 1920 - Nov 20th, 1965",
+      "type": "inclusive",
+      "label": "modified"
+    },
+    {
+      "begin": "1936-10-30",
+      "end": "2001-10-13",
+      "expression": "Oct 30th, 1936 - Oct 13th, 2001",
+      "type": "single",
+      "label": "copyright"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/1"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/22"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "6.34",
+      "type": "volumes"
+    }
+  ],
+  "notes": [
+    {
+      "type": "note",
+      "title": "ad cillum duis",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "et quis mollit velit culpa proident"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "cupidatat do ipsum commodo ea esse",
+            "eiusmod ipsum esse et aliqua anim",
+            "laborum est adipisicing et mollit nisi",
+            "consequat laboris sit laborum incididunt consequat"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "aliquip commodo consequat sit nulla ut",
+            "et deserunt dolore aliquip voluptate et",
+            "velit enim ut eu excepteur anim"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rights_statement_act",
+      "title": "reprehenderit excepteur ea",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "proident ullamco ad incididunt nostrud anim",
+            "non duis laborum deserunt dolore eiusmod",
+            "non quis voluptate duis sit minim",
+            "sint ullamco ullamco minim laboris est"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "extent",
+      "title": "qui enim eiusmod",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "qui commodo ipsum fugiat laboris aute",
+            "voluptate officia dolore cupidatat elit velit"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "duis eu cillum nulla anim nostrud",
+            "eiusmod laboris cupidatat pariatur consequat incididunt",
+            "voluptate exercitation ut laborum velit cupidatat",
+            "fugiat sint cillum deserunt dolore voluptate"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rights_statement_act",
+      "title": "ut ipsum ipsum",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "ipsum do aute ad officia minim",
+            "fugiat non officia occaecat quis eu",
+            "veniam proident amet excepteur sint quis"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "tempor minim aliqua exercitation aliqua et",
+            "quis ullamco occaecat enim magna officia",
+            "anim officia elit officia eiusmod exercitation",
+            "laboris ea ullamco quis enim duis"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "culpa mollit anim mollit labore ut"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/20"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/1"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/19"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "English",
+      "identifier": "epo"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a00ce45eeb24b3ece438",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "other",
+      "rights_status": "public domain",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "unknown",
+      "other_basis": "quis",
+      "jurisdiction": "CN",
+      "notes": [
+        {
+          "type": "extension",
+          "title": "culpa labore laboris",
+          "source": "wikipedia",
+          "subnotes": [
+            {
+              "type": "definedlist",
+              "content": [
+                "ex tempor consectetur sunt id non",
+                "sint velit amet aliquip quis officia"
+              ]
+            }
+          ]
+        }
+      ],
+      "rights_granted": [
+        {
+          "act": "migrate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": []
+        },
+        {
+          "act": "delete",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": [
+            {
+              "type": "rights_statement_act",
+              "title": "commodo et labore",
+              "source": "wikipedia",
+              "subnotes": [
+                {
+                  "type": "orderedlist",
+                  "content": [
+                    "voluptate voluptate elit do adipisicing id",
+                    "incididunt velit laboris Lorem duis proident"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/15"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/10"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/14"
+    }
+  ]
+}

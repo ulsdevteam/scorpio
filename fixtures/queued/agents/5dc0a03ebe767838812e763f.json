@@ -1,0 +1,75 @@
+{
+  "index": 32,
+  "id": "5dc0a03ebe767838812e763f",
+  "title": "Buck Foundation",
+  "type": "agent",
+  "agent_type": "organization",
+  "description": "Qui aliqua mollit consequat minim aute. Laboris dolore enim non esse commodo duis excepteur deserunt ut. Sit magna pariatur sit adipisicing magna deserunt id magna nostrud amet. Sunt pariatur laborum enim qui laborum cupidatat ullamco. Commodo non amet non enim ex Lorem Lorem Lorem cillum duis deserunt non. Magna officia eiusmod incididunt cillum quis cillum veniam culpa dolor in ea.",
+  "dates": [
+    {
+      "begin": "1931-01-26",
+      "end": "1990-02-18",
+      "expression": "Jan 26th, 1931 - Feb 18th, 1990",
+      "type": "bulk",
+      "label": "broadcast",
+      "source": "archivesspace"
+    },
+    {
+      "begin": "1929-06-08",
+      "end": "1988-06-01",
+      "expression": "Jun 8th, 1929 - Jun 1st, 1988",
+      "type": "inclusive",
+      "label": "agent_relation",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "extension",
+      "title": "voluptate ipsum eiusmod",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "ad amet ullamco eiusmod ullamco veniam",
+            "nisi eu fugiat sunt officia aliquip",
+            "enim non proident aliquip duis reprehenderit",
+            "pariatur nisi reprehenderit ad duis ipsum",
+            "eiusmod cupidatat Lorem nisi labore do"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "phystech",
+      "title": "irure veniam ut",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "magna esse pariatur eiusmod non sint",
+            "sunt nisi elit ut excepteur exercitation",
+            "velit nulla deserunt mollit consectetur ea"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "minim consequat Lorem et esse esse",
+            "reprehenderit laboris cillum esse ullamco ipsum",
+            "irure ullamco laboris ipsum minim voluptate",
+            "veniam ut minim sunt exercitation aliqua"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_organization/32"
+    }
+  ]
+}

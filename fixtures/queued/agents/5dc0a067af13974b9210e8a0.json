@@ -1,0 +1,51 @@
+{
+  "index": 23,
+  "id": "5dc0a067af13974b9210e8a0",
+  "title": "Jewell Hardin",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "Nisi incididunt dolore quis pariatur ad in duis duis non excepteur. Deserunt Lorem veniam Lorem laboris proident elit. Incididunt veniam magna qui Lorem tempor magna laborum in officia. Eu in laboris eiusmod labore id proident reprehenderit voluptate in.",
+  "dates": [
+    {
+      "begin": "1923-07-20",
+      "end": "1963-11-14",
+      "expression": "Jul 20th, 1923 - Nov 14th, 1963",
+      "type": "bulk",
+      "label": "modified",
+      "source": "wikidata"
+    },
+    {
+      "begin": "1948-12-10",
+      "end": "2018-08-30",
+      "expression": "Dec 10th, 1948 - Aug 30th, 2018",
+      "type": "bulk",
+      "label": "record_keeping",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "extension",
+      "title": "fugiat nostrud esse",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "deserunt culpa incididunt do fugiat anim",
+            "velit enim laborum enim ad do",
+            "esse labore aliqua nostrud commodo magna",
+            "reprehenderit nulla qui cupidatat ea aute",
+            "duis consequat culpa officia dolor enim"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/23"
+    }
+  ]
+}

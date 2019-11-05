@@ -1,0 +1,222 @@
+{
+  "index": 24,
+  "id": "5dc0a0277cfcb954373a2cad",
+  "title": "In tempor occaecat quis nostrud minim consequat elit anim veniam quis irure veniam amet sint.",
+  "type": "object",
+  "dates": [
+    {
+      "begin": "1921-03-12",
+      "end": "2019-04-29",
+      "expression": "Mar 12th, 1921 - Apr 29th, 2019",
+      "type": "bulk",
+      "label": "modified"
+    }
+  ],
+  "extents": [
+    {
+      "value": "2.49",
+      "type": "leaves"
+    },
+    {
+      "value": "6.3",
+      "type": "gigabytes"
+    }
+  ],
+  "notes": [
+    {
+      "type": "index",
+      "title": "eu non aliquip",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "ea consectetur mollit qui et aliquip",
+            "elit velit Lorem commodo sint duis",
+            "sint in aliqua irure voluptate deserunt"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "otherfindaid",
+      "title": "velit sit irure",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "excepteur velit qui excepteur qui non",
+            "esse exercitation eu esse mollit sunt",
+            "ea fugiat in aliquip est laboris"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "voluptate excepteur ad laborum est aute"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/4"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/38"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/44"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/38"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/2"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "English",
+      "identifier": "eng"
+    },
+    {
+      "expression": "Spanish",
+      "identifier": "eng"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "eng"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a02739aff51aa053cb7e",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "statute",
+      "rights_status": "copyrighted",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "copyrighted",
+      "other_basis": "ad",
+      "jurisdiction": "US",
+      "notes": [
+        {
+          "type": "permissions",
+          "title": "est labore consequat",
+          "source": "cartographer",
+          "subnotes": [
+            {
+              "type": "text",
+              "content": [
+                "non dolore consectetur exercitation ad laboris",
+                "quis sunt ipsum eiusmod ullamco pariatur",
+                "irure non Lorem sit Lorem ipsum"
+              ]
+            }
+          ]
+        }
+      ],
+      "rights_granted": [
+        {
+          "act": "migrate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "id": "5dc0a0279fa0ca674cfdbd6e",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "copyright",
+      "rights_status": "unknown",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "veniam",
+      "jurisdiction": "US",
+      "notes": [],
+      "rights_granted": [
+        {
+          "act": "migrate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": []
+        },
+        {
+          "act": "migrate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/49"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/20"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/7"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/archival_objects/24"
+    }
+  ]
+}

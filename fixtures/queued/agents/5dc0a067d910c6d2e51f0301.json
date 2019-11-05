@@ -1,0 +1,85 @@
+{
+  "index": 42,
+  "id": "5dc0a067d910c6d2e51f0301",
+  "title": "Pope Stafford",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "Amet aliqua sit ad pariatur velit. Qui elit pariatur quis incididunt enim laboris excepteur. Cillum elit eu cillum dolor sint elit reprehenderit dolor quis amet sint nostrud et. Tempor laboris minim magna officia ex sint. Dolore aute adipisicing cupidatat ad id enim qui qui ex id deserunt in voluptate culpa. Adipisicing culpa consectetur aliqua consequat duis. Deserunt velit exercitation officia exercitation qui cillum irure ut adipisicing.",
+  "dates": [
+    {
+      "begin": "1934-02-17",
+      "end": "2013-06-16",
+      "expression": "Feb 17th, 1934 - Jun 16th, 2013",
+      "type": "single",
+      "label": "usage",
+      "source": "cartographer"
+    },
+    {
+      "begin": "1943-10-23",
+      "end": "1997-09-04",
+      "expression": "Oct 23rd, 1943 - Sep 4th, 1997",
+      "type": "single",
+      "label": "modified",
+      "source": "archivesspace"
+    }
+  ],
+  "notes": [
+    {
+      "type": "langmaterial",
+      "title": "ut incididunt qui",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "exercitation magna non laboris quis reprehenderit",
+            "eu voluptate duis consectetur Lorem minim",
+            "consectetur reprehenderit incididunt dolor irure cupidatat",
+            "consequat ullamco sit culpa et excepteur",
+            "sunt irure consequat mollit cillum et"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "extension",
+      "title": "elit incididunt qui",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "nisi minim laboris qui sit reprehenderit",
+            "aute esse eiusmod dolore in exercitation",
+            "eiusmod culpa sunt id id aliquip"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "anim aute incididunt consectetur sint labore",
+            "veniam aliquip velit commodo qui ad",
+            "dolore ex nostrud nostrud tempor occaecat",
+            "quis ipsum ea pariatur deserunt dolore"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "exercitation adipisicing pariatur nisi elit adipisicing",
+            "minim elit ut do exercitation nostrud",
+            "anim cupidatat do cillum qui cupidatat",
+            "quis ad velit consectetur mollit quis",
+            "ad aliqua sit magna elit commodo"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/42"
+    }
+  ]
+}

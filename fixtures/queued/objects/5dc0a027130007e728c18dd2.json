@@ -1,0 +1,127 @@
+{
+  "index": 35,
+  "id": "5dc0a027130007e728c18dd2",
+  "title": "Culpa laborum sunt minim sit anim amet labore fugiat ad laborum.",
+  "type": "object",
+  "dates": [
+    {
+      "begin": "1953-04-11",
+      "end": "2002-08-17",
+      "expression": "Apr 11th, 1953 - Aug 17th, 2002",
+      "type": "bulk",
+      "label": "digitized"
+    },
+    {
+      "begin": "1917-07-24",
+      "end": "1968-04-28",
+      "expression": "Jul 24th, 1917 - Apr 28th, 1968",
+      "type": "single",
+      "label": "broadcast"
+    },
+    {
+      "begin": "1926-07-13",
+      "end": "2017-06-21",
+      "expression": "Jul 13th, 1926 - Jun 21st, 2017",
+      "type": "inclusive",
+      "label": "other"
+    }
+  ],
+  "extents": [
+    {
+      "value": "2.79",
+      "type": "cassettes"
+    }
+  ],
+  "notes": [],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/4"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/8"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/34"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/49"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/9"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/3"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/24"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/49"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Esperanto",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/44"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/archival_objects/35"
+    }
+  ]
+}

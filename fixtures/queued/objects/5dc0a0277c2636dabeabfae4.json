@@ -1,0 +1,192 @@
+{
+  "index": 18,
+  "id": "5dc0a0277c2636dabeabfae4",
+  "title": "Deserunt pariatur cillum et sunt.",
+  "type": "object",
+  "dates": [
+    {
+      "begin": "1917-09-10",
+      "end": "2007-10-19",
+      "expression": "Sep 10th, 1917 - Oct 19th, 2007",
+      "type": "inclusive",
+      "label": "creation"
+    },
+    {
+      "begin": "1959-09-09",
+      "end": "1962-09-19",
+      "expression": "Sep 9th, 1959 - Sep 19th, 1962",
+      "type": "inclusive",
+      "label": "event"
+    }
+  ],
+  "extents": [
+    {
+      "value": "1.74",
+      "type": "megabytes"
+    },
+    {
+      "value": "2.79",
+      "type": "cassettes"
+    }
+  ],
+  "notes": [
+    {
+      "type": "inscription",
+      "title": "et commodo sunt",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "occaecat cupidatat duis ad non duis",
+            "amet dolor aute et ullamco in"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "est laborum elit Lorem sunt anim",
+            "consequat culpa duis est fugiat officia",
+            "laboris qui excepteur eu ad id",
+            "ex tempor sunt sunt sint minim"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "eu laborum sit Lorem consequat exercitation"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "langmaterial",
+      "title": "nisi id et",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "nisi sit tempor irure dolore dolor",
+            "ex magna consequat occaecat ipsum aliquip"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "userestrict",
+      "title": "mollit quis velit",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "ullamco non esse esse Lorem elit",
+            "dolore cupidatat sint veniam mollit officia"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bioghist",
+      "title": "ullamco non labore",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "qui deserunt non do est fugiat"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "elit ipsum dolor esse consequat consectetur"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "aute labore laboris velit nulla cupidatat",
+            "ad excepteur adipisicing cillum ad ad",
+            "minim deserunt eu ipsum sunt laborum"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/48"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/7"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/6"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/1"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/30"
+        }
+      ]
+    }
+  ],
+  "agents": [],
+  "languages": [
+    {
+      "expression": "Spanish",
+      "identifier": "spa"
+    },
+    {
+      "expression": "English",
+      "identifier": "spa"
+    },
+    {
+      "expression": "English",
+      "identifier": "epo"
+    }
+  ],
+  "rights_statements": [],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/44"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/archival_objects/18"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "index": 2,
+  "id": "5dc0a0677fba94d6d72b30bf",
+  "title": "Lambert Mcgee",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "Culpa id laboris ullamco eu ea quis commodo nisi dolor ullamco exercitation labore. Eiusmod enim tempor ullamco magna. Et ex deserunt aute minim ad deserunt est. Laboris pariatur fugiat proident ad laboris elit tempor irure nisi ex et aliquip. Magna nisi reprehenderit fugiat cupidatat ex est mollit. In sit esse sint sit et do.",
+  "dates": [
+    {
+      "begin": "1947-12-20",
+      "end": "1962-01-30",
+      "expression": "Dec 20th, 1947 - Jan 30th, 1962",
+      "type": "bulk",
+      "label": "modified",
+      "source": "wikipedia"
+    },
+    {
+      "begin": "1942-02-16",
+      "end": "1972-12-24",
+      "expression": "Feb 16th, 1942 - Dec 24th, 1972",
+      "type": "bulk",
+      "label": "publication",
+      "source": "cartographer"
+    }
+  ],
+  "notes": [
+    {
+      "type": "materialspec",
+      "title": "dolore eiusmod fugiat",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "ut duis qui nostrud culpa exercitation",
+            "qui enim officia officia anim commodo",
+            "ullamco fugiat laborum exercitation officia eu",
+            "eu laborum duis quis reprehenderit Lorem"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "id quis et laboris veniam qui",
+            "adipisicing consectetur ex nisi ad occaecat",
+            "excepteur laboris fugiat duis aute consequat",
+            "aute reprehenderit fugiat do cillum aliquip",
+            "ad proident ad reprehenderit reprehenderit labore"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "culpa enim magna exercitation consectetur consectetur",
+            "dolor dolor aliqua pariatur in velit",
+            "irure in sunt laborum nostrud aliquip"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "appraisal",
+      "title": "reprehenderit anim do",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "sit do do laborum voluptate officia"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "tempor voluptate eu eiusmod ad veniam",
+            "non reprehenderit sint occaecat proident anim"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/2"
+    }
+  ]
+}

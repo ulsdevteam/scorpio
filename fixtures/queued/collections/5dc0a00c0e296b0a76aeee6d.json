@@ -1,0 +1,172 @@
+{
+  "index": 20,
+  "id": "5dc0a00c0e296b0a76aeee6d",
+  "title": "In pariatur et ipsum labore ullamco.",
+  "type": "collection",
+  "level": "series",
+  "dates": [
+    {
+      "begin": "1948-06-06",
+      "end": "1976-04-03",
+      "expression": "Jun 6th, 1948 - Apr 3rd, 1976",
+      "type": "inclusive",
+      "label": "copyright"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/6"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/22"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "5.48",
+      "type": "photographic_slides"
+    }
+  ],
+  "notes": [],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/16"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/17"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "English",
+      "identifier": "epo"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "spa"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "eng"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a00c80125c09a9aedfbe",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "license",
+      "rights_status": "copyrighted",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "copyrighted",
+      "other_basis": "incididunt",
+      "jurisdiction": "US",
+      "notes": [],
+      "rights_granted": [
+        {
+          "act": "modify",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": [
+            {
+              "type": "expiration",
+              "title": "velit adipisicing pariatur",
+              "source": "cartographer",
+              "subnotes": [
+                {
+                  "type": "definedlist",
+                  "content": [
+                    "eiusmod excepteur non in reprehenderit fugiat",
+                    "nisi do reprehenderit amet et anim"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": [
+                    "amet ea non non eu eiusmod"
+                  ]
+                },
+                {
+                  "type": "orderedlist",
+                  "content": [
+                    "sunt non consequat fugiat proident ad",
+                    "tempor sit minim velit velit ad",
+                    "officia cupidatat sint dolore proident qui",
+                    "est minim deserunt minim enim quis",
+                    "do aliqua voluptate ullamco quis sint"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/26"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/18"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/30"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/10"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/20"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "index": 17,
+  "id": "5dc0a07f53d894db5b6d5010",
+  "title": "Griffin family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Eu dolor et nulla proident culpa exercitation nisi officia ex cillum id duis eu exercitation. Lorem occaecat culpa sint adipisicing do irure id. Ut et do aute est nisi. Est exercitation est et amet incididunt duis dolor et culpa cupidatat in dolore cupidatat. Cupidatat culpa pariatur aute Lorem anim culpa esse. Eu cupidatat tempor ad quis nostrud. Eiusmod enim in esse duis Lorem nostrud in id ex laboris enim veniam.",
+  "dates": [
+    {
+      "begin": "1925-07-27",
+      "end": "1992-10-27",
+      "expression": "Jul 27th, 1925 - Oct 27th, 1992",
+      "type": "inclusive",
+      "label": "event",
+      "source": "archivesspace"
+    }
+  ],
+  "notes": [
+    {
+      "type": "custodhist",
+      "title": "do voluptate mollit",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "cupidatat ad irure aliqua cillum in"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "ad aliqua labore mollit velit irure",
+            "reprehenderit laboris deserunt culpa magna qui"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/17"
+    }
+  ]
+}

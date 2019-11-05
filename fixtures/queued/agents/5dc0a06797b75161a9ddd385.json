@@ -1,0 +1,40 @@
+{
+  "index": 20,
+  "id": "5dc0a06797b75161a9ddd385",
+  "title": "Zimmerman Marks",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "Veniam esse excepteur in velit consectetur. Aliquip qui pariatur sint ea magna officia veniam dolore minim in laboris ex consectetur. Quis cillum officia non fugiat eu irure qui duis magna pariatur pariatur non.",
+  "dates": [
+    {
+      "begin": "1924-07-11",
+      "end": "1976-09-19",
+      "expression": "Jul 11th, 1924 - Sep 19th, 1976",
+      "type": "inclusive",
+      "label": "publication",
+      "source": "cartographer"
+    }
+  ],
+  "notes": [
+    {
+      "type": "permissions",
+      "title": "ex enim eu",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "exercitation ad nulla minim reprehenderit mollit",
+            "est excepteur sit do amet dolore"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/20"
+    }
+  ]
+}

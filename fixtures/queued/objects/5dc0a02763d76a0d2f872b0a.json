@@ -1,0 +1,175 @@
+{
+  "index": 10,
+  "id": "5dc0a02763d76a0d2f872b0a",
+  "title": "Ullamco ut culpa cillum est.",
+  "type": "object",
+  "dates": [
+    {
+      "begin": "1941-01-22",
+      "end": "1967-06-11",
+      "expression": "Jan 22nd, 1941 - Jun 11th, 1967",
+      "type": "single",
+      "label": "copyright"
+    },
+    {
+      "begin": "1935-06-01",
+      "end": "1999-07-15",
+      "expression": "Jun 1st, 1935 - Jul 15th, 1999",
+      "type": "bulk",
+      "label": "copyright"
+    }
+  ],
+  "extents": [
+    {
+      "value": "4.32",
+      "type": "document box(es)"
+    }
+  ],
+  "notes": [
+    {
+      "type": "dimensions",
+      "title": "sint culpa nostrud",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "cupidatat mollit laboris Lorem ad sunt",
+            "mollit id culpa sunt ad veniam",
+            "occaecat id in duis veniam aliquip"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/11"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/12"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/12"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/21"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/46"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/23"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/45"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/20"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Spanish",
+      "identifier": "spa"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "epo"
+    },
+    {
+      "expression": "English",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a027d35b501d15a2c89d",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "copyright",
+      "rights_status": "public domain",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "aliqua",
+      "jurisdiction": "FR",
+      "notes": [],
+      "rights_granted": [
+        {
+          "act": "disseminate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/28"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/9"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/archival_objects/10"
+    }
+  ]
+}

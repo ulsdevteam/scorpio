@@ -1,0 +1,256 @@
+{
+  "index": 22,
+  "id": "5dc0a00c295271e86e0152df",
+  "title": "Eu cillum sunt anim do ullamco.",
+  "type": "collection",
+  "level": "subgrp",
+  "dates": [
+    {
+      "begin": "1946-03-05",
+      "end": "2015-12-23",
+      "expression": "Mar 5th, 1946 - Dec 23rd, 2015",
+      "type": "single",
+      "label": "copyright"
+    },
+    {
+      "begin": "1921-12-29",
+      "end": "1997-12-28",
+      "expression": "Dec 29th, 1921 - Dec 28th, 1997",
+      "type": "inclusive",
+      "label": "event"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/1"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/15"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "8.39",
+      "type": "photographic_prints"
+    }
+  ],
+  "notes": [
+    {
+      "type": "fileplan",
+      "title": "nulla laborum sunt",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "aliqua consequat eu sit aute est",
+            "ad dolor non cillum occaecat enim",
+            "fugiat esse esse est non culpa"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "minim occaecat qui nisi ullamco cupidatat",
+            "amet velit irure officia quis occaecat",
+            "eu ut exercitation et ut eu",
+            "Lorem et consectetur aute occaecat aliqua",
+            "ea ad amet laborum laboris consequat"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "veniam exercitation laboris in quis est"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "phystech",
+      "title": "ullamco ut id",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "laborum aliquip fugiat ad excepteur elit",
+            "ea incididunt officia magna excepteur amet",
+            "incididunt proident voluptate irure in nostrud",
+            "fugiat occaecat excepteur velit fugiat qui"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "esse cillum non esse qui elit",
+            "consequat occaecat sit ullamco ea ex",
+            "quis incididunt magna ipsum labore ut",
+            "pariatur in in nulla cupidatat dolor"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "officia cillum deserunt aute esse adipisicing",
+            "quis labore exercitation laborum ullamco exercitation"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "processinfo",
+      "title": "do ullamco commodo",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "incididunt tempor minim aliquip deserunt proident",
+            "proident nulla pariatur amet dolor consectetur",
+            "incididunt cillum in occaecat officia mollit",
+            "adipisicing minim non pariatur nulla labore"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "consectetur labore amet consequat nulla duis",
+            "deserunt aliqua ex ad laborum sit",
+            "adipisicing ipsum cupidatat anim occaecat minim"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "laboris Lorem reprehenderit tempor in velit",
+            "nisi aute est adipisicing quis enim"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/9"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/21"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/49"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/44"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/12"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/38"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/6"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Spanish",
+      "identifier": "epo"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/2"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/17"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/18"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/28"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/22"
+    }
+  ]
+}

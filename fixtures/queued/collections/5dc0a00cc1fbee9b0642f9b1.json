@@ -1,0 +1,221 @@
+{
+  "index": 29,
+  "id": "5dc0a00cc1fbee9b0642f9b1",
+  "title": "Dolore qui exercitation dolor exercitation sint non commodo excepteur.",
+  "type": "collection",
+  "level": "subgrp",
+  "dates": [
+    {
+      "begin": "1940-06-09",
+      "end": "1979-07-07",
+      "expression": "Jun 9th, 1940 - Jul 7th, 1979",
+      "type": "inclusive",
+      "label": "deaccession"
+    },
+    {
+      "begin": "1940-05-04",
+      "end": "1969-11-21",
+      "expression": "May 4th, 1940 - Nov 21st, 1969",
+      "type": "single",
+      "label": "agent_relation"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/24"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/28"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "6.23",
+      "type": "volumes"
+    }
+  ],
+  "notes": [
+    {
+      "type": "langmaterial",
+      "title": "in enim voluptate",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "ex officia est exercitation enim sint"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/48"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/41"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/26"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/10"
+        }
+      ]
+    }
+  ],
+  "agents": [],
+  "languages": [
+    {
+      "expression": "Esperanto",
+      "identifier": "spa"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "eng"
+    },
+    {
+      "expression": "English",
+      "identifier": "epo"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a00c372e7446626650cc",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "license",
+      "rights_status": "copyrighted",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "cupidatat",
+      "jurisdiction": "US",
+      "notes": [
+        {
+          "type": "rights_statement",
+          "title": "amet eu quis",
+          "source": "archivesspace",
+          "subnotes": [
+            {
+              "type": "text",
+              "content": [
+                "tempor aliquip ipsum reprehenderit amet tempor",
+                "fugiat non pariatur laboris eiusmod mollit",
+                "Lorem id aute velit magna Lorem"
+              ]
+            }
+          ]
+        }
+      ],
+      "rights_granted": [
+        {
+          "act": "replicate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": []
+        },
+        {
+          "act": "modify",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": [
+            {
+              "type": "restrictions",
+              "title": "consectetur est eiusmod",
+              "source": "wikipedia",
+              "subnotes": [
+                {
+                  "type": "orderedlist",
+                  "content": [
+                    "amet velit duis est aliqua nisi",
+                    "nostrud adipisicing enim proident ex amet"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": [
+                    "nisi id cillum excepteur pariatur minim"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/45"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/19"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/11"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/3"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/29"
+    }
+  ]
+}

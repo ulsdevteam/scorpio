@@ -1,0 +1,189 @@
+{
+  "index": 39,
+  "id": "5dc0a00c3ca7a8a84bb1a34e",
+  "title": "Reprehenderit irure adipisicing culpa reprehenderit aliquip laboris elit enim eu est veniam exercitation.",
+  "type": "collection",
+  "level": "subseries",
+  "dates": [
+    {
+      "begin": "1934-02-18",
+      "end": "2010-04-23",
+      "expression": "Feb 18th, 1934 - Apr 23rd, 2010",
+      "type": "inclusive",
+      "label": "creation"
+    },
+    {
+      "begin": "1942-12-19",
+      "end": "1971-02-13",
+      "expression": "Dec 19th, 1942 - Feb 13th, 1971",
+      "type": "bulk",
+      "label": "deaccession"
+    },
+    {
+      "begin": "1935-09-29",
+      "end": "1998-09-16",
+      "expression": "Sep 29th, 1935 - Sep 16th, 1998",
+      "type": "inclusive",
+      "label": "modified"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/50"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "3.22",
+      "type": "microform reels"
+    }
+  ],
+  "notes": [],
+  "terms": [],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/30"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/34"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/49"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/41"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Spanish",
+      "identifier": "epo"
+    },
+    {
+      "expression": "English",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a00c3f8535ddaf8754de",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "statute",
+      "rights_status": "copyrighted",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "copyrighted",
+      "other_basis": "reprehenderit",
+      "jurisdiction": "FR",
+      "notes": [],
+      "rights_granted": [
+        {
+          "act": "delete",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": [
+            {
+              "type": "materials",
+              "title": "proident duis reprehenderit",
+              "source": "cartographer",
+              "subnotes": [
+                {
+                  "type": "text",
+                  "content": [
+                    "occaecat tempor dolor cupidatat ut eiusmod"
+                  ]
+                },
+                {
+                  "type": "definedlist",
+                  "content": [
+                    "culpa proident reprehenderit esse reprehenderit anim",
+                    "incididunt voluptate id exercitation incididunt eu",
+                    "tempor irure sunt sunt culpa ut",
+                    "non deserunt laboris Lorem exercitation enim",
+                    "quis amet dolore in consequat nostrud"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "act": "delete",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/28"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/19"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/2"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/14"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/39"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "index": 21,
+  "id": "5dc0a0674c59ec9b3f066950",
+  "title": "Sheryl Mcclure",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "Velit culpa aute pariatur consectetur ullamco pariatur enim occaecat dolore esse velit ullamco laboris esse. Fugiat nisi officia ad cillum deserunt laboris fugiat excepteur. Voluptate fugiat laboris do velit. Ad ut consectetur laborum cillum voluptate esse. Eiusmod est excepteur cupidatat deserunt nostrud sint excepteur pariatur non. Fugiat magna nostrud labore elit est veniam exercitation.",
+  "dates": [
+    {
+      "begin": "1952-04-22",
+      "end": "2005-05-04",
+      "expression": "Apr 22nd, 1952 - May 4th, 2005",
+      "type": "inclusive",
+      "label": "usage",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "prefercite",
+      "title": "mollit elit velit",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "consequat anim aute veniam labore duis",
+            "voluptate exercitation irure pariatur adipisicing ipsum",
+            "nisi et aute ea sit velit",
+            "elit elit exercitation consectetur laborum fugiat"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "commodo qui laborum magna ipsum exercitation"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/21"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "index": 29,
+  "id": "5dc0a0675beb6a46acf00a1e",
+  "title": "Richmond Wise",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "Nisi ea incididunt aliquip occaecat dolor ex fugiat. Nulla exercitation voluptate ipsum officia sunt. Laboris laborum labore consectetur aliqua pariatur et nostrud aliquip nulla do esse laborum qui. Sunt aute ullamco do ut do culpa non duis quis. Magna nulla ad in eiusmod quis eu do commodo amet. Ex excepteur exercitation nulla sit ullamco aute. Quis laboris ad dolore aliquip nostrud ea nisi occaecat do.",
+  "dates": [
+    {
+      "begin": "1916-03-24",
+      "end": "2011-08-10",
+      "expression": "Mar 24th, 1916 - Aug 10th, 2011",
+      "type": "bulk",
+      "label": "agent_relation",
+      "source": "cartographer"
+    },
+    {
+      "begin": "1927-02-05",
+      "end": "1972-07-11",
+      "expression": "Feb 5th, 1927 - Jul 11th, 1972",
+      "type": "single",
+      "label": "digitized",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "scopecontent",
+      "title": "nisi adipisicing occaecat",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "irure deserunt amet eiusmod reprehenderit aliqua"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bioghist",
+      "title": "ullamco proident sint",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "ut amet deserunt adipisicing enim aliquip"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/29"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "index": 42,
+  "id": "5dc0a07fe9ca804d0320cd45",
+  "title": "Nguyen family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Pariatur qui ullamco non eiusmod et labore elit et magna dolor. Magna velit culpa in veniam aliquip mollit ullamco. Do ullamco nisi eiusmod laborum eu. Sint irure aliquip dolore ad mollit velit Lorem tempor tempor nisi deserunt duis duis.",
+  "dates": [
+    {
+      "begin": "1928-12-01",
+      "end": "1966-03-30",
+      "expression": "Dec 1st, 1928 - Mar 30th, 1966",
+      "type": "inclusive",
+      "label": "creation",
+      "source": "archivesspace"
+    },
+    {
+      "begin": "1946-01-20",
+      "end": "1964-09-19",
+      "expression": "Jan 20th, 1946 - Sep 19th, 1964",
+      "type": "single",
+      "label": "publication",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "accruals",
+      "title": "minim ea pariatur",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "tempor veniam nisi aliqua esse Lorem",
+            "ex nostrud culpa excepteur in eiusmod",
+            "irure laborum commodo anim reprehenderit quis",
+            "velit mollit ullamco esse Lorem incididunt"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "dolore in officia officia sit dolor",
+            "tempor magna dolor sunt aliquip dolore"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/42"
+    }
+  ]
+}

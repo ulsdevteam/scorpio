@@ -1,0 +1,242 @@
+{
+  "index": 10,
+  "id": "5dc0a00c33271d840bea84b4",
+  "title": "Laborum voluptate velit veniam culpa excepteur commodo cupidatat tempor commodo nulla deserunt ipsum.",
+  "type": "collection",
+  "level": "subseries",
+  "dates": [
+    {
+      "begin": "1917-12-05",
+      "end": "1963-10-25",
+      "expression": "Dec 5th, 1917 - Oct 25th, 1963",
+      "type": "single",
+      "label": "usage"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/5"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "1.39",
+      "type": "volumes"
+    },
+    {
+      "value": "3.71",
+      "type": "gigabytes"
+    }
+  ],
+  "notes": [
+    {
+      "type": "permissions",
+      "title": "duis velit adipisicing",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "sunt dolore esse nisi magna in"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "id aliquip laboris exercitation sunt reprehenderit"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fileplan",
+      "title": "cillum eiusmod sit",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "nisi commodo ad qui sunt non"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "non pariatur eiusmod sint ad irure",
+            "in anim do exercitation sunt Lorem",
+            "aliquip mollit est ea Lorem quis",
+            "velit ex irure Lorem nulla commodo"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "eiusmod eiusmod proident occaecat laboris pariatur"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/45"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Spanish",
+      "identifier": "eng"
+    },
+    {
+      "expression": "Spanish",
+      "identifier": "epo"
+    },
+    {
+      "expression": "English",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a00cf620f0d48da1c135",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "copyright",
+      "rights_status": "copyrighted",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "dolor",
+      "jurisdiction": "CN",
+      "notes": [
+        {
+          "type": "rights_statement",
+          "title": "excepteur sunt deserunt",
+          "source": "wikidata",
+          "subnotes": [
+            {
+              "type": "orderedlist",
+              "content": [
+                "dolor elit fugiat voluptate cupidatat magna",
+                "nisi eu exercitation proident consectetur id",
+                "deserunt exercitation duis et cillum minim"
+              ]
+            }
+          ]
+        }
+      ],
+      "rights_granted": [
+        {
+          "act": "modify",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": [
+            {
+              "type": "additional_information",
+              "title": "enim ad cupidatat",
+              "source": "wikidata",
+              "subnotes": [
+                {
+                  "type": "orderedlist",
+                  "content": [
+                    "reprehenderit dolor reprehenderit fugiat est eiusmod",
+                    "ex veniam aute mollit sunt eu"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "act": "disseminate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "id": "5dc0a00cc87d085f6511a14b",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "statute",
+      "rights_status": "unknown",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "unknown",
+      "other_basis": "veniam",
+      "jurisdiction": "US",
+      "notes": [
+        {
+          "type": "restrictions",
+          "title": "laboris culpa magna",
+          "source": "wikipedia",
+          "subnotes": [
+            {
+              "type": "orderedlist",
+              "content": [
+                "sunt qui incididunt cupidatat dolore elit"
+              ]
+            }
+          ]
+        }
+      ],
+      "rights_granted": [
+        {
+          "act": "disseminate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/46"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/33"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/4"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/10"
+    }
+  ]
+}

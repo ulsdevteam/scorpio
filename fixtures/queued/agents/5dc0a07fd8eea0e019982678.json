@@ -1,0 +1,54 @@
+{
+  "index": 34,
+  "id": "5dc0a07fd8eea0e019982678",
+  "title": "Moran family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Incididunt Lorem ea ullamco adipisicing ullamco eu deserunt aliqua Lorem esse laborum enim voluptate ea. Cillum ea enim anim proident labore nulla minim aliqua deserunt est. Aute mollit ex ex anim amet minim ex proident esse dolor laborum excepteur esse. Sint excepteur dolor voluptate officia elit eiusmod sint elit. Magna officia et excepteur reprehenderit eu velit officia sunt amet fugiat cupidatat. Cillum culpa anim nisi reprehenderit eu dolore aliqua voluptate.",
+  "dates": [
+    {
+      "begin": "1914-05-27",
+      "end": "2013-08-27",
+      "expression": "May 27th, 1914 - Aug 27th, 2013",
+      "type": "single",
+      "label": "publication",
+      "source": "archivesspace"
+    },
+    {
+      "begin": "1920-01-01",
+      "end": "1995-08-02",
+      "expression": "Jan 1st, 1920 - Aug 2nd, 1995",
+      "type": "bulk",
+      "label": "event",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "originalsloc",
+      "title": "tempor ipsum sint",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "proident ea officia et voluptate ea"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "exercitation non fugiat ad pariatur est",
+            "aliquip nostrud aliqua incididunt enim ullamco"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/34"
+    }
+  ]
+}

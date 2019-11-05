@@ -1,0 +1,79 @@
+{
+  "index": 42,
+  "id": "5dc0a03ee9ad46d5b3c2dece",
+  "title": "Lloyd Foundation",
+  "type": "agent",
+  "agent_type": "organization",
+  "description": "Aliquip cupidatat dolor ut reprehenderit sint nulla minim occaecat elit laboris. Quis labore cupidatat nulla excepteur veniam aliqua qui enim duis anim aliqua. Mollit eiusmod ullamco anim reprehenderit Lorem esse Lorem quis culpa eu non do. Commodo in quis Lorem commodo magna magna. Ex et minim quis sint laborum. Fugiat occaecat proident esse sit. Ipsum et incididunt ex ea sit laboris ut ad occaecat magna.",
+  "dates": [
+    {
+      "begin": "1915-08-16",
+      "end": "1975-06-08",
+      "expression": "Aug 16th, 1915 - Jun 8th, 1975",
+      "type": "bulk",
+      "label": "publication",
+      "source": "wikipedia"
+    },
+    {
+      "begin": "1934-07-22",
+      "end": "1988-01-14",
+      "expression": "Jul 22nd, 1934 - Jan 14th, 1988",
+      "type": "inclusive",
+      "label": "agent_relation",
+      "source": "wikipedia"
+    }
+  ],
+  "notes": [
+    {
+      "type": "physfacet",
+      "title": "deserunt consectetur sint",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "elit Lorem anim dolor fugiat eu"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "otherfindaid",
+      "title": "excepteur consequat dolore",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "ad reprehenderit deserunt ad adipisicing labore",
+            "ad deserunt commodo ipsum nisi veniam"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "labore occaecat elit dolor quis laboris",
+            "dolor pariatur laboris adipisicing amet eu",
+            "minim Lorem reprehenderit tempor qui ex",
+            "elit aliqua fugiat est officia labore"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "fugiat commodo minim exercitation quis quis",
+            "incididunt nostrud ut nulla labore aute",
+            "incididunt consequat aute fugiat eu exercitation",
+            "adipisicing ad culpa quis commodo officia"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_organization/42"
+    }
+  ]
+}

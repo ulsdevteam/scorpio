@@ -1,0 +1,39 @@
+{
+  "index": 25,
+  "id": "5dc0a07fee6ed088422cfcca",
+  "title": "Cortez family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Proident in consectetur ut labore occaecat incididunt nisi mollit eu sit do non nostrud. Cillum esse deserunt deserunt amet nostrud reprehenderit aute. Consequat incididunt in tempor adipisicing ad aliquip sunt consectetur labore voluptate anim. Consectetur aute proident occaecat cupidatat. Sit nostrud ad aliquip tempor aliquip do quis cillum consequat.",
+  "dates": [
+    {
+      "begin": "1940-01-22",
+      "end": "1987-09-05",
+      "expression": "Jan 22nd, 1940 - Sep 5th, 1987",
+      "type": "inclusive",
+      "label": "digitized",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "note",
+      "title": "aute esse veniam",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "cillum nulla consequat Lorem tempor sint"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/25"
+    }
+  ]
+}

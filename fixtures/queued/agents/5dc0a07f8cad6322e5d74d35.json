@@ -1,0 +1,81 @@
+{
+  "index": 8,
+  "id": "5dc0a07f8cad6322e5d74d35",
+  "title": "Galloway family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Reprehenderit sit officia cillum in veniam occaecat exercitation voluptate eu anim. Occaecat deserunt deserunt velit reprehenderit. Amet pariatur velit reprehenderit anim ad sunt.",
+  "dates": [
+    {
+      "begin": "1948-06-03",
+      "end": "1973-06-21",
+      "expression": "Jun 3rd, 1948 - Jun 21st, 1973",
+      "type": "single",
+      "label": "deaccession",
+      "source": "wikidata"
+    },
+    {
+      "begin": "1921-04-27",
+      "end": "1997-01-20",
+      "expression": "Apr 27th, 1921 - Jan 20th, 1997",
+      "type": "bulk",
+      "label": "agent_relation",
+      "source": "cartographer"
+    }
+  ],
+  "notes": [
+    {
+      "type": "scopecontent",
+      "title": "dolor aliqua do",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "exercitation eiusmod eu amet ea dolore",
+            "do aliqua sint sit aliquip commodo",
+            "adipisicing non cupidatat commodo sunt irure",
+            "ullamco nisi nisi tempor voluptate incididunt",
+            "eiusmod velit do laboris sint adipisicing"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "sunt excepteur culpa enim dolore reprehenderit"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "enim esse consectetur deserunt culpa Lorem",
+            "commodo ad anim enim commodo exercitation"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "prefercite",
+      "title": "reprehenderit nostrud reprehenderit",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "id et fugiat Lorem et ullamco",
+            "consequat non ut irure velit laborum",
+            "consectetur id elit mollit duis est",
+            "eu elit in cillum qui aute",
+            "enim officia dolore ipsum do dolor"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/8"
+    }
+  ]
+}

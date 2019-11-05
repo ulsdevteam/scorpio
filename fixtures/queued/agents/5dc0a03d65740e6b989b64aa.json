@@ -1,0 +1,42 @@
+{
+  "index": 21,
+  "id": "5dc0a03d65740e6b989b64aa",
+  "title": "Bryan Foundation",
+  "type": "agent",
+  "agent_type": "organization",
+  "description": "Proident esse aliqua ex cillum fugiat aliquip ex mollit in cupidatat aliquip dolore. Minim consequat veniam in ut ex labore dolore. Nostrud in nulla tempor nostrud est excepteur eiusmod consectetur est duis in irure ex. Nisi incididunt aliqua enim laboris sunt consequat consequat magna. Cupidatat ullamco incididunt consectetur proident magna duis eiusmod minim.",
+  "dates": [
+    {
+      "begin": "1925-12-19",
+      "end": "1991-10-08",
+      "expression": "Dec 19th, 1925 - Oct 8th, 1991",
+      "type": "bulk",
+      "label": "digitized",
+      "source": "cartographer"
+    }
+  ],
+  "notes": [
+    {
+      "type": "index",
+      "title": "eiusmod cillum aliquip",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "eiusmod Lorem in ipsum sunt qui",
+            "consequat ex et proident irure eu",
+            "aute reprehenderit cupidatat labore ex eiusmod",
+            "ex est eiusmod deserunt laborum ea"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_organization/21"
+    }
+  ]
+}

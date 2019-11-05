@@ -1,0 +1,41 @@
+{
+  "index": 22,
+  "id": "5dc0a07f4c8dbc0d4c41072b",
+  "title": "Berger family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Est pariatur ipsum proident irure Lorem adipisicing anim. Elit deserunt amet cillum eu est nulla laboris. Ex Lorem aliqua pariatur ex et irure nostrud dolor ea enim deserunt ea.",
+  "dates": [
+    {
+      "begin": "1938-09-23",
+      "end": "1976-12-14",
+      "expression": "Sep 23rd, 1938 - Dec 14th, 1976",
+      "type": "bulk",
+      "label": "event",
+      "source": "cartographer"
+    }
+  ],
+  "notes": [
+    {
+      "type": "scopecontent",
+      "title": "dolor magna ea",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "mollit tempor magna ut adipisicing nostrud",
+            "incididunt quis fugiat pariatur consequat aliqua",
+            "Lorem aute ut exercitation nostrud enim"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/22"
+    }
+  ]
+}

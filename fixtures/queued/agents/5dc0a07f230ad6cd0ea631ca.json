@@ -1,0 +1,47 @@
+{
+  "index": 38,
+  "id": "5dc0a07f230ad6cd0ea631ca",
+  "title": "Ellis family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Veniam id in sint veniam nulla elit incididunt qui officia anim dolor culpa Lorem anim. Veniam consequat nulla laboris minim consequat nulla nostrud culpa incididunt. Aliqua aute et excepteur irure et fugiat esse labore quis velit occaecat. Incididunt veniam sint incididunt nisi.",
+  "dates": [
+    {
+      "begin": "1941-09-15",
+      "end": "1993-11-22",
+      "expression": "Sep 15th, 1941 - Nov 22nd, 1993",
+      "type": "single",
+      "label": "digitized",
+      "source": "wikidata"
+    },
+    {
+      "begin": "1943-09-18",
+      "end": "2016-12-27",
+      "expression": "Sep 18th, 1943 - Dec 27th, 2016",
+      "type": "bulk",
+      "label": "publication",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "odd",
+      "title": "sit qui enim",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "consectetur velit labore incididunt duis aute"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/38"
+    }
+  ]
+}

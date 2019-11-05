@@ -1,0 +1,261 @@
+{
+  "index": 47,
+  "id": "5dc0a00ca5609c3d0dcd0a03",
+  "title": "Elit dolore laboris voluptate magna labore ut eiusmod do pariatur quis anim anim.",
+  "type": "collection",
+  "level": "subseries",
+  "dates": [
+    {
+      "begin": "1925-07-08",
+      "end": "1981-04-26",
+      "expression": "Jul 8th, 1925 - Apr 26th, 1981",
+      "type": "single",
+      "label": "digitized"
+    },
+    {
+      "begin": "1919-12-22",
+      "end": "2012-07-14",
+      "expression": "Dec 22nd, 1919 - Jul 14th, 2012",
+      "type": "inclusive",
+      "label": "event"
+    },
+    {
+      "begin": "1928-04-09",
+      "end": "1969-09-17",
+      "expression": "Apr 9th, 1928 - Sep 17th, 1969",
+      "type": "inclusive",
+      "label": "copyright"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/46"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/14"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "6.79",
+      "type": "volumes"
+    }
+  ],
+  "notes": [
+    {
+      "type": "extension",
+      "title": "labore dolor cillum",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "id eiusmod adipisicing et non exercitation",
+            "officia sit enim cupidatat ullamco proident"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "aliqua aliquip cupidatat officia in proident",
+            "nostrud velit pariatur sint non sit"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "et id laborum mollit voluptate anim",
+            "quis ut pariatur anim sint amet",
+            "fugiat anim velit sint esse do",
+            "aliqua minim enim consectetur commodo aute",
+            "exercitation do ea voluptate aliquip proident"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "expiration",
+      "title": "commodo dolore laboris",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "enim excepteur irure laboris fugiat et"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "ipsum dolore voluptate dolore et exercitation",
+            "ut velit excepteur eiusmod fugiat sunt",
+            "pariatur laboris ipsum enim nostrud minim",
+            "laboris commodo excepteur ullamco sunt Lorem",
+            "nulla nostrud excepteur dolore incididunt cillum"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "physfacet",
+      "title": "proident veniam voluptate",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "aliquip sit veniam ut nostrud velit"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "Lorem exercitation officia eu laboris pariatur"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "type_note",
+      "title": "sunt nulla veniam",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "amet laboris minim eu ea eiusmod"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "ut officia ex irure aute sunt",
+            "eiusmod commodo adipisicing sit nisi tempor",
+            "sunt cillum elit tempor cillum sit"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/14"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/32"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/35"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/44"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/24"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Esperanto",
+      "identifier": "epo"
+    },
+    {
+      "expression": "English",
+      "identifier": "eng"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a00ca50c3cfefb605811",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "copyright",
+      "rights_status": "unknown",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "copyrighted",
+      "other_basis": "ut",
+      "jurisdiction": "CN",
+      "notes": [],
+      "rights_granted": [
+        {
+          "act": "replicate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/7"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/9"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/11"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/47"
+    }
+  ]
+}

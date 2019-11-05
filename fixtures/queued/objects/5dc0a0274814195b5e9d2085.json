@@ -1,0 +1,176 @@
+{
+  "index": 25,
+  "id": "5dc0a0274814195b5e9d2085",
+  "title": "Aute adipisicing pariatur consequat non cillum consectetur dolor nulla aute aute amet enim duis.",
+  "type": "object",
+  "dates": [
+    {
+      "begin": "1934-09-29",
+      "end": "2012-06-28",
+      "expression": "Sep 29th, 1934 - Jun 28th, 2012",
+      "type": "inclusive",
+      "label": "usage"
+    },
+    {
+      "begin": "1950-11-12",
+      "end": "2019-09-23",
+      "expression": "Nov 12th, 1950 - Sep 23rd, 2019",
+      "type": "bulk",
+      "label": "digitized"
+    },
+    {
+      "begin": "1952-06-09",
+      "end": "1978-01-18",
+      "expression": "Jun 9th, 1952 - Jan 18th, 1978",
+      "type": "bulk",
+      "label": "agent_relation"
+    }
+  ],
+  "extents": [
+    {
+      "value": "7.91",
+      "type": "record cartons"
+    }
+  ],
+  "notes": [
+    {
+      "type": "processinfo",
+      "title": "minim quis labore",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "elit Lorem duis voluptate ad tempor",
+            "labore sint nisi in non occaecat"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "nostrud sint quis quis non laborum"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "extent",
+      "title": "ea sint voluptate",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "enim veniam anim irure aliqua non",
+            "ut pariatur reprehenderit sunt excepteur culpa"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "sit commodo irure deserunt tempor labore"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/7"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/1"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/25"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/38"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/50"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/46"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/28"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/6"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/41"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "English",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/4"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/archival_objects/25"
+    }
+  ]
+}

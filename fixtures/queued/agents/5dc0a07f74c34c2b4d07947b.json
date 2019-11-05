@@ -1,0 +1,65 @@
+{
+  "index": 15,
+  "id": "5dc0a07f74c34c2b4d07947b",
+  "title": "Baker family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Sint sunt veniam dolore nisi aliquip ipsum labore nostrud laborum eu laboris. Voluptate occaecat magna incididunt ex labore tempor eiusmod. Commodo veniam non aliquip duis magna Lorem sit commodo officia sit Lorem qui non commodo. Enim eiusmod laboris aliqua Lorem cupidatat laborum deserunt ad ex nisi dolor sunt voluptate nostrud. Anim dolore ut non quis magna. Fugiat quis velit ipsum excepteur est officia dolore.",
+  "dates": [
+    {
+      "begin": "1925-07-31",
+      "end": "1984-08-29",
+      "expression": "Jul 31st, 1925 - Aug 29th, 1984",
+      "type": "inclusive",
+      "label": "issued",
+      "source": "cartographer"
+    }
+  ],
+  "notes": [
+    {
+      "type": "prefercite",
+      "title": "consequat cillum veniam",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "excepteur quis aliqua eiusmod id aliqua",
+            "aliquip dolore nisi cillum sit magna",
+            "proident labore velit commodo occaecat est",
+            "aute dolor non culpa cillum incididunt",
+            "dolore proident ad mollit aliqua esse"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "odd",
+      "title": "amet minim dolor",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "anim sit mollit quis consequat mollit",
+            "aute minim cupidatat et culpa exercitation",
+            "in deserunt reprehenderit occaecat Lorem ex",
+            "dolore laboris sunt cupidatat fugiat eiusmod"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "ex tempor nulla commodo enim irure"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/15"
+    }
+  ]
+}

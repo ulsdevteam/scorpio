@@ -1,0 +1,46 @@
+{
+  "index": 29,
+  "id": "5dc0a07f6a10ad04cc681258",
+  "title": "Bender family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Et deserunt elit Lorem enim duis cillum eiusmod minim reprehenderit magna ipsum sit. Officia voluptate sint non quis deserunt velit non deserunt exercitation consectetur quis. Mollit occaecat non ipsum elit deserunt labore labore. Laborum in laborum commodo eu ex.",
+  "dates": [
+    {
+      "begin": "1916-05-07",
+      "end": "2012-07-21",
+      "expression": "May 7th, 1916 - Jul 21st, 2012",
+      "type": "inclusive",
+      "label": "copyright",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "note",
+      "title": "dolore incididunt veniam",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "culpa minim Lorem aliqua sint nulla",
+            "anim sint eiusmod esse anim adipisicing"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "cupidatat exercitation incididunt est laboris incididunt"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/29"
+    }
+  ]
+}

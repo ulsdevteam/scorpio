@@ -1,0 +1,200 @@
+{
+  "index": 1,
+  "id": "5dc0a00c65997e045628f590",
+  "title": "Irure in enim labore exercitation labore dolore minim officia.",
+  "type": "collection",
+  "level": "subseries",
+  "dates": [
+    {
+      "begin": "1932-02-22",
+      "end": "1965-11-27",
+      "expression": "Feb 22nd, 1932 - Nov 27th, 1965",
+      "type": "inclusive",
+      "label": "record_keeping"
+    },
+    {
+      "begin": "1941-10-17",
+      "end": "1977-11-26",
+      "expression": "Oct 17th, 1941 - Nov 26th, 1977",
+      "type": "inclusive",
+      "label": "publication"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/50"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/1"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "1.06",
+      "type": "photographic_slides"
+    },
+    {
+      "value": "5.23",
+      "type": "cubic_feet"
+    }
+  ],
+  "notes": [
+    {
+      "type": "additional_information",
+      "title": "magna Lorem sunt",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "nostrud qui id quis anim reprehenderit",
+            "elit commodo veniam nulla eu exercitation"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "excepteur Lorem elit sunt proident dolor"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "voluptate aliqua sint consectetur occaecat aliqua",
+            "consectetur duis reprehenderit tempor proident mollit",
+            "cillum nisi adipisicing culpa est duis",
+            "exercitation ut qui nisi nostrud mollit",
+            "excepteur ad eiusmod velit ad nisi"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/2"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/46"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/4"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/47"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/50"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/24"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Esperanto",
+      "identifier": "spa"
+    },
+    {
+      "expression": "English",
+      "identifier": "spa"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/13"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/34"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/33"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/7"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/41"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/1"
+    }
+  ]
+}

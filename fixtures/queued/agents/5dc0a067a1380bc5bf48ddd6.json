@@ -1,0 +1,47 @@
+{
+  "index": 5,
+  "id": "5dc0a067a1380bc5bf48ddd6",
+  "title": "Gardner Downs",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "Exercitation consectetur veniam commodo irure et exercitation ea reprehenderit do. Occaecat tempor dolor officia sint sunt duis qui. Aliquip nostrud dolor irure aliquip do non deserunt esse incididunt aliquip officia sit consequat.",
+  "dates": [
+    {
+      "begin": "1942-02-22",
+      "end": "2005-05-15",
+      "expression": "Feb 22nd, 1942 - May 15th, 2005",
+      "type": "single",
+      "label": "modified",
+      "source": "wikipedia"
+    },
+    {
+      "begin": "1943-02-25",
+      "end": "1985-12-24",
+      "expression": "Feb 25th, 1943 - Dec 24th, 1985",
+      "type": "bulk",
+      "label": "digitized",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "index",
+      "title": "duis ad tempor",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "aliqua minim fugiat amet incididunt nulla"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/5"
+    }
+  ]
+}

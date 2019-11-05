@@ -1,0 +1,319 @@
+{
+  "index": 21,
+  "id": "5dc0a0279638da7122855e46",
+  "title": "Consectetur eiusmod voluptate reprehenderit dolor cupidatat labore exercitation enim eiusmod ex nulla ullamco est laborum.",
+  "type": "object",
+  "dates": [
+    {
+      "begin": "1942-12-18",
+      "end": "2015-01-16",
+      "expression": "Dec 18th, 1942 - Jan 16th, 2015",
+      "type": "bulk",
+      "label": "publication"
+    }
+  ],
+  "extents": [
+    {
+      "value": "2.48",
+      "type": "cassettes"
+    },
+    {
+      "value": "1.45",
+      "type": "gigabytes"
+    }
+  ],
+  "notes": [
+    {
+      "type": "custodhist",
+      "title": "adipisicing pariatur aliqua",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "aute qui nulla qui ea exercitation",
+            "consequat tempor magna adipisicing ut cillum",
+            "incididunt pariatur esse non aliqua ipsum",
+            "ad nisi consequat ad ad voluptate",
+            "aute incididunt deserunt quis in deserunt"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "accruals",
+      "title": "consequat magna dolor",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "enim officia laboris cupidatat ea amet",
+            "laborum pariatur incididunt ex ullamco cillum",
+            "laborum mollit consectetur labore eiusmod mollit",
+            "deserunt cillum anim ea incididunt id"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "enim dolore excepteur ad veniam anim",
+            "incididunt incididunt non consectetur sit esse"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bibliography",
+      "title": "occaecat ad eu",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "culpa id velit elit incididunt eu"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "incididunt voluptate ut anim mollit excepteur",
+            "in aute consectetur cupidatat sint veniam",
+            "commodo laboris ipsum dolore aliqua quis"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "reprehenderit laborum proident commodo voluptate id",
+            "ex duis anim excepteur cupidatat nostrud"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/29"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/16"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/8"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Spanish",
+      "identifier": "spa"
+    },
+    {
+      "expression": "Spanish",
+      "identifier": "spa"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a0275d90bd2304b69f64",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "statute",
+      "rights_status": "copyrighted",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "copyrighted",
+      "other_basis": "commodo",
+      "jurisdiction": "US",
+      "notes": [
+        {
+          "type": "extension",
+          "title": "laborum nulla non",
+          "source": "wikidata",
+          "subnotes": [
+            {
+              "type": "definedlist",
+              "content": [
+                "exercitation incididunt amet exercitation adipisicing magna",
+                "commodo minim tempor do ex dolore"
+              ]
+            }
+          ]
+        }
+      ],
+      "rights_granted": [
+        {
+          "act": "disseminate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": [
+            {
+              "type": "additional_information",
+              "title": "adipisicing occaecat irure",
+              "source": "cartographer",
+              "subnotes": [
+                {
+                  "type": "definedlist",
+                  "content": [
+                    "quis mollit dolor est irure elit",
+                    "Lorem id voluptate cupidatat irure anim",
+                    "in anim sunt tempor sit sit"
+                  ]
+                },
+                {
+                  "type": "definedlist",
+                  "content": [
+                    "ullamco incididunt eu consequat irure et",
+                    "nisi proident laboris id nisi nulla"
+                  ]
+                },
+                {
+                  "type": "definedlist",
+                  "content": [
+                    "enim duis enim dolor aute excepteur",
+                    "exercitation nostrud enim consectetur in consectetur",
+                    "aliquip fugiat consequat deserunt aute commodo",
+                    "est deserunt veniam nisi minim dolore",
+                    "ex aliquip qui quis Lorem mollit"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "act": "use",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": [
+            {
+              "type": "expiration",
+              "title": "nisi reprehenderit ipsum",
+              "source": "cartographer",
+              "subnotes": [
+                {
+                  "type": "orderedlist",
+                  "content": [
+                    "anim do in velit cupidatat minim",
+                    "velit laboris cupidatat aute magna anim",
+                    "enim laborum adipisicing laboris culpa voluptate",
+                    "nulla commodo velit tempor pariatur eiusmod"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": [
+                    "consectetur excepteur irure et quis eiusmod"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5dc0a027a78ca127489fe50c",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "statute",
+      "rights_status": "public domain",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "unknown",
+      "other_basis": "commodo",
+      "jurisdiction": "CN",
+      "notes": [],
+      "rights_granted": [
+        {
+          "act": "modify",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": [
+            {
+              "type": "materials",
+              "title": "laborum reprehenderit nulla",
+              "source": "cartographer",
+              "subnotes": [
+                {
+                  "type": "definedlist",
+                  "content": [
+                    "culpa cillum cillum id irure ullamco",
+                    "cillum amet id aute reprehenderit exercitation",
+                    "voluptate elit cillum qui sint Lorem",
+                    "est cupidatat anim adipisicing mollit irure",
+                    "consequat nulla adipisicing ullamco sint consectetur"
+                  ]
+                },
+                {
+                  "type": "definedlist",
+                  "content": [
+                    "do id do qui aute cillum",
+                    "in commodo sit eiusmod ipsum magna",
+                    "anim nulla dolor officia tempor quis",
+                    "labore exercitation labore mollit pariatur voluptate"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": [
+                    "labore minim excepteur eiusmod consequat esse",
+                    "minim ex sunt ex esse deserunt",
+                    "in sint ex sint cillum proident",
+                    "tempor irure ea duis qui sint"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "act": "delete",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/21"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/archival_objects/21"
+    }
+  ]
+}

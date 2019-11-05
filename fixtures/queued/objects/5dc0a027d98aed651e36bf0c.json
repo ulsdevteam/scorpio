@@ -1,0 +1,231 @@
+{
+  "index": 15,
+  "id": "5dc0a027d98aed651e36bf0c",
+  "title": "Et elit reprehenderit commodo et amet commodo fugiat ex irure do.",
+  "type": "object",
+  "dates": [
+    {
+      "begin": "1933-09-21",
+      "end": "1965-11-03",
+      "expression": "Sep 21st, 1933 - Nov 3rd, 1965",
+      "type": "single",
+      "label": "agent_relation"
+    },
+    {
+      "begin": "1951-08-11",
+      "end": "2019-06-02",
+      "expression": "Aug 11th, 1951 - Jun 2nd, 2019",
+      "type": "inclusive",
+      "label": "creation"
+    },
+    {
+      "begin": "1949-07-18",
+      "end": "1986-09-13",
+      "expression": "Jul 18th, 1949 - Sep 13th, 1986",
+      "type": "bulk",
+      "label": "modified"
+    }
+  ],
+  "extents": [
+    {
+      "value": "2.88",
+      "type": "sheets"
+    },
+    {
+      "value": "4.46",
+      "type": "sheets"
+    }
+  ],
+  "notes": [
+    {
+      "type": "additional_information",
+      "title": "sit ut ipsum",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "cillum enim laboris aute excepteur magna",
+            "elit Lorem est velit minim ipsum",
+            "cupidatat aute consequat nostrud occaecat ex"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "qui est pariatur nisi sit officia",
+            "nostrud do dolor labore eu ipsum",
+            "dolor incididunt mollit duis ullamco cillum"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "elit enim magna et magna aliquip",
+            "occaecat commodo laboris officia et aute",
+            "duis ut labore est do mollit",
+            "id sunt consequat non voluptate excepteur"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "materialspec",
+      "title": "exercitation anim duis",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "occaecat et labore officia do minim",
+            "ad irure ex consequat Lorem cillum"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "cupidatat quis duis dolor aute eu",
+            "excepteur aliqua non incididunt elit ut",
+            "culpa eu aute eu aliquip magna"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "otherfindaid",
+      "title": "proident sint adipisicing",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "aliqua nisi ullamco nulla cupidatat adipisicing",
+            "ea adipisicing id et fugiat ut",
+            "officia aliquip Lorem laborum nulla aliqua",
+            "veniam occaecat aute consequat deserunt velit"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "index",
+      "title": "ullamco aliquip labore",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "nulla ad est incididunt sint nisi",
+            "magna cupidatat ut aliquip officia culpa",
+            "magna cillum ut cillum ex reprehenderit",
+            "tempor consequat dolor non do dolore"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/8"
+        }
+      ]
+    }
+  ],
+  "agents": [],
+  "languages": [
+    {
+      "expression": "English",
+      "identifier": "epo"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a02789bb67a718576c61",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "other",
+      "rights_status": "public domain",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "unknown",
+      "other_basis": "aliquip",
+      "jurisdiction": "FR",
+      "notes": [
+        {
+          "type": "type_note",
+          "title": "do pariatur esse",
+          "source": "wikipedia",
+          "subnotes": [
+            {
+              "type": "text",
+              "content": [
+                "minim consectetur veniam excepteur fugiat aliqua",
+                "consequat id reprehenderit ea tempor et",
+                "fugiat laboris sit aliquip pariatur esse",
+                "enim nulla consequat ipsum eu sunt"
+              ]
+            }
+          ]
+        }
+      ],
+      "rights_granted": [
+        {
+          "act": "migrate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": [
+            {
+              "type": "restrictions",
+              "title": "labore quis ea",
+              "source": "wikidata",
+              "subnotes": [
+                {
+                  "type": "definedlist",
+                  "content": [
+                    "reprehenderit aliqua in ipsum in ea",
+                    "cillum culpa amet velit eiusmod sint"
+                  ]
+                },
+                {
+                  "type": "definedlist",
+                  "content": [
+                    "aute velit anim tempor ut ut",
+                    "labore laboris dolor in ipsum Lorem"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "content": [
+                    "id ipsum velit elit laboris ut",
+                    "consequat labore quis veniam incididunt enim",
+                    "ad reprehenderit irure enim eu aliquip"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/36"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/archival_objects/15"
+    }
+  ]
+}

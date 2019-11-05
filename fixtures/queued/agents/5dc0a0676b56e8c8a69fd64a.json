@@ -1,0 +1,56 @@
+{
+  "index": 38,
+  "id": "5dc0a0676b56e8c8a69fd64a",
+  "title": "Alba Gaines",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "Sit nostrud non velit aliqua tempor. Reprehenderit excepteur cupidatat duis nostrud amet ut minim mollit excepteur minim. Non do deserunt proident eu est. Quis Lorem officia sunt elit voluptate nulla commodo pariatur reprehenderit ex excepteur veniam magna.",
+  "dates": [
+    {
+      "begin": "1944-04-29",
+      "end": "2014-02-04",
+      "expression": "Apr 29th, 1944 - Feb 4th, 2014",
+      "type": "inclusive",
+      "label": "agent_relation",
+      "source": "archivesspace"
+    },
+    {
+      "begin": "1953-08-20",
+      "end": "1985-12-21",
+      "expression": "Aug 20th, 1953 - Dec 21st, 1985",
+      "type": "single",
+      "label": "publication",
+      "source": "wikipedia"
+    }
+  ],
+  "notes": [
+    {
+      "type": "arrangement",
+      "title": "ad do quis",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "irure occaecat qui excepteur qui consectetur"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "consectetur nostrud tempor officia reprehenderit consequat",
+            "deserunt minim et ullamco anim do",
+            "sit fugiat consectetur non veniam ex",
+            "laboris excepteur consequat ad eu nostrud"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/38"
+    }
+  ]
+}

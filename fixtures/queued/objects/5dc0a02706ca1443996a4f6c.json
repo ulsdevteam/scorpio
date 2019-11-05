@@ -1,0 +1,175 @@
+{
+  "index": 37,
+  "id": "5dc0a02706ca1443996a4f6c",
+  "title": "Laboris Lorem minim commodo reprehenderit proident velit.",
+  "type": "object",
+  "dates": [
+    {
+      "begin": "1914-11-25",
+      "end": "2014-08-08",
+      "expression": "Nov 25th, 1914 - Aug 8th, 2014",
+      "type": "single",
+      "label": "publication"
+    },
+    {
+      "begin": "1936-08-10",
+      "end": "2001-07-14",
+      "expression": "Aug 10th, 1936 - Jul 14th, 2001",
+      "type": "single",
+      "label": "event"
+    }
+  ],
+  "extents": [
+    {
+      "value": "6.29",
+      "type": "microform reels"
+    }
+  ],
+  "notes": [
+    {
+      "type": "arrangement",
+      "title": "dolore pariatur laborum",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "velit elit fugiat pariatur enim consectetur",
+            "ad ut nisi cupidatat officia ea",
+            "dolor do irure in ad ad",
+            "occaecat do ipsum minim sint nisi",
+            "ex duis cupidatat officia culpa nostrud"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "processinfo",
+      "title": "nulla tempor dolore",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "voluptate pariatur cupidatat sint duis sint",
+            "deserunt aliquip non exercitation tempor ut",
+            "enim veniam voluptate nisi anim sint",
+            "minim incididunt aliquip aute magna sit",
+            "velit aliquip incididunt ad cupidatat occaecat"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "altformavail",
+      "title": "laborum labore duis",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "qui irure ea ullamco consectetur Lorem",
+            "ea est qui ad enim ullamco",
+            "sint adipisicing fugiat ex ea amet",
+            "ullamco aliqua quis ipsum officia sit"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "relatedmaterial",
+      "title": "id est veniam",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "commodo laborum cupidatat cupidatat ut aute"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/41"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/47"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/43"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/20"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/13"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "English",
+      "identifier": "spa"
+    },
+    {
+      "expression": "English",
+      "identifier": "eng"
+    },
+    {
+      "expression": "Spanish",
+      "identifier": "epo"
+    }
+  ],
+  "rights_statements": [],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/25"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/40"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/archival_objects/37"
+    }
+  ]
+}

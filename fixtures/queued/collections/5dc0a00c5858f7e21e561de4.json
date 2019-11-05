@@ -1,0 +1,194 @@
+{
+  "index": 49,
+  "id": "5dc0a00c5858f7e21e561de4",
+  "title": "Consectetur esse aliquip amet cupidatat deserunt excepteur.",
+  "type": "collection",
+  "level": "collection",
+  "dates": [
+    {
+      "begin": "1929-01-30",
+      "end": "1992-03-22",
+      "expression": "Jan 30th, 1929 - Mar 22nd, 1992",
+      "type": "bulk",
+      "label": "publication"
+    },
+    {
+      "begin": "1943-10-07",
+      "end": "1982-12-24",
+      "expression": "Oct 7th, 1943 - Dec 24th, 1982",
+      "type": "bulk",
+      "label": "creation"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/39"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "4.22",
+      "type": "cubic_feet"
+    }
+  ],
+  "notes": [
+    {
+      "type": "accessrestrict",
+      "title": "incididunt ipsum exercitation",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "exercitation ex occaecat exercitation eu aliqua",
+            "consequat ad ut reprehenderit anim duis"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/26"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/1"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/26"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Esperanto",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a00c66fc72f7b9c10d5d",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "other",
+      "rights_status": "public domain",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "ex",
+      "jurisdiction": "US",
+      "notes": [
+        {
+          "type": "permissions",
+          "title": "irure eiusmod excepteur",
+          "source": "archivesspace",
+          "subnotes": [
+            {
+              "type": "definedlist",
+              "content": [
+                "dolore duis consequat nostrud magna aliquip",
+                "qui voluptate veniam qui consectetur minim",
+                "est aute commodo labore incididunt quis",
+                "excepteur ut quis culpa deserunt et",
+                "non tempor mollit dolore minim laborum"
+              ]
+            }
+          ]
+        }
+      ],
+      "rights_granted": [
+        {
+          "act": "modify",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": [
+            {
+              "type": "type_note",
+              "title": "incididunt sunt pariatur",
+              "source": "archivesspace",
+              "subnotes": [
+                {
+                  "type": "definedlist",
+                  "content": [
+                    "ex eu consectetur anim reprehenderit qui",
+                    "veniam quis culpa tempor sit cupidatat"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "act": "replicate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/6"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/28"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/20"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/8"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/49"
+    }
+  ]
+}

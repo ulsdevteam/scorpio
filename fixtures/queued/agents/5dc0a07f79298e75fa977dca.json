@@ -1,0 +1,67 @@
+{
+  "index": 16,
+  "id": "5dc0a07f79298e75fa977dca",
+  "title": "Armstrong family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Cupidatat id sint ipsum ipsum irure esse nisi cillum laboris sunt veniam in proident. Ipsum reprehenderit nisi excepteur eu culpa exercitation nisi do ad irure veniam est. Aute non pariatur est voluptate qui qui Lorem consectetur proident. Occaecat qui ut aliqua enim elit id reprehenderit laborum pariatur mollit duis quis labore amet.",
+  "dates": [
+    {
+      "begin": "1928-02-11",
+      "end": "1971-01-08",
+      "expression": "Feb 11th, 1928 - Jan 8th, 1971",
+      "type": "inclusive",
+      "label": "digitized",
+      "source": "cartographer"
+    },
+    {
+      "begin": "1927-11-24",
+      "end": "1970-08-16",
+      "expression": "Nov 24th, 1927 - Aug 16th, 1970",
+      "type": "bulk",
+      "label": "deaccession",
+      "source": "wikipedia"
+    }
+  ],
+  "notes": [
+    {
+      "type": "altformavail",
+      "title": "ut exercitation ipsum",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "elit velit tempor nisi ea velit",
+            "minim excepteur nisi minim sint voluptate",
+            "non dolor consectetur amet labore aliqua",
+            "nulla excepteur sint quis velit in",
+            "nostrud labore ipsum consectetur deserunt aute"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "altformavail",
+      "title": "tempor culpa mollit",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "do amet nulla est veniam reprehenderit",
+            "aliquip pariatur quis dolore ullamco voluptate",
+            "ipsum aliqua pariatur sunt ex labore",
+            "aliquip excepteur duis incididunt amet voluptate"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/16"
+    }
+  ]
+}

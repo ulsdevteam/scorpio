@@ -1,0 +1,86 @@
+{
+  "index": 31,
+  "id": "5dc0a07f32838997768a5dbf",
+  "title": "Mcfadden family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Dolore cillum voluptate pariatur sunt ut laborum elit sit fugiat ut in dolore sit. Sunt Lorem velit cillum cupidatat do incididunt pariatur qui ea cupidatat nostrud tempor. Nisi anim voluptate ex eiusmod tempor laborum dolore cillum aute sit cillum cupidatat. Laboris ullamco Lorem do ullamco et labore voluptate irure. Et est labore Lorem proident amet veniam esse cupidatat dolore nulla dolore velit. Lorem do aliqua cillum voluptate veniam quis dolore dolore id culpa nulla.",
+  "dates": [
+    {
+      "begin": "1950-02-26",
+      "end": "1974-03-12",
+      "expression": "Feb 26th, 1950 - Mar 12th, 1974",
+      "type": "inclusive",
+      "label": "copyright",
+      "source": "archivesspace"
+    }
+  ],
+  "notes": [
+    {
+      "type": "materials",
+      "title": "cupidatat enim nulla",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "eiusmod sint velit cupidatat magna nostrud",
+            "eu mollit sunt officia ut incididunt",
+            "Lorem dolor in do sint nulla"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "elit labore dolore fugiat qui pariatur",
+            "ipsum ea quis irure cupidatat ipsum",
+            "minim nostrud pariatur proident eu proident"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "consectetur ut ex reprehenderit laboris enim",
+            "cillum aliqua ipsum officia deserunt adipisicing",
+            "deserunt et esse proident elit culpa"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "arrangement",
+      "title": "occaecat dolore tempor",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "do id culpa fugiat cupidatat Lorem",
+            "in est eiusmod tempor incididunt id",
+            "magna commodo ut deserunt proident cupidatat",
+            "duis ipsum ex deserunt officia cupidatat"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "cupidatat sint velit fugiat laboris ex"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "nulla ullamco officia tempor exercitation in",
+            "non reprehenderit sunt reprehenderit anim nostrud"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/31"
+    }
+  ]
+}

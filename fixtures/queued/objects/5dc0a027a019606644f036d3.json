@@ -1,0 +1,141 @@
+{
+  "index": 40,
+  "id": "5dc0a027a019606644f036d3",
+  "title": "Nostrud cupidatat proident cillum amet.",
+  "type": "object",
+  "dates": [
+    {
+      "begin": "1951-03-13",
+      "end": "1992-02-05",
+      "expression": "Mar 13th, 1951 - Feb 5th, 1992",
+      "type": "single",
+      "label": "deaccession"
+    }
+  ],
+  "extents": [
+    {
+      "value": "2.35",
+      "type": "photographic_prints"
+    }
+  ],
+  "notes": [
+    {
+      "type": "materialspec",
+      "title": "non consequat nulla",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "elit sunt officia cupidatat amet dolore",
+            "ex cupidatat fugiat nulla voluptate officia"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "id est aliquip deserunt veniam Lorem",
+            "incididunt in cillum aute ad fugiat",
+            "id pariatur est aliqua ea amet",
+            "eiusmod ullamco quis duis velit aute"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "ullamco occaecat dolore exercitation culpa mollit",
+            "commodo anim et excepteur do mollit",
+            "ea culpa est adipisicing quis veniam"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/49"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/16"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/33"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/6"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/33"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/6"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/35"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Esperanto",
+      "identifier": "spa"
+    },
+    {
+      "expression": "English",
+      "identifier": "eng"
+    }
+  ],
+  "rights_statements": [],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/16"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/archival_objects/40"
+    }
+  ]
+}

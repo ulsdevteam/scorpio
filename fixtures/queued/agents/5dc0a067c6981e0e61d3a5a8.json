@@ -1,0 +1,59 @@
+{
+  "index": 40,
+  "id": "5dc0a067c6981e0e61d3a5a8",
+  "title": "Walton Brown",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "Voluptate adipisicing reprehenderit ullamco voluptate sunt est consequat minim dolore aliquip id. Mollit labore laboris eu eiusmod sunt ullamco magna consectetur magna enim ad irure esse quis. Eu minim est mollit ex laborum do. Et duis ea anim deserunt ullamco laboris. Ipsum reprehenderit nisi ullamco cillum qui Lorem anim.",
+  "dates": [
+    {
+      "begin": "1956-12-25",
+      "end": "1989-12-26",
+      "expression": "Dec 25th, 1956 - Dec 26th, 1989",
+      "type": "single",
+      "label": "deaccession",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "appraisal",
+      "title": "sint sint et",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "sit esse ullamco sit ut voluptate",
+            "enim irure nulla quis reprehenderit dolor",
+            "mollit reprehenderit sit eu eiusmod ad"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "do fugiat reprehenderit proident officia ex",
+            "enim qui occaecat voluptate consequat pariatur",
+            "reprehenderit nostrud proident consequat ullamco duis",
+            "aliqua nostrud elit nostrud qui esse"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "pariatur pariatur quis anim anim commodo",
+            "laborum aute eiusmod ex labore deserunt",
+            "irure excepteur qui culpa ea amet",
+            "adipisicing elit aliqua laboris enim voluptate"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/40"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "index": 4,
+  "id": "5dc0a027e0687b6919384c70",
+  "title": "Irure proident reprehenderit consectetur ipsum incididunt do laboris occaecat commodo.",
+  "type": "object",
+  "dates": [
+    {
+      "begin": "1957-07-13",
+      "end": "1977-06-26",
+      "expression": "Jul 13th, 1957 - Jun 26th, 1977",
+      "type": "single",
+      "label": "event"
+    },
+    {
+      "begin": "1959-12-03",
+      "end": "2006-08-07",
+      "expression": "Dec 3rd, 1959 - Aug 7th, 2006",
+      "type": "bulk",
+      "label": "event"
+    }
+  ],
+  "extents": [
+    {
+      "value": "3.01",
+      "type": "gigabytes"
+    },
+    {
+      "value": "8.89",
+      "type": "box(es)"
+    }
+  ],
+  "notes": [
+    {
+      "type": "note",
+      "title": "duis minim ipsum",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "eu ad sit cupidatat commodo consequat",
+            "amet dolor anim adipisicing pariatur deserunt",
+            "tempor eu cupidatat Lorem pariatur fugiat",
+            "minim adipisicing eiusmod deserunt dolor sit"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "type_note",
+      "title": "sunt nisi ex",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "ea exercitation ullamco enim nostrud duis",
+            "non deserunt pariatur incididunt occaecat ut",
+            "est cillum ex culpa reprehenderit aliqua",
+            "est in non officia sit voluptate",
+            "consectetur officia magna Lorem veniam nisi"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "proident incididunt cillum labore incididunt nulla",
+            "reprehenderit cillum cillum occaecat aliquip culpa",
+            "eu est aliqua eiusmod voluptate minim",
+            "occaecat irure voluptate amet do eu"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "separatedmaterial",
+      "title": "aliquip duis non",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "sint dolore ipsum dolor nulla cupidatat",
+            "ipsum sunt excepteur sit et anim"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "cillum eiusmod ipsum aute incididunt voluptate",
+            "dolor nostrud eu reprehenderit esse cillum"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/37"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/terms/28"
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/39"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/7"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "English",
+      "identifier": "epo"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/32"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/archival_objects/4"
+    }
+  ]
+}

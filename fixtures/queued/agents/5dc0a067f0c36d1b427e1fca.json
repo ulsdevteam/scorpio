@@ -1,0 +1,70 @@
+{
+  "index": 33,
+  "id": "5dc0a067f0c36d1b427e1fca",
+  "title": "Kim Cooper",
+  "type": "agent",
+  "agent_type": "person",
+  "description": "Sint officia mollit laboris qui eiusmod. Elit id reprehenderit laboris laborum tempor proident excepteur. Exercitation nisi aliquip aliquip officia et dolor.",
+  "dates": [
+    {
+      "begin": "1946-09-06",
+      "end": "2003-02-15",
+      "expression": "Sep 6th, 1946 - Feb 15th, 2003",
+      "type": "single",
+      "label": "event",
+      "source": "wikipedia"
+    },
+    {
+      "begin": "1929-12-22",
+      "end": "1967-10-05",
+      "expression": "Dec 22nd, 1929 - Oct 5th, 1967",
+      "type": "single",
+      "label": "modified",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "physfacet",
+      "title": "veniam eu occaecat",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "ex eiusmod dolor nulla nulla sint",
+            "ea esse enim ut anim culpa"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "userestrict",
+      "title": "pariatur cupidatat enim",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "Lorem cillum incididunt cillum nostrud aliqua"
+          ]
+        },
+        {
+          "type": "text",
+          "content": [
+            "velit dolor voluptate laboris sint ea",
+            "ad adipisicing est esse pariatur tempor",
+            "elit aliqua irure proident irure cillum",
+            "cupidatat est incididunt ipsum velit minim"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_person/33"
+    }
+  ]
+}

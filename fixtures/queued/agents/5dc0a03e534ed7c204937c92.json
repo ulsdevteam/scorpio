@@ -1,0 +1,73 @@
+{
+  "index": 46,
+  "id": "5dc0a03e534ed7c204937c92",
+  "title": "Emerson Foundation",
+  "type": "agent",
+  "agent_type": "organization",
+  "description": "Reprehenderit culpa adipisicing proident occaecat proident exercitation voluptate ullamco enim. Aute id labore velit quis aute eu occaecat labore anim enim anim et. Aliqua consequat laboris minim veniam cupidatat labore. Deserunt excepteur esse enim laboris cupidatat ex. Quis laboris velit do cillum sunt exercitation aute aliqua incididunt officia labore magna. Voluptate esse irure velit veniam.",
+  "dates": [
+    {
+      "begin": "1932-09-11",
+      "end": "2012-02-14",
+      "expression": "Sep 11th, 1932 - Feb 14th, 2012",
+      "type": "single",
+      "label": "publication",
+      "source": "wikipedia"
+    }
+  ],
+  "notes": [
+    {
+      "type": "processinfo",
+      "title": "anim cupidatat ea",
+      "source": "cartographer",
+      "subnotes": [
+        {
+          "type": "text",
+          "content": [
+            "fugiat sit excepteur nulla proident culpa",
+            "qui quis mollit in officia officia",
+            "magna id non culpa est culpa",
+            "aute tempor deserunt est ex anim"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "aliqua est dolor excepteur ipsum ipsum",
+            "ut commodo fugiat ea sint magna"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "elit id irure elit anim irure",
+            "Lorem fugiat nostrud eiusmod sunt nulla"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "materialspec",
+      "title": "qui nostrud minim",
+      "source": "wikipedia",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "voluptate cillum nostrud voluptate incididunt adipisicing",
+            "duis voluptate ipsum excepteur fugiat fugiat",
+            "laborum enim proident dolor duis proident",
+            "nulla voluptate excepteur tempor deserunt eiusmod",
+            "in dolore do consequat Lorem aute"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_organization/46"
+    }
+  ]
+}

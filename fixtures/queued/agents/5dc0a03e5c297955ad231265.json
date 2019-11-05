@@ -1,0 +1,47 @@
+{
+  "index": 43,
+  "id": "5dc0a03e5c297955ad231265",
+  "title": "Gaines Foundation",
+  "type": "agent",
+  "agent_type": "organization",
+  "description": "Minim non et quis non minim fugiat cillum ipsum fugiat duis do occaecat. Reprehenderit ipsum irure nulla ut enim consectetur sint. Et non pariatur reprehenderit Lorem aliquip laborum dolor irure voluptate reprehenderit sunt sint consectetur excepteur.",
+  "dates": [
+    {
+      "begin": "1937-12-11",
+      "end": "2013-03-15",
+      "expression": "Dec 11th, 1937 - Mar 15th, 2013",
+      "type": "bulk",
+      "label": "creation",
+      "source": "cartographer"
+    },
+    {
+      "begin": "1939-01-18",
+      "end": "2014-07-25",
+      "expression": "Jan 18th, 1939 - Jul 25th, 2014",
+      "type": "single",
+      "label": "record_keeping",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "additional_information",
+      "title": "nulla sint nisi",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "et aliquip laborum eu non ipsum"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_organization/43"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "index": 30,
+  "id": "5dc0a07f0caec4f2751e4ffd",
+  "title": "Thornton family",
+  "type": "agent",
+  "agent_type": "family",
+  "description": "Dolor anim irure sint eu est ea reprehenderit cupidatat labore tempor. Commodo nostrud ex voluptate ad non excepteur esse. Exercitation occaecat sit mollit non duis reprehenderit incididunt. Id ex sint occaecat excepteur occaecat.",
+  "dates": [
+    {
+      "begin": "1943-04-01",
+      "end": "1965-12-08",
+      "expression": "Apr 1st, 1943 - Dec 8th, 1965",
+      "type": "bulk",
+      "label": "creation",
+      "source": "wikidata"
+    }
+  ],
+  "notes": [
+    {
+      "type": "extension",
+      "title": "pariatur laborum ut",
+      "source": "wikidata",
+      "subnotes": [
+        {
+          "type": "orderedlist",
+          "content": [
+            "esse esse est veniam irure in",
+            "amet ex ut sunt in reprehenderit",
+            "labore est incididunt veniam aute culpa",
+            "duis minim deserunt consectetur aliqua esse",
+            "eiusmod aute sit tempor minim occaecat"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "cupidatat ea id aliqua mollit velit"
+          ]
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/agents_family/30"
+    }
+  ]
+}

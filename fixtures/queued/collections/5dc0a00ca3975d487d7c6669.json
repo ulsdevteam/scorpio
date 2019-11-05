@@ -1,0 +1,243 @@
+{
+  "index": 33,
+  "id": "5dc0a00ca3975d487d7c6669",
+  "title": "Irure labore duis labore incididunt esse quis eiusmod commodo minim voluptate occaecat commodo dolor exercitation.",
+  "type": "collection",
+  "level": "series",
+  "dates": [
+    {
+      "begin": "1949-11-11",
+      "end": "1969-12-14",
+      "expression": "Nov 11th, 1949 - Dec 14th, 1969",
+      "type": "single",
+      "label": "other"
+    }
+  ],
+  "creators": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_family/23"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/2"
+        }
+      ]
+    }
+  ],
+  "extents": [
+    {
+      "value": "3.83",
+      "type": "box(es)"
+    },
+    {
+      "value": "8.15",
+      "type": "record cartons"
+    }
+  ],
+  "notes": [
+    {
+      "type": "bioghist",
+      "title": "anim occaecat nulla",
+      "source": "archivesspace",
+      "subnotes": [
+        {
+          "type": "definedlist",
+          "content": [
+            "pariatur laborum non reprehenderit in eiusmod",
+            "aliqua laboris laboris amet nostrud elit",
+            "adipisicing eiusmod sit nulla esse pariatur"
+          ]
+        },
+        {
+          "type": "definedlist",
+          "content": [
+            "culpa amet ut reprehenderit deserunt ut",
+            "culpa est Lorem minim consectetur reprehenderit",
+            "dolore fugiat ea occaecat nulla eiusmod",
+            "nostrud incididunt non nostrud consectetur dolor"
+          ]
+        },
+        {
+          "type": "orderedlist",
+          "content": [
+            "do quis sunt incididunt officia dolore",
+            "mollit ea mollit id cupidatat non",
+            "mollit magna non duis culpa eu",
+            "occaecat dolore consectetur consequat minim reprehenderit",
+            "proident consectetur cillum ullamco aute dolor"
+          ]
+        }
+      ]
+    }
+  ],
+  "terms": [],
+  "agents": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_organization/48"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/agents_person/20"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "expression": "Spanish",
+      "identifier": "eng"
+    },
+    {
+      "expression": "Esperanto",
+      "identifier": "epo"
+    },
+    {
+      "expression": "English",
+      "identifier": "spa"
+    }
+  ],
+  "rights_statements": [
+    {
+      "id": "5dc0a00cd2688503e3da2ea9",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "other",
+      "rights_status": "unknown",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "public domain",
+      "other_basis": "adipisicing",
+      "jurisdiction": "FR",
+      "notes": [
+        {
+          "type": "type_note",
+          "title": "voluptate in ex",
+          "source": "wikidata",
+          "subnotes": [
+            {
+              "type": "text",
+              "content": [
+                "reprehenderit minim exercitation est consectetur nulla",
+                "consequat nostrud quis consequat aliqua laboris",
+                "sit ex ex aliqua eu excepteur",
+                "pariatur ut aliqua aute non elit",
+                "ullamco qui Lorem culpa laborum sint"
+              ]
+            }
+          ]
+        }
+      ],
+      "rights_granted": [
+        {
+          "act": "migrate",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "disallow",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "id": "5dc0a00c80f37731c16f50f5",
+      "determination_date": "2019-11-04",
+      "type": "rights_statement",
+      "rights_type": "other",
+      "rights_status": "public domain",
+      "begin": "2019-11-04",
+      "end": "2019-11-04",
+      "copyright_status": "copyrighted",
+      "other_basis": "Lorem",
+      "jurisdiction": "CN",
+      "notes": [
+        {
+          "type": "rights_statement",
+          "title": "ea anim duis",
+          "source": "wikidata",
+          "subnotes": [
+            {
+              "type": "orderedlist",
+              "content": [
+                "ipsum incididunt commodo aliqua non amet",
+                "in sint incididunt quis veniam id",
+                "quis mollit commodo qui laboris nostrud"
+              ]
+            }
+          ]
+        }
+      ],
+      "rights_granted": [
+        {
+          "act": "modify",
+          "begin": "2019-11-04",
+          "end": "2019-11-04",
+          "restriction": "allow",
+          "notes": [
+            {
+              "type": "extension",
+              "title": "sint incididunt consectetur",
+              "source": "wikidata",
+              "subnotes": [
+                {
+                  "type": "text",
+                  "content": [
+                    "do tempor nisi Lorem deserunt esse",
+                    "irure aliqua enim nulla enim mollit",
+                    "in laboris esse nisi aliqua amet"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ancestors": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/28"
+        }
+      ]
+    },
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/resources/47"
+        }
+      ]
+    }
+  ],
+  "children": [
+    {
+      "external_identifiers": [
+        {
+          "source": "archivesspace",
+          "identifier": "/repositories/2/archival_objects/38"
+        }
+      ]
+    }
+  ],
+  "external_identifiers": [
+    {
+      "source": "archivesspace",
+      "identifier": "/repositories/2/resources/33"
+    }
+  ]
+}
