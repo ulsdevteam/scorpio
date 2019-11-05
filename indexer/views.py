@@ -26,7 +26,7 @@ class IndexView(APIView):
             resp = getattr(Indexer(), self.method)(clean=clean, source=source, identifier=identifier)
             return Response(prepare_response(resp), status=200)
         except Exception as e:
-            return Response(prepare_response(resp), status=500)
+            return Response(prepare_response(e), status=500)
 
 
 class IndexAddView(IndexView):
