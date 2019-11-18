@@ -60,8 +60,8 @@ class BaseMerger:
     @silk_profile()
     def merge(self, object):
         """Main merge function. Merges transformed object into matched objects
-           if they exist, or simply passes on the transformed object if no
-           matches are found."""
+           if they exist and then persists the merged object, or simply persists
+           the transformed object if no matches are found."""
         try:
             merged_ids = []
             for identifier in object['external_identifiers']:
@@ -91,7 +91,7 @@ class BaseMerger:
 
 
 class AgentMerger(BaseMerger):
-    """Merges transformed Agents data"""
+    """Merges transformed Agent data."""
     type = 'agent'
     single_source_fields = {"archivesspace": [
         "title", "agent_type", "collections", "objects"], "wikidata": ["description"]}
@@ -99,6 +99,7 @@ class AgentMerger(BaseMerger):
 
 
 class CollectionMerger(BaseMerger):
+    """Merges transformed Agent data."""
     type = 'collection'
     single_source_fields = {"archivesspace": [
         "title", "level", "dates", "creators", "languages", "extents", "notes", "agents", "terms", "rights_statements"]}
@@ -106,6 +107,7 @@ class CollectionMerger(BaseMerger):
 
 
 class ObjectMerger(BaseMerger):
+    """Merges transformed Agent data."""
     type = 'object'
     single_source_fields = {"archivesspace": [
         "title", "dates", "languages", "extents", "notes", "agents", "terms", "rights_statements"]}
@@ -113,6 +115,7 @@ class ObjectMerger(BaseMerger):
 
 
 class TermMerger(BaseMerger):
+    """Merges transformed Agent data."""
     type = 'term'
     single_source_fields = {"archivesspace": ["title", "term_type"]}
     multi_source_fields = []
