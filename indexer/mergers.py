@@ -58,6 +58,36 @@ class BaseMerger:
         return match
 
     @silk_profile()
+    def apply_tree_merges(self, transformed, match, source):
+        if match.get('type') in ['collection', 'object']:
+            pass
+            # if sources match:
+                # replace match ancestors with transformed ancestors
+                # if match children attr exists:
+                    # replace match children with transformed children if exists
+            # else:
+                # children
+                    # if transformed source = cartographer:
+                        # replace match children with transformed children
+                    # if transformed source = archivesspace
+                        # replace if match source = archivespace this is already handled above?
+                # ancestors
+                    # if transformed source = cartographer
+                        # remove ancestors with source=cartographer from match
+                        # prepend transformed ancestors to match ancestors
+                    # if transformed source = archivesspace
+                        # remove ancestors with source=cartographer from match
+                        # append transformed ancestors to match ancestors
+        return match
+
+    @silk_profile()
+    def merge_external_identifiers(self, transformed, match):
+        for ex_id in transformed.get('external_identifiers'):
+            if ex_id not in match.get(external_identifiers):
+                match.get('external_identifiers', []).append(ex_id)
+        return match
+
+    @silk_profile()
     def merge(self, object):
         """Main merge function. Merges transformed object into matched objects
            if they exist and then persists the merged object, or simply persists
@@ -74,7 +104,11 @@ class BaseMerger:
                             object, match.data, identifier['source'])
                         multi_merge = self.apply_multi_source_merges(
                             object, single_merge, identifier['source'])
-                        match.data = multi_merge
+                        tree_merge = self.apply_tree_merges(
+                            object, multi_merge, identifier['source'])
+                        external_id_merge = self.merge_external_identifiers(
+                            object, tree_merge)
+                        match.data = external_id_merge
                         match.indexed = False
                         match.save()
                         merged_ids.append(match.es_id)
