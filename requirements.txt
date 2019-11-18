@@ -13,7 +13,7 @@ djangorestframework==3.10.3
 elasticsearch==7.1.0
 elasticsearch-dsl==7.1.0
 gitdb2==2.0.6
-GitPython==3.0.4
+GitPython==3.0.5
 gprof2dot==2017.9.19
 health-check==3.4.1
 idna==2.8
