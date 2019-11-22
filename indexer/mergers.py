@@ -58,32 +58,24 @@ class BaseMerger:
         return match
 
     @silk_profile()
-    def apply_tree_merges(self, transformed, match, source):
+    def apply_tree_merges(self, transformed, match, transformed_source):
         if match.get('type') in ['collection', 'object']:
-            pass
-            # if sources match:
-                # replace match ancestors with transformed ancestors
-                # if match children attr exists:
-                    # replace match children with transformed children if exists
-            # else:
-                # children
-                    # if transformed source = cartographer:
-                        # replace match children with transformed children
-                    # if transformed source = archivesspace
-                        # replace if match source = archivespace this is already handled above?
-                # ancestors
-                    # if transformed source = cartographer
-                        # remove ancestors with source=cartographer from match
-                        # prepend transformed ancestors to match ancestors
-                    # if transformed source = archivesspace
-                        # remove ancestors with source=cartographer from match
-                        # append transformed ancestors to match ancestors
+            if transformed_source == 'cartographer':
+                ancestors = [a for a in match.get('ancestors') if a.get('source') != 'cartographer']
+                ancestors.insert(0, transformed.get('ancestors'))
+            if transformed_source == 'archivesspace':
+                ancestors = [a for a in match.get('ancestors') if a.get('source') != 'archivespace']
+                ancestors.append(transformed.get('ancestors'))
+            match['ancestors'] = ancestors
+        if match.get('type') == 'collection':
+            if len(transformed.get('children')):
+                match['children'] = transformed.get('children')
         return match
 
     @silk_profile()
     def merge_external_identifiers(self, transformed, match):
         for ex_id in transformed.get('external_identifiers'):
-            if ex_id not in match.get(external_identifiers):
+            if ex_id not in match.get('external_identifiers'):
                 match.get('external_identifiers', []).append(ex_id)
         return match
 
