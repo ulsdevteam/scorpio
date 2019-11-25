@@ -1,8 +1,12 @@
+import jsonschema
+import requests
+
 from rac_es.documents import Agent, Collection, Object, Term
 from silk.profiling.profiler import silk_profile
 
 from .helpers import generate_identifier
 from .models import DataObject
+from scorpio import settings
 
 
 class MergeError(Exception):
@@ -80,6 +84,17 @@ class BaseMerger:
         return match
 
     @silk_profile()
+    def _is_valid(self, instance):
+        try:
+            schema = requests.get(settings.SCHEMA_URL)
+            schema.raise_for_status()
+            jsonschema.validate(instance=instance, schema=schema.json())
+        except requests.HTTPError:
+            print("Could not fetch schema from {}".format(settings.SCHEMA_URL))
+        return True
+
+
+    @silk_profile()
     def merge(self, object):
         """Main merge function. Merges transformed object into matched objects
            if they exist and then persists the merged object, or simply persists
@@ -100,10 +115,11 @@ class BaseMerger:
                             object, multi_merge, identifier['source'])
                         external_id_merge = self.merge_external_identifiers(
                             object, tree_merge)
-                        match.data = external_id_merge
-                        match.indexed = False
-                        match.save()
-                        merged_ids.append(match.es_id)
+                        if self._is_valid(external_id_merge):
+                            match.data = external_id_merge
+                            match.indexed = False
+                            match.save()
+                            merged_ids.append(match.es_id)
                 else:
                     es_id = generate_identifier()
                     doc = DataObject.objects.create(es_id=es_id,
@@ -113,7 +129,7 @@ class BaseMerger:
                     merged_ids.append(es_id)
             return ("Object merged", merged_ids)
         except Exception as e:
-            raise MergeError("Error merging: {}".format(e))
+            raise MergeError("Error merging: {}".format(e), match.es_id)
 
 
 class AgentMerger(BaseMerger):
