@@ -14,7 +14,7 @@ elasticsearch==7.1.0
 elasticsearch-dsl==7.1.0
 gitdb2==2.0.6
 GitPython==3.0.5
-gprof2dot==2017.9.19
+gprof2dot==2019.11.30
 health-check==3.4.1
 idna==2.8
 Jinja2==2.10.3
