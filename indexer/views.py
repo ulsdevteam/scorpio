@@ -6,7 +6,7 @@ from rest_framework.viewsets import ModelViewSet
 from .indexers import Indexer
 from .models import DataObject
 from .mergers import AgentMerger, CollectionMerger, ObjectMerger, TermMerger
-from .serializers import DataObjectSerializer
+from .serializers import DataObjectSerializer, DataObjectListSerializer
 
 MERGERS = {
     "agent": AgentMerger,
@@ -55,4 +55,8 @@ class MergeView(APIView):
 class DataObjectViewSet(ModelViewSet):
     model = DataObject
     queryset = DataObject.objects.all()
-    serializer_class = DataObjectSerializer
+
+    def get_serializer_class(self):
+        if self.action == 'list':
+            return DataObjectListSerializer
+        return DataObjectSerializer
