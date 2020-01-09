@@ -1,8 +1,12 @@
+import jsonschema
+import requests
+
 from rac_es.documents import Agent, Collection, Object, Term
 from silk.profiling.profiler import silk_profile
 
 from .helpers import generate_identifier
 from .models import DataObject
+from scorpio import settings
 
 
 class MergeError(Exception):
@@ -34,6 +38,13 @@ class BaseMerger:
         if not isinstance(self.multi_source_fields, list):
             raise Exception(
                 "`self.multi_source_fields` property should be a list")
+        try:
+            schema = requests.get(settings.SCHEMA_URL)
+            schema.raise_for_status()
+            self.schema = schema.json()
+        except requests.ConnectionError or requests.HTTPError:
+            raise Exception("Could not fetch schema from {}".format(settings.SCHEMA_URL))
+
 
     @silk_profile()
     def apply_single_source_merges(self, transformed, match, source):
@@ -65,7 +76,7 @@ class BaseMerger:
                 ancestors.insert(0, transformed.get('ancestors'))
             if transformed_source == 'archivesspace':
                 ancestors = [a for a in match.get('ancestors') if a.get('source') != 'archivespace']
-                ancestors.append(transformed.get('ancestors'))
+                ancestors += transformed.get('ancestors')
             match['ancestors'] = ancestors
         if match.get('type') == 'collection':
             if len(transformed.get('children')):
@@ -78,6 +89,14 @@ class BaseMerger:
             if ex_id not in match.get('external_identifiers'):
                 match.get('external_identifiers', []).append(ex_id)
         return match
+
+    @silk_profile()
+    def _is_valid(self, instance):
+        try:
+            jsonschema.validate(instance=instance, schema=self.schema)
+            return True
+        except jsonschema.exceptions.ValidationError as e:
+            raise MergeError(e.message)
 
     @silk_profile()
     def merge(self, object):
@@ -100,10 +119,11 @@ class BaseMerger:
                             object, multi_merge, identifier['source'])
                         external_id_merge = self.merge_external_identifiers(
                             object, tree_merge)
-                        match.data = external_id_merge
-                        match.indexed = False
-                        match.save()
-                        merged_ids.append(match.es_id)
+                        if self._is_valid(external_id_merge):
+                            match.data = external_id_merge
+                            match.indexed = False
+                            match.save()
+                            merged_ids.append(match.es_id)
                 else:
                     es_id = generate_identifier()
                     doc = DataObject.objects.create(es_id=es_id,
@@ -113,7 +133,7 @@ class BaseMerger:
                     merged_ids.append(es_id)
             return ("Object merged", merged_ids)
         except Exception as e:
-            raise MergeError("Error merging: {}".format(e))
+            raise MergeError("Error merging: {}".format(e), match.es_id)
 
 
 class AgentMerger(BaseMerger):
