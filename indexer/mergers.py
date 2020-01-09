@@ -38,6 +38,13 @@ class BaseMerger:
         if not isinstance(self.multi_source_fields, list):
             raise Exception(
                 "`self.multi_source_fields` property should be a list")
+        try:
+            schema = requests.get(settings.SCHEMA_URL)
+            schema.raise_for_status()
+            self.schema = schema.json()
+        except requests.ConnectionError or requests.HTTPError:
+            raise Exception("Could not fetch schema from {}".format(settings.SCHEMA_URL))
+
 
     @silk_profile()
     def apply_single_source_merges(self, transformed, match, source):
@@ -69,7 +76,7 @@ class BaseMerger:
                 ancestors.insert(0, transformed.get('ancestors'))
             if transformed_source == 'archivesspace':
                 ancestors = [a for a in match.get('ancestors') if a.get('source') != 'archivespace']
-                ancestors.append(transformed.get('ancestors'))
+                ancestors += transformed.get('ancestors')
             match['ancestors'] = ancestors
         if match.get('type') == 'collection':
             if len(transformed.get('children')):
@@ -86,13 +93,10 @@ class BaseMerger:
     @silk_profile()
     def _is_valid(self, instance):
         try:
-            schema = requests.get(settings.SCHEMA_URL)
-            schema.raise_for_status()
-            jsonschema.validate(instance=instance, schema=schema.json())
-        except requests.HTTPError:
-            print("Could not fetch schema from {}".format(settings.SCHEMA_URL))
-        return True
-
+            jsonschema.validate(instance=instance, schema=self.schema)
+            return True
+        except jsonschema.exceptions.ValidationError as e:
+            raise MergeError(e.message)
 
     @silk_profile()
     def merge(self, object):
