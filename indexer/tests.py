@@ -33,7 +33,7 @@ class TestMergerToIndex(TestCase):
             "object": ObjectMerger,
             "term": TermMerger
         }
-        merger = MERGERS[merged_data['type']]
+        merger = MERGERS[merged_data['object_type']]
         for identifier in transformed_data['external_identifiers']:
             source = identifier['source']
             for field in merger.single_source_fields[source]:

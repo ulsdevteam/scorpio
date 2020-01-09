@@ -16,7 +16,7 @@ class DataObject(models.Model):
         ('term', 'Term'),
     )
     es_id = models.CharField(max_length=255)
-    type = models.CharField(max_length=255, choices=TYPE_CHOICES)
+    object_type = models.CharField(max_length=255, choices=TYPE_CHOICES)
     data = JSONField()
     indexed = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)
