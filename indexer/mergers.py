@@ -1,6 +1,7 @@
+import json
 import jsonschema
 import requests
-import os
+from os.path import isfile, join
 
 from rac_es.documents import Agent, Collection, Object, Term
 from silk.profiling.profiler import silk_profile
@@ -30,15 +31,15 @@ class BaseMerger:
     def __init__(self):
         if not self.object_type:
             raise Exception("Missing required `object_type` property on self")
-        if not os.isfile(os.path.join(settings.BASE_DIR, settings.SCHEMA_PATH)):
+        if not isfile(join(settings.BASE_DIR, settings.SCHEMA_PATH)):
             try:
                 schema = requests.get(settings.SCHEMA_URL)
                 schema.raise_for_status()
-                with open(os.path.join(settings.BASE_DIR, settings.SCHEMA_PATH), 'w') as sf:
+                with open(join(settings.BASE_DIR, settings.SCHEMA_PATH), 'w') as sf:
                     json.dump(schema.json(), sf)
             except requests.ConnectionError or requests.HTTPError:
                 raise Exception("Could not fetch schema from {}".format(settings.SCHEMA_URL))
-        with open(os.path.join(settings.BASE_DIR, settings.SCHEMA_PATH), 'r') as sf:
+        with open(join(settings.BASE_DIR, settings.SCHEMA_PATH), 'r') as sf:
             self.schema = json.load(sf)
 
     @silk_profile()
