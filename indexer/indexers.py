@@ -7,7 +7,7 @@ from .models import DataObject
 
 from scorpio import settings
 
-TYPES = {
+OBJECT_TYPES = {
     "agent": Agent,
     "collection": Collection,
     "object": Object,
@@ -15,7 +15,7 @@ TYPES = {
 }
 
 
-class IndexError(Exception): pass
+class ScorpioIndexError(Exception): pass
 
 
 class Indexer:
@@ -26,8 +26,8 @@ class Indexer:
     def __init__(self):
         self.connection = connections.create_connection(hosts=settings.ELASTICSEARCH['default']['hosts'], timeout=60)
 
-    def prepare_data(self, type, data):
-        doc = TYPES[type]()
+    def prepare_data(self, object_type, data):
+        doc = OBJECT_TYPES[object_type]()
         doc.source = data.data
         doc.meta.id = data.es_id
         return doc.to_dict(True)
@@ -36,14 +36,14 @@ class Indexer:
     def add(self, clean=False, **kwargs):
         """Adds documents to index. Uses ES bulk indexing."""
         indexed_ids = []
-        for type in TYPES:
-            objects = DataObject.objects.filter(type=type)
+        for obj_type in OBJECT_TYPES:
+            objects = DataObject.objects.filter(object_type=obj_type)
             if not clean:
                 objects = objects.exclude(indexed=True)
-            for ok, result in streaming_bulk(self.connection, (self.prepare_data(type, obj) for obj in objects), refresh=True):
+            for ok, result in streaming_bulk(self.connection, (self.prepare_data(obj_type, obj) for obj in objects), refresh=True):
                 action, result = result.popitem()
                 if not ok:
-                    raise IndexError("Failed to {} document {}: {}".format(action, result["_id"], result))
+                    raise ScorpioIndexError("Failed to {} document {}: {}".format(action, result["_id"], result))
                 else:
                     o = DataObject.objects.get(es_id=result["_id"])
                     o.indexed = True
@@ -60,7 +60,7 @@ class Indexer:
         deleted_ids = []
         matches = DataObject.find_matches(source, identifier)
         for obj in matches:
-            doc_cls = TYPES[obj.type]
+            doc_cls = OBJECT_TYPES[obj.object_type]
             document = doc_cls.get(id=obj.es_id)
             document.delete(refresh=True)
             deleted_ids.append(obj.es_id)

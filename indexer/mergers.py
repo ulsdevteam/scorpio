@@ -27,8 +27,8 @@ class BaseMerger:
      """
 
     def __init__(self):
-        if not self.type:
-            raise Exception("Missing required `type` property on self")
+        if not self.object_type:
+            raise Exception("Missing required `object_type` property on self")
         if not (hasattr(self, 'single_source_fields') and hasattr(self, 'multi_source_fields')):
             raise Exception(
                 "Both `single_source_fields` and `multi_source_fields` properties are required on self.")
@@ -108,7 +108,7 @@ class BaseMerger:
             for identifier in object['external_identifiers']:
                 matches = DataObject.find_matches(identifier['source'],
                                                   identifier['identifier'],
-                                                  initial_queryset=DataObject.objects.filter(type=self.type))
+                                                  initial_queryset=DataObject.objects.filter(object_type=self.object_type))
                 if len(matches):
                     for match in matches:
                         single_merge = self.apply_single_source_merges(
@@ -128,7 +128,7 @@ class BaseMerger:
                     es_id = generate_identifier()
                     doc = DataObject.objects.create(es_id=es_id,
                                                     data=object,
-                                                    type=self.type,
+                                                    object_type=self.object_type,
                                                     indexed=False)
                     merged_ids.append(es_id)
             return ("Object merged", merged_ids)
@@ -138,7 +138,7 @@ class BaseMerger:
 
 class AgentMerger(BaseMerger):
     """Merges transformed Agent data."""
-    type = 'agent'
+    object_type = 'agent'
     single_source_fields = {"archivesspace": [
         "title", "agent_type", "collections", "objects"], "wikidata": ["description"]}
     multi_source_fields = ["dates", "notes"]
@@ -146,7 +146,7 @@ class AgentMerger(BaseMerger):
 
 class CollectionMerger(BaseMerger):
     """Merges transformed Agent data."""
-    type = 'collection'
+    object_type = 'collection'
     single_source_fields = {"archivesspace": [
         "title", "level", "dates", "creators", "languages", "extents", "notes", "agents", "terms", "rights_statements"]}
     multi_source_fields = []
@@ -154,7 +154,7 @@ class CollectionMerger(BaseMerger):
 
 class ObjectMerger(BaseMerger):
     """Merges transformed Agent data."""
-    type = 'object'
+    object_type = 'object'
     single_source_fields = {"archivesspace": [
         "title", "dates", "languages", "extents", "notes", "agents", "terms", "rights_statements"]}
     multi_source_fields = []
@@ -162,6 +162,6 @@ class ObjectMerger(BaseMerger):
 
 class TermMerger(BaseMerger):
     """Merges transformed Agent data."""
-    type = 'term'
+    object_type = 'term'
     single_source_fields = {"archivesspace": ["title", "term_type"]}
     multi_source_fields = []
