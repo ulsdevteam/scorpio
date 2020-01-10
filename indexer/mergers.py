@@ -1,5 +1,7 @@
+import json
 import jsonschema
 import requests
+from os.path import isfile, join
 
 from rac_es.documents import Agent, Collection, Object, Term
 from silk.profiling.profiler import silk_profile
@@ -29,29 +31,24 @@ class BaseMerger:
     def __init__(self):
         if not self.object_type:
             raise Exception("Missing required `object_type` property on self")
-        if not (hasattr(self, 'single_source_fields') and hasattr(self, 'multi_source_fields')):
-            raise Exception(
-                "Both `single_source_fields` and `multi_source_fields` properties are required on self.")
-        if not isinstance(self.single_source_fields, dict):
-            raise Exception(
-                "`self.single_source_fields` property should be a dictionary")
-        if not isinstance(self.multi_source_fields, list):
-            raise Exception(
-                "`self.multi_source_fields` property should be a list")
-        try:
-            schema = requests.get(settings.SCHEMA_URL)
-            schema.raise_for_status()
-            self.schema = schema.json()
-        except requests.ConnectionError or requests.HTTPError:
-            raise Exception("Could not fetch schema from {}".format(settings.SCHEMA_URL))
-
+        if not isfile(join(settings.BASE_DIR, settings.SCHEMA_PATH)):
+            try:
+                schema = requests.get(settings.SCHEMA_URL)
+                schema.raise_for_status()
+                with open(join(settings.BASE_DIR, settings.SCHEMA_PATH), 'w') as sf:
+                    json.dump(schema.json(), sf)
+            except requests.ConnectionError or requests.HTTPError:
+                raise Exception("Could not fetch schema from {}".format(settings.SCHEMA_URL))
+        with open(join(settings.BASE_DIR, settings.SCHEMA_PATH), 'r') as sf:
+            self.schema = json.load(sf)
 
     @silk_profile()
     def apply_single_source_merges(self, transformed, match, source):
         """Replaces fields that have only one possible source and match the
            incoming object's source."""
-        for field in self.single_source_fields[source]:
-            match[field] = transformed.get(field)
+        if hasattr(self, 'single_source_fields'):
+            for field in self.single_source_fields[source]:
+                match[field] = transformed.get(field)
         return match
 
     @silk_profile()
@@ -59,13 +56,14 @@ class BaseMerger:
         """Merge multi-source fields by removing matching nested objects and then
            adding new nested objects. Match lists are traversed in reverse order
            so that all list items are acted on."""
-        for field in self.multi_source_fields:
-            if match.get(field):
-                for field_obj in reversed(match[field]):
-                    if field_obj.get('source') == source:
-                        match[field].remove(field_obj)
-                for f in transformed[field]:
-                    match[field].append(f)
+        if hasattr(self, 'multi_source_fields'):
+            for field in self.multi_source_fields:
+                if match.get(field):
+                    for field_obj in reversed(match[field]):
+                        if field_obj.get('source') == source:
+                            match[field].remove(field_obj)
+                    for f in transformed[field]:
+                        match[field].append(f)
         return match
 
     @silk_profile()
@@ -149,7 +147,6 @@ class CollectionMerger(BaseMerger):
     object_type = 'collection'
     single_source_fields = {"archivesspace": [
         "title", "level", "dates", "creators", "languages", "extents", "notes", "agents", "terms", "rights_statements"]}
-    multi_source_fields = []
 
 
 class ObjectMerger(BaseMerger):
@@ -157,11 +154,9 @@ class ObjectMerger(BaseMerger):
     object_type = 'object'
     single_source_fields = {"archivesspace": [
         "title", "dates", "languages", "extents", "notes", "agents", "terms", "rights_statements"]}
-    multi_source_fields = []
 
 
 class TermMerger(BaseMerger):
     """Merges transformed Agent data."""
     object_type = 'term'
     single_source_fields = {"archivesspace": ["title", "term_type"]}
-    multi_source_fields = []

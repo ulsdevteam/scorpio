@@ -36,12 +36,14 @@ class TestMergerToIndex(TestCase):
         merger = MERGERS[merged_data['type']]
         for identifier in transformed_data['external_identifiers']:
             source = identifier['source']
-            for field in merger.single_source_fields[source]:
-                self.assertEqual(transformed_data.get(field), merged_data.get(field))
-            for field in merger.multi_source_fields:
-                transformed_objs = [obj for obj in transformed_data.get(field) if obj['source'] == source]
-                merged_objs = [obj for obj in merged_data.get(field) if obj['source'] == source]
-                self.assertEqual(transformed_objs, merged_objs)
+            if hasattr(merger, 'single_source_fields'):
+                for field in merger.single_source_fields[source]:
+                    self.assertEqual(transformed_data.get(field), merged_data.get(field))
+            if hasattr(merger, 'multi_source_fields'):
+                for field in merger.multi_source_fields:
+                    transformed_objs = [obj for obj in transformed_data.get(field) if obj['source'] == source]
+                    merged_objs = [obj for obj in merged_data.get(field) if obj['source'] == source]
+                    self.assertEqual(transformed_objs, merged_objs)
 
     def merge_objects(self):
         for dir in os.listdir(os.path.join(settings.BASE_DIR, 'fixtures', 'queued')):
