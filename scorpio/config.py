@@ -10,7 +10,8 @@ DATABASES = {
 
 ELASTICSEARCH = {
     'default': {
-        'hosts': ['elasticsearch:9200']
+        'hosts': ['elasticsearch:9200'],
+        'index': 'default'
     },
 }
 

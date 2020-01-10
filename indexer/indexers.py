@@ -1,4 +1,4 @@
-from elasticsearch_dsl import connections
+from elasticsearch_dsl import connections, Index
 from elasticsearch.helpers import streaming_bulk
 from rac_es.documents import Agent, Collection, Object, Term
 from silk.profiling.profiler import silk_profile
@@ -24,7 +24,11 @@ class Indexer:
     documents from the index.
     """
     def __init__(self):
-        self.connection = connections.create_connection(hosts=settings.ELASTICSEARCH['default']['hosts'], timeout=60)
+        self.connection = connections.create_connection(
+            hosts=settings.ELASTICSEARCH['default']['hosts'], timeout=60
+        )
+        if not Index(settings.ELASTICSEARCH['default']['index']).exists():
+            BaseDescriptionComponent.init()
 
     def prepare_data(self, object_type, data):
         doc = OBJECT_TYPES[object_type]()
