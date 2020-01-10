@@ -70,7 +70,7 @@ class BaseMerger:
 
     @silk_profile()
     def apply_tree_merges(self, transformed, match, transformed_source):
-        if match.get('object_type') in ['collection', 'object']:
+        if match.get('type') in ['collection', 'object']:
             if transformed_source == 'cartographer':
                 ancestors = [a for a in match.get('ancestors') if a.get('source') != 'cartographer']
                 ancestors.insert(0, transformed.get('ancestors'))
@@ -78,7 +78,7 @@ class BaseMerger:
                 ancestors = [a for a in match.get('ancestors') if a.get('source') != 'archivespace']
                 ancestors += transformed.get('ancestors')
             match['ancestors'] = ancestors
-        if match.get('object_type') == 'collection':
+        if match.get('type') == 'collection':
             if len(transformed.get('children')):
                 match['children'] = transformed.get('children')
         return match

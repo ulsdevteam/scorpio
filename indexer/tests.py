@@ -33,7 +33,7 @@ class TestMergerToIndex(TestCase):
             "object": ObjectMerger,
             "term": TermMerger
         }
-        merger = MERGERS[merged_data['object_type']]
+        merger = MERGERS[merged_data['type']]
         for identifier in transformed_data['external_identifiers']:
             source = identifier['source']
             for field in merger.single_source_fields[source]:
@@ -50,6 +50,7 @@ class TestMergerToIndex(TestCase):
                     with open(os.path.join(settings.BASE_DIR, 'fixtures', 'queued', dir, f), 'r') as jf:
                         instance = json.load(jf)
                         request = self.client.post(reverse("merge"), instance, format='json')
+                        print(request.data)
                         self.assertEqual(request.status_code, 200)
                         merged = DataObject.objects.get(es_id=request.data['objects'][0])
                         self.check_merged_values(instance, merged.data)

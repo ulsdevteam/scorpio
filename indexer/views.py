@@ -45,7 +45,7 @@ class MergeView(APIView):
         if not request.data:
             return Response(prepare_response("No data submitted to merge",), status=500)
         try:
-            merger = MERGERS[request.data['object_type']]()
+            merger = MERGERS[request.data['type']]()
             resp = merger.merge(request.data)
             return Response(prepare_response(resp), status=200)
         except Exception as e:
