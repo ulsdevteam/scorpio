@@ -60,7 +60,7 @@ class Indexer:
         deleted_ids = []
         matches = DataObject.find_matches(source, identifier)
         for obj in matches:
-            doc_cls = TYPES[obj.object_type]
+            doc_cls = OBJECT_TYPES[obj.object_type]
             document = doc_cls.get(id=obj.es_id)
             document.delete(refresh=True)
             deleted_ids.append(obj.es_id)
