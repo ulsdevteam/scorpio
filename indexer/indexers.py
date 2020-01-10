@@ -49,7 +49,7 @@ class Indexer:
                     o.indexed = True
                     o.save()
                     indexed_ids.append(result["_id"])
-        return ("Indexing complete", indexed_ids)
+        return "Indexing complete", indexed_ids
 
     @silk_profile()
     def delete(self, source, identifier, **kwargs):
@@ -65,4 +65,4 @@ class Indexer:
             document.delete(refresh=True)
             deleted_ids.append(obj.es_id)
             obj.delete()
-        return ("Deletion complete", deleted_ids)
+        return "Deletion complete", deleted_ids
