@@ -30,13 +30,16 @@ class BaseMerger:
     def __init__(self):
         if not self.object_type:
             raise Exception("Missing required `object_type` property on self")
-        try:
-            schema = requests.get(settings.SCHEMA_URL)
-            schema.raise_for_status()
-            self.schema = schema.json()
-        except requests.ConnectionError or requests.HTTPError:
-            raise Exception("Could not fetch schema from {}".format(settings.SCHEMA_URL))
-
+        if not os.isfile(os.path.join(settings.BASE_DIR, settings.SCHEMA_PATH)):
+            try:
+                schema = requests.get(settings.SCHEMA_URL)
+                schema.raise_for_status()
+                with open(os.path.join(settings.BASE_DIR, settings.SCHEMA_PATH), 'w') as sf:
+                    json.dump(schema.json(), sf)
+            except requests.ConnectionError or requests.HTTPError:
+                raise Exception("Could not fetch schema from {}".format(settings.SCHEMA_URL))
+        with open(os.path.join(settings.BASE_DIR, settings.SCHEMA_PATH), 'r') as sf:
+            self.schema = json.load(sf)
 
     @silk_profile()
     def apply_single_source_merges(self, transformed, match, source):
