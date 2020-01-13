@@ -8,7 +8,7 @@ DateTime==4.3
 Django==2.2.8
 django-elasticsearch-dsl==7.1.1
 django-elasticsearch-dsl-drf==0.20.5
-django-nine==0.2.2
+django-nine==0.2.3
 django-silk==3.0.4
 djangorestframework==3.11.0
 elasticsearch==7.1.0
