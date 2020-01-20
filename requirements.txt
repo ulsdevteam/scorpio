@@ -11,7 +11,7 @@ django-elasticsearch-dsl-drf==0.20.5
 django-nine==0.2.3
 django-silk==3.0.4
 djangorestframework==3.11.0
-elasticsearch==7.1.0
+elasticsearch==7.5.1
 elasticsearch-dsl==7.1.0
 gitdb2==2.0.6
 GitPython==3.0.5
