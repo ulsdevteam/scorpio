@@ -1,6 +1,6 @@
 from elasticsearch_dsl import connections, Index
 from elasticsearch.helpers import streaming_bulk
-from rac_es.documents import Agent, Collection, Object, Term
+from rac_es.documents import Agent, Collection, Object, Term, BaseDescriptionComponent
 from silk.profiling.profiler import silk_profile
 
 from .models import DataObject
