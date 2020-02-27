@@ -59,6 +59,7 @@ class TestMergerToIndex(TestCase):
         self.assertEqual(self.object_len, len(DataObject.objects.all()))
 
     def index_objects(self):
+        BaseDescriptionComponent._index.delete()  # Delete index to ensure view recreates it properly
         request = self.client.post(reverse("index-add"))
         self.assertEqual(request.status_code, 200)
         self.assertEqual(self.object_len, request.data['count'])
