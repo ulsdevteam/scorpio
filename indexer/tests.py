@@ -1,5 +1,5 @@
-import os
 import json
+import os
 
 from django.test import TestCase
 from django.urls import reverse
@@ -7,10 +7,10 @@ from elasticsearch.exceptions import NotFoundError
 from elasticsearch_dsl import connections
 from rac_es.documents import BaseDescriptionComponent
 from rest_framework.test import APIClient
+from scorpio import settings
 
 from .mergers import AgentMerger, CollectionMerger, ObjectMerger, TermMerger
 from .models import DataObject
-from scorpio import settings
 
 
 class TestMergerToIndex(TestCase):

@@ -18,8 +18,8 @@ from django.urls import include, path, re_path
 from rest_framework.schemas import get_schema_view
 
 schema_view = get_schema_view(
-      title="Scorpio API",
-      description="Endpoints for Scorpio microservice application."
+    title="Scorpio API",
+    description="Endpoints for Scorpio microservice application."
 )
 
 urlpatterns = [

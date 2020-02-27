@@ -13,19 +13,18 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
 from django.urls import include, path
 from rest_framework.schemas import get_schema_view
 
-from .views import DataObjectViewSet, IndexAddView, IndexDeleteView, MergeView
 from .routers import ScorpioRouter
+from .views import DataObjectViewSet, IndexAddView, IndexDeleteView, MergeView
 
 router = ScorpioRouter()
 router.register(r'objects', DataObjectViewSet, basename='objects')
 schema_view = get_schema_view(
-      title="Scorpio API",
-      description="Endpoints for Scorpio microservice application.",
-      urlconf='indexer.urls'
+    title="Scorpio API",
+    description="Endpoints for Scorpio microservice application.",
+    urlconf='indexer.urls'
 )
 
 urlpatterns = [

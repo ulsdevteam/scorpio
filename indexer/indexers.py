@@ -1,11 +1,11 @@
-from elasticsearch_dsl import connections, Index
 from elasticsearch.helpers import streaming_bulk
-from rac_es.documents import Agent, Collection, Object, Term, BaseDescriptionComponent
+from elasticsearch_dsl import Index, connections
+from rac_es.documents import (Agent, BaseDescriptionComponent, Collection,
+                              Object, Term)
+from scorpio import settings
 from silk.profiling.profiler import silk_profile
 
 from .models import DataObject
-
-from scorpio import settings
 
 OBJECT_TYPES = {
     "agent": Agent,
@@ -15,7 +15,8 @@ OBJECT_TYPES = {
 }
 
 
-class ScorpioIndexError(Exception): pass
+class ScorpioIndexError(Exception):
+    pass
 
 
 class Indexer:
@@ -23,6 +24,7 @@ class Indexer:
     Main indexer class, which adds merged documents to the index or removes
     documents from the index.
     """
+
     def __init__(self):
         self.connection = connections.create_connection(
             hosts=settings.ELASTICSEARCH['default']['hosts'], timeout=60
