@@ -21,7 +21,7 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 script:
-  - docker-compose exec pisces-web pre-commit run --all-files --show-diff-on-failure
+  - docker-compose exec scorpio-web pre-commit run --all-files --show-diff-on-failure
   - docker-compose exec scorpio-web coverage run manage.py test
 after_script:
   - docker-compose exec scorpio-web coverage xml
