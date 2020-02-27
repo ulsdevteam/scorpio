@@ -29,17 +29,22 @@ Or, if you want to remove all data
 
 ## Services
 
-Coming soon...
+scorpio has three services:
+- Merge: merges DataObjects it receives by matching them with existing DataObjects.
+- Add to index: Adds new or updated DataObjects to the index.
+- Delete from index: Removes deleted DataObjects from its index
 
 
 ### Routes
 
-Coming soon...
-
-
-### ArchivesSpace configuration
-
-Coming soon...
+| Method | URL | Parameters | Response  | Behavior  |
+|--------|-----|---|---|---|
+|GET, PUT, POST, DELETE|/objects||200|Returns data about DataObjects|
+|POST|/index/add/|`clean` - whether or not to perform a clean index (i.e. index everything)|200|Adds new data to index|
+|POST|/index/delete/|`source` - a source of the DataObject</br>`identifier` - the source's identifier for the DataObject|200|Deletes data from index|
+|POST|/merge/||200|Merges DataObjects|
+|GET|/status/||200|Return the status of the service|
+|GET|/schema/||200|Returns the OpenAPI schema for this service|
 
 
 ## License
