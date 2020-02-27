@@ -1,6 +1,4 @@
-from asterism.views import prepare_response
-from rest_framework.response import Response
-from rest_framework.views import APIView
+from asterism.views import BaseServiceView
 from rest_framework.viewsets import ModelViewSet
 
 from .indexers import Indexer
@@ -16,18 +14,14 @@ MERGERS = {
 }
 
 
-class IndexView(APIView):
+class IndexView(BaseServiceView):
     """Add data to or delete data from an index"""
 
-    def post(self, request, format=None):
+    def get_service_response(self, request):
         clean = True if request.GET.get('clean') else False
         source = request.data.get('source')
         identifier = request.data.get('identifier')
-        try:
-            resp = getattr(Indexer(), self.method)(clean=clean, source=source, identifier=identifier)
-            return Response(prepare_response(resp), status=200)
-        except Exception as e:
-            return Response(prepare_response(e), status=500)
+        return getattr(Indexer(), self.method)(clean=clean, source=source, identifier=identifier)
 
 
 class IndexAddView(IndexView):
@@ -40,18 +34,14 @@ class IndexDeleteView(IndexView):
     method = 'delete'
 
 
-class MergeView(APIView):
+class MergeView(BaseServiceView):
     """Merges transformed data objects."""
 
-    def post(self, request, format=None):
+    def get_service_response(self, request):
         if not request.data:
-            return Response(prepare_response("No data submitted to merge",), status=500)
-        try:
-            merger = MERGERS[request.data['type']]()
-            resp = merger.merge(request.data)
-            return Response(prepare_response(resp), status=200)
-        except Exception as e:
-            return Response(prepare_response(e), status=500)
+            raise Exception("No data submitted to merge")
+        merger = MERGERS[request.data['type']]()
+        return merger.merge(request.data)
 
 
 class DataObjectViewSet(ModelViewSet):
