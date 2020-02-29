@@ -103,9 +103,11 @@ class BaseMerger:
         try:
             merged_ids = []
             for identifier in object['external_identifiers']:
-                matches = DataObject.find_matches(identifier['source'],
-                                                  identifier['identifier'],
-                                                  initial_queryset=DataObject.objects.filter(object_type=self.object_type))
+                matches = DataObject.find_matches(
+                    identifier['source'],
+                    identifier['identifier'],
+                    initial_queryset=DataObject.objects.filter(
+                        object_type=self.object_type))
                 if len(matches):
                     for match in matches:
                         single_merge = self.apply_single_source_merges(
@@ -123,14 +125,15 @@ class BaseMerger:
                             merged_ids.append(match.es_id)
                 else:
                     es_id = generate_identifier()
-                    DataObject.objects.create(es_id=es_id,
-                                              data=object,
-                                              object_type=self.object_type,
-                                              indexed=False)
+                    DataObject.objects.create(
+                        es_id=es_id,
+                        data=object,
+                        object_type=self.object_type,
+                        indexed=False)
                     merged_ids.append(es_id)
             return "Object merged", merged_ids
         except Exception as e:
-            raise MergeError("Error merging: {}".format(e), match.es_id)
+            raise MergeError("Error merging {}: {}".format(identifier["identifier"], e))
 
 
 class AgentMerger(BaseMerger):
