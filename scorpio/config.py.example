@@ -16,7 +16,7 @@ ELASTICSEARCH = {
 }
 
 PISCES = {
-  "baseurl": "http://pisces-web:8007/"
+    "baseurl": "http://pisces-web:8007/"
 }
 
 STATIC_URL = '/indexer/static/'
