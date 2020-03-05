@@ -14,16 +14,24 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import include, path, re_path
+from django.urls import include, re_path
+from indexer.views import IndexAddView, IndexDeleteView
 from rest_framework.schemas import get_schema_view
 
+from .routers import ScorpioRouter
+
+router = ScorpioRouter()
 schema_view = get_schema_view(
     title="Scorpio API",
     description="Endpoints for Scorpio microservice application."
 )
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('indexer.urls')),
+    re_path(r'^admin/', admin.site.urls),
+    re_path(r'^index/add/', IndexAddView.as_view(), name='index-add'),
+    re_path(r'^index/delete/', IndexDeleteView.as_view(), name='index-delete'),
+    re_path(r'^status/', include('health_check.api.urls')),
+    re_path(r'^schema/', schema_view, name='schema'),
     re_path(r'^silk/', include('silk.urls', namespace='silk')),
+    re_path(r'^', include(router.urls)),
 ]

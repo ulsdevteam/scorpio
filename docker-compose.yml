@@ -6,14 +6,14 @@ services:
     volumes:
       - scorpiodbvolume:/var/lib/postgresql/data/
     networks:
-      - microservices
+      - pisces_default
   scorpio-web:
     build: .
     entrypoint: /code/entrypoint.sh
     volumes:
       - .:/code
     networks:
-      - microservices
+      - pisces_default
     ports:
       - "8008:8008"
     depends_on:
@@ -39,7 +39,7 @@ services:
     volumes:
       - elasticsearch:/usr/share/elasticsearch/data
     networks:
-      - microservices
+      - pisces_default
     ports:
       - 9200:9200
 
@@ -48,4 +48,5 @@ volumes:
   elasticsearch:
 
 networks:
-  microservices:
+  pisces_default:
+    external: true

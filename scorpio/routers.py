@@ -8,7 +8,6 @@ class ScorpioAPIRootView(APIRootView):
     def get(self, request, *args, **kwargs):
         self.api_root_dict.update([('index/add', 'index-add'),
                                    ('index/delete', 'index-delete'),
-                                   ('merge', 'merge'),
                                    ('schema', 'schema')])
         return super(ScorpioAPIRootView, self).get(request, *args, **kwargs)
 
