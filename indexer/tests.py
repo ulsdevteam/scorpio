@@ -30,16 +30,16 @@ class TestMergerToIndex(TestCase):
     def index_objects(self):
         with indexer_vcr.use_cassette("index-add.json"):
             request = self.client.post(reverse("index-add"))
-            self.assertEqual(request.status_code, 200, "Index error: {}".format(request.data))
+            self.assertEqual(request.status_code, 200, "Index add error: {}".format(request.data))
             # TODO: test counts
+            # TODO: test clean
 
     def delete_objects(self):
         for hit in BaseDescriptionComponent.search().execute():
-            for id_obj in hit["external_identifiers"]:
-                request = self.client.post(reverse("index-delete"), {"source": id_obj['source'], "identifier": id_obj['identifier']})
-                self.assertEqual(request.status_code, 200)
+            request = self.client.post(reverse("index-delete"), {"identifier": hit.meta.id})
+            self.assertEqual(request.status_code, 200, "Index delete error: {}".format(request.data))
         self.assertEqual(0, BaseDescriptionComponent.search().count())
 
     def test_process(self):
         self.index_objects()
-        # self.delete_objects()
+        self.delete_objects()

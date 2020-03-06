@@ -62,14 +62,11 @@ class Indexer:
         return "Indexing complete", indexed_ids
 
     @silk_profile()
-    def delete(self, source, identifier, **kwargs):
+    def delete(self, identifier, **kwargs):
         """
         Deletes data from index. Since this will be a less-regular occurrence,
         this is an atomic (not bulk) operation.
         """
-        deleted_ids = []
-        matches = BaseDescriptionComponent.search(source_identifier="{}_{}".format(source, identifier))
-        for obj in matches:
-            obj.delete(refresh=True)
-            deleted_ids.append(obj.es_id)
-        return "Deletion complete", deleted_ids
+        obj = BaseDescriptionComponent.get(id=identifier)
+        obj.delete(refresh=True)
+        return "Deletion complete", identifier
