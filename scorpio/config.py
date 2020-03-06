@@ -15,11 +15,12 @@ ELASTICSEARCH = {
     },
 }
 
+PISCES = {
+    "baseurl": "http://pisces-web:8007/"
+}
+
 STATIC_URL = '/indexer/static/'
 
 ALLOWED_HOSTS = ['localhost', 'scorpio-web']
 
 SILKY_PYTHON_PROFILER = True
-
-SCHEMA_URL = 'https://raw.githubusercontent.com/RockefellerArchiveCenter/rac-data-model/master/schema.json'
-SCHEMA_PATH = 'schema.json'
