@@ -1,4 +1,3 @@
-import requests
 from elasticsearch.helpers import streaming_bulk
 from elasticsearch_dsl import Index, connections
 from electronbonder.client import ElectronBond
@@ -13,17 +12,6 @@ OBJECT_TYPES = {
     "object": Object,
     "term": Term
 }
-
-
-def update_pisces(identifier, action):
-    try:
-        resp = requests.post("/".join([
-            settings.PISCES["baseurl"].rstrip("/"),
-            settings.PISCES["post_index_path"].lstrip("/")]),
-            json={"identifier": identifier, "action": action})
-        resp.raise_for_status()
-    except Exception as e:
-        print("Error sending request to Pisces: {}".format(e))
 
 
 class ScorpioIndexError(Exception):
@@ -57,18 +45,18 @@ class Indexer:
         return self.pisces_client.get_paged(url)
 
     @silk_profile()
-    def add(self, object_type=None, clean=False, **kwargs):
+    def add(self, clean=False, **kwargs):
         """Adds documents to index. Uses ES bulk indexing."""
         indexed_ids = []
-        object_types = [object_type] if object_type else OBJECT_TYPES
-        for object_type in object_types:
+        for object_type in OBJECT_TYPES:
             objects = self.fetch_objects(object_type, clean)
             for ok, result in streaming_bulk(self.connection, (self.prepare_data(object_type, obj) for obj in objects), refresh=True):
                 action, result = result.popitem()
                 if not ok:
                     raise ScorpioIndexError("Failed to {} document {}: {}".format(action, result["_id"], result))
                 else:
-                    update_pisces(result["_id"], "indexed")
+                    # TODO: Update status in Pisces (obj is not available here, but result is.
+                    # Unfortunately that only has the elasticsearch id)
                     print(result)
                     indexed_ids.append(result["_id"])
         return "Indexing complete", indexed_ids
@@ -81,5 +69,4 @@ class Indexer:
         """
         obj = BaseDescriptionComponent.get(id=identifier)
         obj.delete(refresh=True)
-        update_pisces(identifier, "deleted")
         return "Deletion complete", identifier
