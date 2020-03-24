@@ -22,8 +22,8 @@ def update_pisces(identifier, action):
             settings.PISCES["post_index_path"].lstrip("/")]),
             json={"identifier": identifier, "action": action})
         resp.raise_for_status()
-    except Exception as e:
-        print("Error sending request to Pisces: {}".format(e))
+    except requests.HTTPError as e:
+        print("Error sending request to Pisces: {}".format(e.response.json()["detail"]))
 
 
 class ScorpioIndexError(Exception):

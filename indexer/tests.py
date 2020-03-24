@@ -3,7 +3,8 @@ from django.test import TestCase
 from django.urls import reverse
 from elasticsearch.exceptions import NotFoundError
 from elasticsearch_dsl import connections
-from rac_es.documents import BaseDescriptionComponent
+from rac_es.documents import (Agent, BaseDescriptionComponent, Collection,
+                              Object, Term)
 from rest_framework.test import APIClient
 from scorpio import settings
 
@@ -28,17 +29,28 @@ class TestMergerToIndex(TestCase):
             pass
 
     def index_objects(self):
-        with indexer_vcr.use_cassette("index-add.json"):
-            request = self.client.post(reverse("index-add"))
-            self.assertEqual(request.status_code, 200, "Index add error: {}".format(request.data))
-            # TODO: test counts
-            # TODO: test clean
+        """Tests adding objects to index."""
+        for clean in [True, False]:
+            for object_type, document in [
+                    ("agent", Agent), ("collection", Collection),
+                    ("object", Object), ("term", Term), ("", None)]:
+                with indexer_vcr.use_cassette(
+                        "index-add-{}-{}.json".format(
+                            object_type, "clean" if clean else "incremental")):
+                    request = self.client.post(
+                        "{}?object_type={}&clean={}".format(
+                            reverse("index-add"), object_type, clean))
+                    self.assertEqual(
+                        request.status_code, 200,
+                        "Index add error: {}".format(request.data))
 
     def delete_objects(self):
-        for hit in BaseDescriptionComponent.search().execute():
-            request = self.client.post(reverse("index-delete"), {"identifier": hit.meta.id})
-            self.assertEqual(request.status_code, 200, "Index delete error: {}".format(request.data))
-        self.assertEqual(0, BaseDescriptionComponent.search().count())
+        """Tests object deletion from index."""
+        with indexer_vcr.use_cassette("index-delete"):
+            for hit in BaseDescriptionComponent.search().execute():
+                request = self.client.post(reverse("index-delete"), {"identifier": hit.meta.id})
+                self.assertEqual(request.status_code, 200, "Index delete error: {}".format(request.data))
+            self.assertEqual(0, BaseDescriptionComponent.search().count())
 
     def test_process(self):
         self.index_objects()
