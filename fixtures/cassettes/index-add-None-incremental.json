@@ -1,0 +1,217 @@
+{
+    "version": 1,
+    "interactions": [
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://pisces-web:8007/objects/agents/?clean=False&page=1",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Content-Length": [
+                        "52"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Thu, 26 Mar 2020 14:18:58 GMT"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":0,\"next\":null,\"previous\":null,\"results\":[]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://pisces-web:8007/objects/collections/?clean=False&page=1",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Content-Length": [
+                        "52"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Thu, 26 Mar 2020 14:18:59 GMT"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":0,\"next\":null,\"previous\":null,\"results\":[]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://pisces-web:8007/objects/objects/?clean=False&page=1",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Content-Length": [
+                        "52"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Thu, 26 Mar 2020 14:18:59 GMT"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":0,\"next\":null,\"previous\":null,\"results\":[]}"
+                }
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "uri": "http://pisces-web:8007/objects/terms/?clean=False&page=1",
+                "body": null,
+                "headers": {
+                    "User-Agent": [
+                        "ElectronBond/0.1"
+                    ],
+                    "Accept-Encoding": [
+                        "gzip, deflate"
+                    ],
+                    "Accept": [
+                        "application/json"
+                    ],
+                    "Connection": [
+                        "keep-alive"
+                    ]
+                }
+            },
+            "response": {
+                "status": {
+                    "code": 200,
+                    "message": "OK"
+                },
+                "headers": {
+                    "Content-Type": [
+                        "application/json"
+                    ],
+                    "X-Frame-Options": [
+                        "SAMEORIGIN"
+                    ],
+                    "Server": [
+                        "WSGIServer/0.2 CPython/3.6.5"
+                    ],
+                    "Content-Length": [
+                        "52"
+                    ],
+                    "Allow": [
+                        "GET, HEAD, OPTIONS"
+                    ],
+                    "Date": [
+                        "Thu, 26 Mar 2020 14:18:59 GMT"
+                    ],
+                    "Vary": [
+                        "Accept, Cookie"
+                    ]
+                },
+                "body": {
+                    "string": "{\"count\":0,\"next\":null,\"previous\":null,\"results\":[]}"
+                }
+            }
+        }
+    ]
+}

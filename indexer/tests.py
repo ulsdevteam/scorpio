@@ -3,8 +3,7 @@ from django.test import TestCase
 from django.urls import reverse
 from elasticsearch.exceptions import NotFoundError
 from elasticsearch_dsl import connections
-from rac_es.documents import (Agent, BaseDescriptionComponent, Collection,
-                              Object, Term)
+from rac_es.documents import BaseDescriptionComponent
 from rest_framework.test import APIClient
 from scorpio import settings
 
@@ -30,16 +29,13 @@ class TestMergerToIndex(TestCase):
 
     def index_objects(self):
         """Tests adding objects to index."""
-        for clean in [True, False]:
-            for object_type, document in [
-                    ("agent", Agent), ("collection", Collection),
-                    ("object", Object), ("term", Term), ("", None)]:
+        for clean in [False, True]:
+            for object_type in ["agent", "collection", "object", "term", None]:
                 with indexer_vcr.use_cassette(
                         "index-add-{}-{}.json".format(
                             object_type, "clean" if clean else "incremental")):
-                    request = self.client.post(
-                        "{}?object_type={}&clean={}".format(
-                            reverse("index-add"), object_type, clean))
+                    data = {"object_type": object_type, "clean": clean} if object_type else {"clean": clean}
+                    request = self.client.post(reverse("index-add"), data=data)
                     self.assertEqual(
                         request.status_code, 200,
                         "Index add error: {}".format(request.data))
@@ -47,7 +43,7 @@ class TestMergerToIndex(TestCase):
     def delete_objects(self):
         """Tests object deletion from index."""
         with indexer_vcr.use_cassette("index-delete"):
-            for hit in BaseDescriptionComponent.search().execute():
+            for hit in BaseDescriptionComponent.search().scan():
                 request = self.client.post(reverse("index-delete"), {"identifier": hit.meta.id})
                 self.assertEqual(request.status_code, 200, "Index delete error: {}".format(request.data))
             self.assertEqual(0, BaseDescriptionComponent.search().count())
