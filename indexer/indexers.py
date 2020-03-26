@@ -53,8 +53,8 @@ class Indexer:
     @silk_profile()
     def fetch_objects(self, object_type, clean):
         """Returns data to be indexed."""
-        url = "objects/{}s/?clean={}".format(object_type, clean)
-        return self.pisces_client.get_paged(url)
+        url = "objects/{}s/".format(object_type)
+        return self.pisces_client.get_paged(url, params={"clean": clean})
 
     @silk_profile()
     def add(self, object_type=None, clean=False, **kwargs):
