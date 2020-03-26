@@ -7,9 +7,12 @@ class IndexView(BaseServiceView):
     """Add data to or delete data from an index"""
 
     def get_service_response(self, request):
-        clean = True if request.GET.get('clean') else False
+        clean = request.data.get('clean')
         identifier = request.data.get('identifier')
-        return getattr(Indexer(), self.method)(clean=clean, identifier=identifier)
+        object_type = request.data.get('object_type')
+        return getattr(
+            Indexer(), self.method)(
+                clean=clean, object_type=object_type, identifier=identifier)
 
 
 class IndexAddView(IndexView):

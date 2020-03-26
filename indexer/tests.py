@@ -28,17 +28,25 @@ class TestMergerToIndex(TestCase):
             pass
 
     def index_objects(self):
-        with indexer_vcr.use_cassette("index-add.json"):
-            request = self.client.post(reverse("index-add"))
-            self.assertEqual(request.status_code, 200, "Index add error: {}".format(request.data))
-            # TODO: test counts
-            # TODO: test clean
+        """Tests adding objects to index."""
+        for clean in [False, True]:
+            for object_type in ["agent", "collection", "object", "term", None]:
+                with indexer_vcr.use_cassette(
+                        "index-add-{}-{}.json".format(
+                            object_type, "clean" if clean else "incremental")):
+                    data = {"object_type": object_type, "clean": clean} if object_type else {"clean": clean}
+                    request = self.client.post(reverse("index-add"), data=data)
+                    self.assertEqual(
+                        request.status_code, 200,
+                        "Index add error: {}".format(request.data))
 
     def delete_objects(self):
-        for hit in BaseDescriptionComponent.search().execute():
-            request = self.client.post(reverse("index-delete"), {"identifier": hit.meta.id})
-            self.assertEqual(request.status_code, 200, "Index delete error: {}".format(request.data))
-        self.assertEqual(0, BaseDescriptionComponent.search().count())
+        """Tests object deletion from index."""
+        with indexer_vcr.use_cassette("index-delete"):
+            for hit in BaseDescriptionComponent.search().scan():
+                request = self.client.post(reverse("index-delete"), {"identifier": hit.meta.id})
+                self.assertEqual(request.status_code, 200, "Index delete error: {}".format(request.data))
+            self.assertEqual(0, BaseDescriptionComponent.search().count())
 
     def test_process(self):
         self.index_objects()
