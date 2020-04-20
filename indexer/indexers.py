@@ -87,6 +87,6 @@ class Indexer:
     def reset(self, **kwargs):
         try:
             BaseDescriptionComponent._index.delete()
-            return "Index deleted."
+            return "Index deleted.", BaseDescriptionComponent._index._name
         except NotFoundError:
             return "Index does not exist."
