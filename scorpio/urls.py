@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, re_path
-from indexer.views import IndexAddView, IndexDeleteView
+from indexer.views import IndexAddView, IndexDeleteView, IndexResetView
 from rest_framework.schemas import get_schema_view
 
 from .routers import ScorpioRouter
@@ -30,6 +30,7 @@ urlpatterns = [
     re_path(r'^admin/', admin.site.urls),
     re_path(r'^index/add/', IndexAddView.as_view(), name='index-add'),
     re_path(r'^index/delete/', IndexDeleteView.as_view(), name='index-delete'),
+    re_path(r'^index/reset/', IndexResetView.as_view(), name='index-reset'),
     re_path(r'^status/', include('health_check.api.urls')),
     re_path(r'^schema/', schema_view, name='schema'),
     re_path(r'^silk/', include('silk.urls', namespace='silk')),
