@@ -1,4 +1,5 @@
 import requests
+from elasticsearch.exceptions import NotFoundError
 from elasticsearch.helpers import streaming_bulk
 from elasticsearch_dsl import Index, connections
 from electronbonder.client import ElectronBond
@@ -82,3 +83,10 @@ class Indexer:
         obj.delete(refresh=True)
         update_pisces(identifier, "deleted")
         return "Deletion complete", identifier
+
+    def reset(self, **kwargs):
+        try:
+            BaseDescriptionComponent._index.delete()
+            return "Index deleted."
+        except NotFoundError:
+            return "Index does not exist."
