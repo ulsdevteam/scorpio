@@ -8,6 +8,7 @@ from .indexers import Indexer
 class BaseCron(CronJobBase):
     RUN_EVERY_MINS = 0
     schedule = Schedule(run_every_mins=RUN_EVERY_MINS)
+    clean = False
 
     def do(self):
         start = datetime.now()
@@ -19,9 +20,17 @@ class BaseCron(CronJobBase):
         print("{} index of {} records complete at {}\n".format(action, self.object_type, end))
 
 
+class IndexAll(BaseCron):
+    object_type = None
+
+
+class IndexAllClean(BaseCron):
+    object_type = None
+    clean = True
+
+
 class IndexAgents(BaseCron):
     object_type = "agent"
-    clean = False
 
 
 class IndexAgentsClean(BaseCron):
@@ -31,7 +40,6 @@ class IndexAgentsClean(BaseCron):
 
 class IndexCollections(BaseCron):
     object_type = "collection"
-    clean = False
 
 
 class IndexCollectionsClean(BaseCron):
@@ -41,7 +49,6 @@ class IndexCollectionsClean(BaseCron):
 
 class IndexObjects(BaseCron):
     object_type = "object"
-    clean = False
 
 
 class IndexObjectsClean(BaseCron):
@@ -51,7 +58,6 @@ class IndexObjectsClean(BaseCron):
 
 class IndexTerms(BaseCron):
     object_type = "term"
-    clean = False
 
 
 class IndexTermsClean(BaseCron):

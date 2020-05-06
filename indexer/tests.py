@@ -7,9 +7,9 @@ from rac_es.documents import BaseDescriptionComponent
 from rest_framework.test import APIClient
 from scorpio import settings
 
-from .cron import (IndexAgents, IndexAgentsClean, IndexCollections,
-                   IndexCollectionsClean, IndexObjects, IndexObjectsClean,
-                   IndexTerms, IndexTermsClean)
+from .cron import (IndexAgents, IndexAgentsClean, IndexAll, IndexAllClean,
+                   IndexCollections, IndexCollectionsClean, IndexObjects,
+                   IndexObjectsClean, IndexTerms, IndexTermsClean)
 
 indexer_vcr = vcr.VCR(
     serializer="json",
@@ -33,7 +33,6 @@ class TestMergerToIndex(TestCase):
 
     def index_objects(self):
         """Tests adding objects to index."""
-        """Tests adding objects to index."""
         for cron, cassette in [
                 (IndexAgents, "index-add-agent-incremental.json"),
                 (IndexAgentsClean, "index-add-agent-clean.json"),
@@ -42,7 +41,9 @@ class TestMergerToIndex(TestCase):
                 (IndexObjects, "index-add-object-incremental.json"),
                 (IndexObjectsClean, "index-add-object-clean.json"),
                 (IndexTerms, "index-add-term-incremental.json"),
-                (IndexTermsClean, "index-add-term-clean.json")]:
+                (IndexTermsClean, "index-add-term-clean.json"),
+                (IndexAll, "index-add-None-incremental.json"),
+                (IndexAllClean, "index-add-None-clean.json")]:
             with indexer_vcr.use_cassette(cassette):
                 out = cron().do()
                 self.assertIsNot(False, out)
