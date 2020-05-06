@@ -7,6 +7,10 @@ from rac_es.documents import BaseDescriptionComponent
 from rest_framework.test import APIClient
 from scorpio import settings
 
+from .cron import (IndexAgents, IndexAgentsClean, IndexCollections,
+                   IndexCollectionsClean, IndexObjects, IndexObjectsClean,
+                   IndexTerms, IndexTermsClean)
+
 indexer_vcr = vcr.VCR(
     serializer="json",
     cassette_library_dir="fixtures/cassettes",
@@ -29,16 +33,19 @@ class TestMergerToIndex(TestCase):
 
     def index_objects(self):
         """Tests adding objects to index."""
-        for clean in [False, True]:
-            for object_type in ["agent", "collection", "object", "term", None]:
-                with indexer_vcr.use_cassette(
-                        "index-add-{}-{}.json".format(
-                            object_type, "clean" if clean else "incremental")):
-                    data = {"object_type": object_type, "clean": clean} if object_type else {"clean": clean}
-                    request = self.client.post(reverse("index-add"), data=data)
-                    self.assertEqual(
-                        request.status_code, 200,
-                        "Index add error: {}".format(request.data))
+        """Tests adding objects to index."""
+        for cron, cassette in [
+                (IndexAgents, "index-add-agent-incremental.json"),
+                (IndexAgentsClean, "index-add-agent-clean.json"),
+                (IndexCollections, "index-add-collection-incremental.json"),
+                (IndexCollectionsClean, "index-add-collection-clean.json"),
+                (IndexObjects, "index-add-object-incremental.json"),
+                (IndexObjectsClean, "index-add-object-clean.json"),
+                (IndexTerms, "index-add-term-incremental.json"),
+                (IndexTermsClean, "index-add-term-clean.json")]:
+            with indexer_vcr.use_cassette(cassette):
+                out = cron().do()
+                self.assertIsNot(False, out)
 
     def delete_objects(self):
         """Tests object deletion from index."""
