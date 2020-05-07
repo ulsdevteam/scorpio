@@ -10,14 +10,10 @@ class IndexView(BaseServiceView):
         clean = request.data.get("clean")
         identifier = request.data.get("identifier")
         object_type = request.data.get("object_type")
-        return getattr(
+        indexed = getattr(
             Indexer(), self.method)(
                 clean=clean, object_type=object_type, identifier=identifier)
-
-
-class IndexAddView(IndexView):
-    """Adds a data object to index."""
-    method = "add"
+        return "{} indexed".format(object_type), indexed
 
 
 class IndexDeleteView(IndexView):

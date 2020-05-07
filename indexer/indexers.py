@@ -62,16 +62,16 @@ class Indexer:
         """Adds documents to index. Uses ES bulk indexing."""
         indexed_ids = []
         object_types = [object_type] if object_type else OBJECT_TYPES
-        for object_type in object_types:
-            objects = self.fetch_objects(object_type, clean)
-            for ok, result in streaming_bulk(self.connection, (self.prepare_data(object_type, obj) for obj in objects), refresh=True):
+        for obj_type in object_types:
+            objects = self.fetch_objects(obj_type, clean)
+            for ok, result in streaming_bulk(self.connection, (self.prepare_data(obj_type, obj) for obj in objects), refresh=True):
                 action, result = result.popitem()
                 if not ok:
                     raise ScorpioIndexError("Failed to {} document {}: {}".format(action, result["_id"], result))
                 else:
                     update_pisces(result["_id"], "indexed")
                     indexed_ids.append(result["_id"])
-        return "Indexing complete", indexed_ids
+        return indexed_ids
 
     @silk_profile()
     def delete(self, identifier, **kwargs):
