@@ -4,7 +4,7 @@ services:
   - docker
 env:
   global:
-    - DOCKER_COMPOSE_VERSION: 1.18.0
+    - DOCKER_COMPOSE_VERSION: 1.25.5
     - SERVICE_NAME: scorpio-web
     - APPLICATION_NAME: scorpio
 before_install:
