@@ -1,27 +1,16 @@
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'HOST': 'scorpio-db',
-        'PORT': 5432,
-    }
-}
-
-ELASTICSEARCH = {
-    'default': {
-        'hosts': ['elasticsearch:9200'],
-        'index': 'default'
-    },
-}
-
-PISCES = {
-    "baseurl": "http://pisces-web:8007/",
-    "post_index_path": "/index-complete/"
-}
-
-STATIC_URL = '/indexer/static/'
-
-ALLOWED_HOSTS = ['localhost', 'scorpio-web']
-
+DJANGO_DEBUG = True
+DJANGO_PORT = 8007
+DJANGO_SECRET_KEY = "=j$8no%qg_k+70zk!1xkvjtr#k6mp-jhkvuz+%2_ccikd2+98*"
+DJANGO_ALLOWED_HOSTS = ["localhost", "scorpio-web"]
+DJANGO_STATIC_ROOT = "/static/"
+SQL_ENGINE = "django.db.backends.postgresql"
+SQL_DATABASE = "postgres"
+SQL_USER = "postgres"
+SQL_PASSWORD = "postgres"
+SQL_HOST = "scorpio-db"
+SQL_PORT = 5432
+ELASTICSEARCH_HOSTS = ["elasticsearch:9200"]
+ELASTICSEARCH_INDEX = "default"
+PISCES_BASEURL = "http://pisces-web:8007/"
+PISCES_POST_INDEX_PATH = "/index-complete/"
 SILKY_PYTHON_PROFILER = True

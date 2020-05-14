@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 
-import scorpio.config as CF
+from . import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,12 +22,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'd$@ip!go1iqfsckz=g7q+*p6epzk$&w*0)yo*!+^rc%jpumn5v'
+SECRET_KEY = config.DJANGO_SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config.DJANGO_DEBUG
 
-ALLOWED_HOSTS = CF.ALLOWED_HOSTS
+ALLOWED_HOSTS = config.DJANGO_ALLOWED_HOSTS
 
 
 # Application definition
@@ -80,7 +80,16 @@ WSGI_APPLICATION = 'scorpio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = CF.DATABASES
+DATABASES = {
+    "default": {
+        "ENGINE": config.SQL_ENGINE,
+        "NAME": config.SQL_DATABASE,
+        "USER": config.SQL_USER,
+        "PASSWORD": config.SQL_PASSWORD,
+        "HOST": config.SQL_HOST,
+        "PORT": config.SQL_PORT,
+    }
+}
 
 
 # Password validation
@@ -119,7 +128,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = "/static/"
+STATIC_ROOT = config.DJANGO_STATIC_ROOT
 
 FIXTURE_DIRS = [os.path.join(BASE_DIR, 'fixtures')]
 
@@ -131,10 +141,18 @@ REST_FRAMEWORK = {
 }
 
 # Elasticsearch configuration
-ELASTICSEARCH = CF.ELASTICSEARCH
+ELASTICSEARCH = {
+    'default': {
+        'hosts': config.ELASTICSEARCH_HOSTS,
+        'index': config.ELASTICSEARCH_INDEX
+    },
+}
 
 # Silk Profiling
-SILKY_PYTHON_PROFILER = CF.SILKY_PYTHON_PROFILER
+SILKY_PYTHON_PROFILER = config.SILKY_PYTHON_PROFILER
 
 # Pisces Configs
-PISCES = CF.PISCES
+PISCES = {
+    "baseurl": config.PISCES_BASEURL,
+    "post_index_path": config.PISCES_POST_INDEX_PATH
+}
