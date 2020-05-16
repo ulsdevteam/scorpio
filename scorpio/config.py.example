@@ -2,7 +2,6 @@ DJANGO_DEBUG = True
 DJANGO_PORT = 8007
 DJANGO_SECRET_KEY = "=j$8no%qg_k+70zk!1xkvjtr#k6mp-jhkvuz+%2_ccikd2+98*"
 DJANGO_ALLOWED_HOSTS = ["localhost", "scorpio-web"]
-DJANGO_STATIC_ROOT = "/static/"
 SQL_ENGINE = "django.db.backends.postgresql"
 SQL_DATABASE = "postgres"
 SQL_USER = "postgres"

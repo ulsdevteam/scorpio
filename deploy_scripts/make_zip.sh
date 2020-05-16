@@ -13,6 +13,7 @@ rm -rf fixtures \
   .gitignore \
   .pre-commit-config.yaml \
   cc-test-reporter \
+  coverage.xml \
   docker-compose.yml \
   Dockerfile \
   entrypoint.sh \
