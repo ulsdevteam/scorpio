@@ -140,6 +140,26 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 25
 }
 
+# Django cron settings
+CRON_CLASSES = [
+    "fetcher.cron.DeletedArchivesSpaceArchivalObjects",
+    "fetcher.cron.DeletedArchivesSpaceFamilies",
+    "fetcher.cron.DeletedArchivesSpaceOrganizations",
+    "fetcher.cron.DeletedArchivesSpacePeople",
+    "fetcher.cron.DeletedArchivesSpaceResources",
+    "fetcher.cron.DeletedArchivesSpaceSubjects",
+    "fetcher.cron.DeletedCartographerArrangementMapComponents",
+    "fetcher.cron.UpdatedArchivesSpaceArchivalObjects",
+    "fetcher.cron.UpdatedArchivesSpaceFamilies",
+    "fetcher.cron.UpdatedArchivesSpaceOrganizations",
+    "fetcher.cron.UpdatedArchivesSpacePeople",
+    "fetcher.cron.UpdatedArchivesSpaceResources",
+    "fetcher.cron.UpdatedArchivesSpaceSubjects",
+    "fetcher.cron.UpdatedCartographerArrangementMapComponents",
+]
+DJANGO_CRON_LOCK_BACKEND = "django_cron.backends.lock.file.FileLock"
+DJANGO_CRON_LOCKFILE_PATH = config.DJANGO_CRON_LOCKFILE_PATH
+
 # Elasticsearch configuration
 ELASTICSEARCH = {
     'default': {

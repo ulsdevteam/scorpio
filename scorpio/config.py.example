@@ -1,3 +1,4 @@
+DJANGO_CRON_LOCKFILE_PATH = "/tmp/scorpio_cron/"
 DJANGO_DEBUG = True
 DJANGO_PORT = 8007
 DJANGO_SECRET_KEY = "=j$8no%qg_k+70zk!1xkvjtr#k6mp-jhkvuz+%2_ccikd2+98*"
