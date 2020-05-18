@@ -142,20 +142,16 @@ REST_FRAMEWORK = {
 
 # Django cron settings
 CRON_CLASSES = [
-    "fetcher.cron.DeletedArchivesSpaceArchivalObjects",
-    "fetcher.cron.DeletedArchivesSpaceFamilies",
-    "fetcher.cron.DeletedArchivesSpaceOrganizations",
-    "fetcher.cron.DeletedArchivesSpacePeople",
-    "fetcher.cron.DeletedArchivesSpaceResources",
-    "fetcher.cron.DeletedArchivesSpaceSubjects",
-    "fetcher.cron.DeletedCartographerArrangementMapComponents",
-    "fetcher.cron.UpdatedArchivesSpaceArchivalObjects",
-    "fetcher.cron.UpdatedArchivesSpaceFamilies",
-    "fetcher.cron.UpdatedArchivesSpaceOrganizations",
-    "fetcher.cron.UpdatedArchivesSpacePeople",
-    "fetcher.cron.UpdatedArchivesSpaceResources",
-    "fetcher.cron.UpdatedArchivesSpaceSubjects",
-    "fetcher.cron.UpdatedCartographerArrangementMapComponents",
+    "indexer.cron.IndexAll",
+    "indexer.cron.IndexAllClean",
+    "indexer.cron.IndexAgents",
+    "indexer.cron.IndexAgentsClean",
+    "indexer.cron.IndexCollections",
+    "indexer.cron.IndexCollectionsClean",
+    "indexer.cron.IndexObjects",
+    "indexer.cron.IndexObjectsClean",
+    "indexer.cron.IndexTerms",
+    "indexer.cron.IndexTermsClean",
 ]
 DJANGO_CRON_LOCK_BACKEND = "django_cron.backends.lock.file.FileLock"
 DJANGO_CRON_LOCKFILE_PATH = config.DJANGO_CRON_LOCKFILE_PATH
