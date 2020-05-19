@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'health_check',
     'indexer',
     'silk',
+    'django_cron',
 ]
 
 MIDDLEWARE = [
