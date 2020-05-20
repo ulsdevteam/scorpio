@@ -14,7 +14,10 @@ class BaseCron(CronJobBase):
         start = datetime.now()
         action = "Full" if self.clean else "Incremental"
         print("{} indexing of {} records started at {}".format(action, self.object_type, start))
-        indexed = Indexer().add(object_type=self.object_type, clean=self.clean)
+        try:
+            indexed = Indexer().add(object_type=self.object_type, clean=self.clean)
+        except Exception as e:
+            print(e)
         end = datetime.now()
         print("{} records indexed in {}".format(len(indexed), end - start))
         print("{} index of {} records complete at {}\n".format(action, self.object_type, end))
