@@ -16,12 +16,12 @@ OBJECT_TYPES = {
 }
 
 
-def update_pisces(identifier, action):
+def update_pisces(identifiers, action):
     try:
         resp = requests.post("/".join([
             settings.PISCES["baseurl"].rstrip("/"),
             settings.PISCES["post_index_path"].lstrip("/")]),
-            json={"identifier": identifier, "action": action})
+            json={"identifiers": identifiers, "action": action})
         resp.raise_for_status()
     except requests.HTTPError as e:
         print("Error sending request to Pisces: {}".format(e.response.json()["detail"]))
@@ -67,10 +67,12 @@ class Indexer:
             for ok, result in streaming_bulk(self.connection, (self.prepare_data(obj_type, obj) for obj in objects), refresh=True):
                 action, result = result.popitem()
                 if not ok:
+                    update_pisces(indexed_ids, "indexed")
                     raise ScorpioIndexError("Failed to {} document {}: {}".format(action, result["_id"], result))
                 else:
-                    update_pisces(result["_id"], "indexed")
                     indexed_ids.append(result["_id"])
+        if indexed_ids:
+            update_pisces(indexed_ids, "indexed")
         return indexed_ids
 
     @silk_profile()
