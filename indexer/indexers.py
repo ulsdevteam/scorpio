@@ -46,8 +46,7 @@ class Indexer:
         self.pisces_client = ElectronBond(baseurl=settings.PISCES['baseurl'])
 
     def prepare_data(self, object_type, data):
-        doc = OBJECT_TYPES[object_type]()
-        doc.source = data["data"]
+        doc = OBJECT_TYPES[object_type](**data["data"])
         doc.meta.id = data["es_id"]
         return doc.to_dict(True)
 
