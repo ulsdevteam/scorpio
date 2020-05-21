@@ -13,7 +13,8 @@ class BaseCron(CronJobBase):
     def do(self):
         start = datetime.now()
         action = "Full" if self.clean else "Incremental"
-        object_type = self.object_type if self.object_type else "All"
+        object_type = self.object_type if self.object_type else "all"
+        indexed = []
         print("{} indexing of {} records started at {}".format(action, object_type, start))
         try:
             indexed = Indexer().add(object_type=self.object_type, clean=self.clean)

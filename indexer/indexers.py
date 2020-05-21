@@ -45,10 +45,10 @@ class Indexer:
             BaseDescriptionComponent.init()
         self.pisces_client = ElectronBond(baseurl=settings.PISCES['baseurl'])
 
-    def prepare_data(self, object_type, data):
-        doc = OBJECT_TYPES[object_type](**data["data"])
-        doc.meta.id = data["es_id"]
-        return doc.to_dict(True)
+    def prepare_data(self, obj_type, clean):
+        for obj in self.fetch_objects(obj_type, clean):
+            doc = OBJECT_TYPES[obj_type](**obj)
+            yield doc.prepare_streaming_dict(obj["id"])
 
     @silk_profile()
     def fetch_objects(self, object_type, clean):
@@ -62,8 +62,7 @@ class Indexer:
         indexed_ids = []
         object_types = [object_type] if object_type else OBJECT_TYPES
         for obj_type in object_types:
-            objects = self.fetch_objects(obj_type, clean)
-            for ok, result in streaming_bulk(self.connection, (self.prepare_data(obj_type, obj) for obj in objects), refresh=True):
+            for ok, result in streaming_bulk(self.connection, self.prepare_data(obj_type, clean), refresh=True):
                 action, result = result.popitem()
                 if not ok:
                     update_pisces(indexed_ids, "indexed")
