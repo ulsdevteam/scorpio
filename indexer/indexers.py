@@ -48,7 +48,7 @@ class Indexer:
     def prepare_data(self, obj_type, clean):
         for obj in self.fetch_objects(obj_type, clean):
             doc = OBJECT_TYPES[obj_type](**obj["data"])
-            yield doc.prepare_streaming_dict(obj["id"])
+            yield doc.prepare_streaming_dict(obj["es_id"])
 
     @silk_profile()
     def fetch_objects(self, object_type, clean):
