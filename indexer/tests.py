@@ -1,11 +1,11 @@
-import random
+from unittest.mock import patch
 
 import vcr
 from django.test import TestCase
 from django.urls import reverse
 from elasticsearch.exceptions import NotFoundError
 from elasticsearch_dsl import connections
-from rac_es.documents import BaseDescriptionComponent
+from rac_es.documents import BaseDescriptionComponent, DescriptionComponent
 from rest_framework.test import APIClient
 from scorpio import settings
 
@@ -35,27 +35,31 @@ class TestMergerToIndex(TestCase):
 
     def index_objects(self):
         """Tests adding objects to index."""
-        for cron, cassette in [
-                (IndexAgents, "index-add-agent-incremental.json"),
-                (IndexAgentsClean, "index-add-agent-clean.json"),
-                (IndexCollections, "index-add-collection-incremental.json"),
-                (IndexCollectionsClean, "index-add-collection-clean.json"),
-                (IndexObjects, "index-add-object-incremental.json"),
-                (IndexObjectsClean, "index-add-object-clean.json"),
-                (IndexTerms, "index-add-term-incremental.json"),
-                (IndexTermsClean, "index-add-term-clean.json"),
-                (IndexAll, "index-add-None-incremental.json"),
-                (IndexAllClean, "index-add-None-clean.json")]:
+        for cron, cassette, count in [
+                (IndexAgents, "index-add-agent-incremental.json", 83)
+                (IndexAgentsClean, "index-add-agent-clean.json", 83),
+                (IndexCollections, "index-add-collection-incremental.json", 99),
+                (IndexCollectionsClean, "index-add-collection-clean.json", 99),
+                (IndexObjects, "index-add-object-incremental.json", 58),
+                (IndexObjectsClean, "index-add-object-clean.json", 58),
+                (IndexTerms, "index-add-term-incremental.json", 45),
+                (IndexTermsClean, "index-add-term-clean.json", 45),
+                (IndexAll, "index-add-None-incremental.json", 0),
+                (IndexAllClean, "index-add-None-clean.json", 285)]:
             with indexer_vcr.use_cassette(cassette):
                 out = cron().do()
                 self.assertIsNot(False, out)
+                self.assertEqual(DescriptionComponent.search().count(), count)
 
-    def delete_objects(self):
+    @patch("indexer.indexers.requests.post")
+    def delete_objects(self, mock_post):
         """Tests object deletion from index."""
-        with indexer_vcr.use_cassette("index-delete"):
-            obj = random.choice(BaseDescriptionComponent.search().execute())
+        expected_len = DescriptionComponent.search().count()
+        for obj in DescriptionComponent.search().scan():
             request = self.client.post(reverse("index-delete"), {"identifier": obj.meta.id})
             self.assertEqual(request.status_code, 200, "Index delete error: {}".format(request.data))
+        self.assertEqual(mock_post.call_count, expected_len)
+        self.assertEqual(0, BaseDescriptionComponent.search().count())
 
     def test_process(self):
         self.index_objects()

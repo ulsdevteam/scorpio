@@ -4,7 +4,7 @@ from elasticsearch.helpers import streaming_bulk
 from elasticsearch_dsl import Index, connections
 from electronbonder.client import ElectronBond
 from rac_es.documents import (Agent, BaseDescriptionComponent, Collection,
-                              Object, Term)
+                              DescriptionComponent, Object, Term)
 from scorpio import settings
 from silk.profiling.profiler import silk_profile
 
@@ -50,39 +50,48 @@ class Indexer:
             doc = OBJECT_TYPES[obj_type](**obj["data"])
             yield doc.prepare_streaming_dict(obj["es_id"])
 
+    def prepare_deletes(self, obj):
+        for reference in obj.get_references() + [obj]:
+            doc = reference.to_dict(True)
+            doc["_op_type"] = "delete"
+            yield doc
+
     @silk_profile()
     def fetch_objects(self, object_type, clean):
         """Returns data to be indexed."""
         url = "objects/{}s/".format(object_type)
         return self.pisces_client.get_paged_reverse(url, params={"clean": clean})
 
+    def bulk_index(self, actions, completed_action):
+        indexed_ids = []
+        for ok, result in streaming_bulk(self.connection, actions, refresh=True):
+            action, result = result.popitem()
+            if not ok:
+                update_pisces(indexed_ids, completed_action)
+                raise ScorpioIndexError("Failed to {} document {}: {}".format(action, result["_id"], result))
+            else:
+                indexed_ids.append(result["_id"])
+        if indexed_ids:
+            update_pisces(indexed_ids, completed_action)
+        return indexed_ids
+
     @silk_profile()
     def add(self, object_type=None, clean=False, **kwargs):
         """Adds documents to index. Uses ES bulk indexing."""
-        indexed_ids = []
         object_types = [object_type] if object_type else OBJECT_TYPES
+        indexed_ids = []
         for obj_type in object_types:
-            for ok, result in streaming_bulk(self.connection, self.prepare_data(obj_type, clean), refresh=True):
-                action, result = result.popitem()
-                if not ok:
-                    update_pisces(indexed_ids, "indexed")
-                    raise ScorpioIndexError("Failed to {} document {}: {}".format(action, result["_id"], result))
-                else:
-                    indexed_ids.append(result["_id"])
-        if indexed_ids:
-            update_pisces(indexed_ids, "indexed")
+            indexed_ids += self.bulk_index(self.prepare_data(obj_type, clean), "indexed")
         return indexed_ids
 
     @silk_profile()
     def delete(self, identifier, **kwargs):
         """
-        Deletes data from index. Since this will be a less-regular occurrence,
-        this is an atomic (not bulk) operation.
+        Deletes a DescriptionComponent from the index, along with all its
+        associated references. Uses ES bulk indexing.
         """
-        obj = BaseDescriptionComponent.get(id=identifier)
-        obj.delete(refresh=True)
-        update_pisces([identifier], "deleted")
-        return "Deletion complete", identifier
+        obj = DescriptionComponent.get(id=identifier)
+        return self.bulk_index(self.prepare_deletes(obj), "deleted")
 
     def reset(self, **kwargs):
         try:
