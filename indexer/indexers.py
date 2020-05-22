@@ -81,7 +81,7 @@ class Indexer:
         """
         obj = BaseDescriptionComponent.get(id=identifier)
         obj.delete(refresh=True)
-        update_pisces(identifier, "deleted")
+        update_pisces([identifier], "deleted")
         return "Deletion complete", identifier
 
     def reset(self, **kwargs):

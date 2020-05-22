@@ -1,3 +1,4 @@
+import random
 import vcr
 from django.test import TestCase
 from django.urls import reverse
@@ -51,10 +52,9 @@ class TestMergerToIndex(TestCase):
     def delete_objects(self):
         """Tests object deletion from index."""
         with indexer_vcr.use_cassette("index-delete"):
-            for hit in BaseDescriptionComponent.search().scan():
-                request = self.client.post(reverse("index-delete"), {"identifier": hit.meta.id})
-                self.assertEqual(request.status_code, 200, "Index delete error: {}".format(request.data))
-            self.assertEqual(0, BaseDescriptionComponent.search().count())
+            obj = random.choice(BaseDescriptionComponent.search().execute())
+            request = self.client.post(reverse("index-delete"), {"identifier": obj.meta.id})
+            self.assertEqual(request.status_code, 200, "Index delete error: {}".format(request.data))
 
     def test_process(self):
         self.index_objects()
