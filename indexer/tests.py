@@ -36,7 +36,7 @@ class TestMergerToIndex(TestCase):
     def index_objects(self):
         """Tests adding objects to index."""
         for cron, cassette, count in [
-                (IndexAgents, "index-add-agent-incremental.json", 83)
+                (IndexAgents, "index-add-agent-incremental.json", 83),
                 (IndexAgentsClean, "index-add-agent-clean.json", 83),
                 (IndexCollections, "index-add-collection-incremental.json", 99),
                 (IndexCollectionsClean, "index-add-collection-clean.json", 99),
