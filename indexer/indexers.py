@@ -62,7 +62,7 @@ class Indexer:
         url = "objects/{}s/".format(object_type)
         return self.pisces_client.get_paged_reverse(url, params={"clean": clean})
 
-    def bulk_index(self, actions, completed_action):
+    def bulk_index_action(self, actions, completed_action):
         indexed_ids = []
         for ok, result in streaming_bulk(self.connection, actions, refresh=True):
             action, result = result.popitem()
@@ -81,7 +81,8 @@ class Indexer:
         object_types = [object_type] if object_type else OBJECT_TYPES
         indexed_ids = []
         for obj_type in object_types:
-            indexed_ids += self.bulk_index(self.prepare_data(obj_type, clean), "indexed")
+            indexed_ids += self.bulk_index_action(
+                self.prepare_data(obj_type, clean), "indexed")
         return indexed_ids
 
     @silk_profile()
@@ -91,7 +92,7 @@ class Indexer:
         associated references. Uses ES bulk indexing.
         """
         obj = DescriptionComponent.get(id=identifier)
-        return self.bulk_index(self.prepare_deletes(obj), "deleted")
+        return self.bulk_index_action(self.prepare_deletes(obj), "deleted")
 
     def reset(self, **kwargs):
         try:
