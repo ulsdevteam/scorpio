@@ -33,7 +33,8 @@ class TestMergerToIndex(TestCase):
         except NotFoundError:
             pass
 
-    def index_objects(self):
+    @patch("indexer.indexers.requests.post")
+    def index_objects(self, mock_post):
         """Tests adding objects to index."""
         for cron, cassette in [
                 (IndexAgents, "index-add-agent-incremental.json"),
