@@ -1,11 +1,11 @@
-import random
+from unittest.mock import patch
 
 import vcr
 from django.test import TestCase
 from django.urls import reverse
 from elasticsearch.exceptions import NotFoundError
 from elasticsearch_dsl import connections
-from rac_es.documents import BaseDescriptionComponent
+from rac_es.documents import BaseDescriptionComponent, DescriptionComponent
 from rest_framework.test import APIClient
 from scorpio import settings
 
@@ -50,12 +50,15 @@ class TestMergerToIndex(TestCase):
                 out = cron().do()
                 self.assertIsNot(False, out)
 
-    def delete_objects(self):
+    @patch("indexer.indexers.requests.post")
+    def delete_objects(self, mock_post):
         """Tests object deletion from index."""
-        with indexer_vcr.use_cassette("index-delete"):
-            obj = random.choice(BaseDescriptionComponent.search().execute())
+        expected_len = DescriptionComponent.search().count()
+        for obj in DescriptionComponent.search().scan():
             request = self.client.post(reverse("index-delete"), {"identifier": obj.meta.id})
             self.assertEqual(request.status_code, 200, "Index delete error: {}".format(request.data))
+        self.assertEqual(mock_post.call_count, expected_len)
+        self.assertEqual(0, BaseDescriptionComponent.search().count())
 
     def test_process(self):
         self.index_objects()
