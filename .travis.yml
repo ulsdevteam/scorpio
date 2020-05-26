@@ -51,3 +51,5 @@ deploy:
   deployment_group: ScorpioDevelopment
   region: us-east-1
   on: *development
+notifications:
+  email: false
