@@ -1,6 +1,7 @@
+import json
+import os
 from unittest.mock import patch
 
-import vcr
 from django.test import TestCase
 from django.urls import reverse
 from elasticsearch.exceptions import NotFoundError
@@ -13,15 +14,7 @@ from .cron import (IndexAgents, IndexAgentsClean, IndexAll, IndexAllClean,
                    IndexCollections, IndexCollectionsClean, IndexObjects,
                    IndexObjectsClean, IndexTerms, IndexTermsClean)
 
-indexer_vcr = vcr.VCR(
-    serializer="json",
-    cassette_library_dir="fixtures/cassettes",
-    record_mode="once",
-    match_on=["path", "method", "query"],
-    filter_query_parameters=["username", "password"],
-    filter_headers=["Authorization", "X-ArchivesSpace-Session"],
-    ignore_hosts=["elasticsearch"]
-)
+FIXTURE_DIR = "fixtures"
 
 
 class TestMergerToIndex(TestCase):
@@ -33,22 +26,30 @@ class TestMergerToIndex(TestCase):
         except NotFoundError:
             pass
 
-    def index_objects(self):
+    def return_fixture_response(self, dir):
+        for f in os.listdir(os.path.join(FIXTURE_DIR, dir)):
+            with open(os.path.join(FIXTURE_DIR, dir, f)) as jf:
+                data = json.load(jf)
+                yield {"data": data, "es_id": data["id"]}
+
+    @patch("indexer.indexers.requests.post")
+    @patch("indexer.indexers.Indexer.fetch_objects")
+    def index_objects(self, mock_fetch, mock_post):
         """Tests adding objects to index."""
-        for cron, cassette in [
-                (IndexAgents, "index-add-agent-incremental.json"),
-                (IndexAgentsClean, "index-add-agent-clean.json"),
-                (IndexCollections, "index-add-collection-incremental.json"),
-                (IndexCollectionsClean, "index-add-collection-clean.json"),
-                (IndexObjects, "index-add-object-incremental.json"),
-                (IndexObjectsClean, "index-add-object-clean.json"),
-                (IndexTerms, "index-add-term-incremental.json"),
-                (IndexTermsClean, "index-add-term-clean.json"),
-                (IndexAll, "index-add-None-incremental.json"),
-                (IndexAllClean, "index-add-None-clean.json")]:
-            with indexer_vcr.use_cassette(cassette):
-                out = cron().do()
-                self.assertIsNot(False, out)
+        for cron, fixture_dir in [
+                (IndexAgents, "agents"),
+                (IndexAgentsClean, "agents"),
+                (IndexCollections, "collections"),
+                (IndexCollectionsClean, "collections"),
+                (IndexObjects, "objects"),
+                (IndexObjectsClean, "objects"),
+                (IndexTerms, "terms"),
+                (IndexTermsClean, "terms"),
+                (IndexAll, "terms"),
+                (IndexAllClean, "terms")]:
+            mock_fetch.return_value = self.return_fixture_response(fixture_dir)
+            out = cron().do()
+            self.assertIsNot(False, out)
 
     @patch("indexer.indexers.requests.post")
     def delete_objects(self, mock_post):
