@@ -48,7 +48,10 @@ class Indexer:
     def prepare_data(self, obj_type, clean):
         for obj in self.fetch_objects(obj_type, clean):
             doc = OBJECT_TYPES[obj_type](**obj["data"])
-            yield doc.prepare_streaming_dict(obj["es_id"])
+            try:
+                yield doc.prepare_streaming_dict(obj["es_id"])
+            except Exception as e:
+                raise Exception("Error preparing streaming dict: {}".format(e))
 
     def prepare_deletes(self, obj):
         for reference in obj.get_references() + [obj]:
@@ -59,20 +62,26 @@ class Indexer:
     @silk_profile()
     def fetch_objects(self, object_type, clean):
         """Returns data to be indexed."""
-        url = "objects/{}s/".format(object_type)
-        return self.pisces_client.get_paged_reverse(url, params={"clean": clean})
+        try:
+            url = "objects/{}s/".format(object_type)
+            return self.pisces_client.get_paged(url, params={"clean": clean})
+        except Exception as e:
+            raise Exception("Error fetching objects: {}".format(e))
 
     def bulk_index_action(self, actions, completed_action):
         indexed_ids = []
-        for ok, result in streaming_bulk(self.connection, actions, refresh=True):
-            action, result = result.popitem()
-            if not ok:
-                update_pisces(indexed_ids, completed_action)
-                raise ScorpioIndexError("Failed to {} document {}: {}".format(action, result["_id"], result))
-            else:
-                indexed_ids.append(result["_id"])
-        if indexed_ids:
+        try:
+            for ok, result in streaming_bulk(self.connection, actions, refresh=True):
+                action, result = result.popitem()
+                if not ok:
+                    update_pisces(indexed_ids, completed_action)
+                    raise ScorpioIndexError("Failed to {} document {}: {}".format(action, result["_id"], result))
+                else:
+                    indexed_ids.append(result["_id"])
+        except Exception as e:
             update_pisces(indexed_ids, completed_action)
+            print(e)
+        update_pisces(indexed_ids, completed_action)
         return indexed_ids
 
     @silk_profile()
