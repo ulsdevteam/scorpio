@@ -173,3 +173,5 @@ PISCES = {
     "baseurl": config.PISCES_BASEURL,
     "post_index_path": config.PISCES_POST_INDEX_PATH
 }
+
+MAX_OBJECTS = config.MAX_OBJECTS
