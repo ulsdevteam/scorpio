@@ -71,13 +71,14 @@ class Indexer:
     def bulk_index_action(self, actions, completed_action):
         indexed_ids = []
         try:
-            for ok, result in streaming_bulk(self.connection, actions, refresh=True):
-                action, result = result.popitem()
-                if not ok:
-                    update_pisces(indexed_ids, completed_action)
-                    raise ScorpioIndexError("Failed to {} document {}: {}".format(action, result["_id"], result))
-                else:
-                    indexed_ids.append(result["_id"])
+            while len(indexed_ids) <= settings.MAX_OBJECTS:
+                for ok, result in streaming_bulk(self.connection, actions, refresh=True):
+                    action, result = result.popitem()
+                    if not ok:
+                        update_pisces(indexed_ids, completed_action)
+                        raise ScorpioIndexError("Failed to {} document {}: {}".format(action, result["_id"], result))
+                    else:
+                        indexed_ids.append(result["_id"])
         except Exception as e:
             update_pisces(indexed_ids, completed_action)
             print(e)
