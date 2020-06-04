@@ -11,6 +11,7 @@ class BaseCron(CronJobBase):
     clean = False
 
     def do(self):
+        result = False
         start = datetime.now()
         action = "Full" if self.clean else "Incremental"
         object_type = self.object_type if self.object_type else "all"
@@ -23,6 +24,8 @@ class BaseCron(CronJobBase):
         end = datetime.now()
         print("{} records indexed in {}".format(len(indexed), end - start))
         print("{} index of {} records complete at {}\n".format(action, object_type, end))
+        result = True
+        return result
 
 
 class IndexAll(BaseCron):
