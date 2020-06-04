@@ -54,7 +54,7 @@
   "external_identifiers": [
     {
       "source": "archivesspace",
-      "identifier": "/agents_person/42"
+      "identifier": "/agents_corporate_entity/42"
     }
   ],
   "agent_type": "organization",

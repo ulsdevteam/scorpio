@@ -45,16 +45,16 @@ class Indexer:
             BaseDescriptionComponent.init()
         self.pisces_client = ElectronBond(baseurl=settings.PISCES['baseurl'])
 
-    def prepare_data(self, obj_type, clean):
+    def prepare_updates(self, obj_type, doc_cls, clean):
         for obj in self.fetch_objects(obj_type, clean):
-            doc = OBJECT_TYPES[obj_type](**obj["data"])
+            doc = doc_cls(**obj["data"])
             try:
-                yield doc.prepare_streaming_dict(obj["es_id"])
+                yield doc.prepare_streaming_dict(obj["es_id"], self.connection)
             except Exception as e:
                 raise Exception("Error preparing streaming dict: {}".format(e))
 
     def prepare_deletes(self, obj):
-        for reference in obj.get_references() + [obj]:
+        for reference in list(obj.get_references()) + [obj]:
             doc = reference.to_dict(True)
             doc["_op_type"] = "delete"
             yield doc
@@ -70,6 +70,7 @@ class Indexer:
 
     def bulk_index_action(self, actions, completed_action):
         indexed_ids = []
+        indexed_count = 0
         try:
             for ok, result in streaming_bulk(self.connection, actions, refresh=True):
                 action, result = result.popitem()
@@ -78,8 +79,9 @@ class Indexer:
                     raise ScorpioIndexError("Failed to {} document {}: {}".format(action, result["_id"], result))
                 else:
                     indexed_ids.append(result["_id"])
-                    if len(indexed_ids) > settings.MAX_OBJECTS:
-                        break
+                    indexed_count += 1
+                if indexed_count == settings.MAX_OBJECTS:
+                    break
         except Exception as e:
             update_pisces(indexed_ids, completed_action)
             print(e)
@@ -92,8 +94,9 @@ class Indexer:
         object_types = [object_type] if object_type else OBJECT_TYPES
         indexed_ids = []
         for obj_type in object_types:
-            indexed_ids += self.bulk_index_action(
-                self.prepare_data(obj_type, clean), "indexed")
+            doc_cls = OBJECT_TYPES[obj_type]
+            indexed_ids += doc_cls.bulk_save(
+                self.connection, self.prepare_updates(obj_type, doc_cls, clean), obj_type)
         return indexed_ids
 
     @silk_profile()
