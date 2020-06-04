@@ -49,7 +49,7 @@ class TestMergerToIndex(TestCase):
                 (IndexAllClean, "terms")]:
             mock_fetch.return_value = self.return_fixture_response(fixture_dir)
             out = cron().do()
-            self.assertIsNot(False, out)
+            self.assertTrue(out)
 
     @patch("indexer.indexers.requests.post")
     def delete_objects(self, mock_post):
