@@ -95,8 +95,16 @@ class Indexer:
         indexed_ids = []
         for obj_type in object_types:
             doc_cls = OBJECT_TYPES[obj_type]
-            indexed_ids += doc_cls.bulk_save(
-                self.connection, self.prepare_updates(obj_type, doc_cls, clean), obj_type)
+            try:
+                indexed_ids += doc_cls.bulk_save(
+                    self.connection,
+                    self.prepare_updates(obj_type, doc_cls, clean),
+                    obj_type,
+                    settings.MAX_OBJECTS)
+            except Exception as e:
+                update_pisces(indexed_ids, "indexed")
+                print(e)
+        update_pisces(indexed_ids, "indexed")
         return indexed_ids
 
     @silk_profile()
