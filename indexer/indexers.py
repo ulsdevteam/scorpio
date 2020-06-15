@@ -112,6 +112,8 @@ class Indexer:
                     message=e,
                     run=current_run)
         update_pisces(indexed_ids, "indexed")
+        current_run.status = IndexRun.FINISHED
+        current_run.save()
         return indexed_ids
 
     @silk_profile()
