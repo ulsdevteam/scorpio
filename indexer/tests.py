@@ -61,7 +61,7 @@ class TestMergerToIndex(TestCase):
             self.assertEqual(len(IndexRun.objects.all()), fetches)
             self.assertEqual(len(IndexRunError.objects.all()), 0)
             for obj in IndexRun.objects.all():
-                self.assertEqual(obj.status, IndexRun.FINISHED)
+                self.assertEqual(int(obj.status), IndexRun.FINISHED)
 
     @patch("indexer.indexers.requests.post")
     def delete_objects(self, mock_post):
