@@ -107,7 +107,7 @@ class Indexer:
                     self.prepare_updates(obj_type, doc_cls, clean),
                     obj_type,
                     settings.MAX_OBJECTS)
-            except Exception as e:
+            except ScorpioIndexError as e:
                 IndexRunError.objects.create(
                     message=e,
                     run=current_run)
