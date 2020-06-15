@@ -1,14 +1,3 @@
-html {
-  height:100%
-}
-
-body.bg-image {
-    background-image: url(/static/img/aquarius.png);
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .prettyprint {
     padding: 8px;
     background-color: #f7f7f9;
