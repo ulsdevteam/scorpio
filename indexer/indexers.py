@@ -8,6 +8,8 @@ from rac_es.documents import (Agent, BaseDescriptionComponent, Collection,
 from scorpio import settings
 from silk.profiling.profiler import silk_profile
 
+from .models import IndexRun, IndexRunError
+
 OBJECT_TYPES = {
     "agent": Agent,
     "collection": Collection,
@@ -94,6 +96,10 @@ class Indexer:
         object_types = [object_type] if object_type else OBJECT_TYPES
         indexed_ids = []
         for obj_type in object_types:
+            current_run = IndexRun.objects.create(
+                status=IndexRun.STARTED,
+                object_type=obj_type,
+                object_status="indexed")
             doc_cls = OBJECT_TYPES[obj_type]
             try:
                 indexed_ids += doc_cls.bulk_save(
@@ -102,8 +108,9 @@ class Indexer:
                     obj_type,
                     settings.MAX_OBJECTS)
             except Exception as e:
-                update_pisces(indexed_ids, "indexed")
-                print(e)
+                IndexRunError.objects.create(
+                    message=e,
+                    run=current_run)
         update_pisces(indexed_ids, "indexed")
         return indexed_ids
 

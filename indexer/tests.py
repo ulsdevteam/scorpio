@@ -13,6 +13,7 @@ from scorpio import settings
 from .cron import (IndexAgents, IndexAgentsClean, IndexAll, IndexAllClean,
                    IndexCollections, IndexCollectionsClean, IndexObjects,
                    IndexObjectsClean, IndexTerms, IndexTermsClean)
+from .models import IndexRun, IndexRunError
 from .views import IndexRunViewSet
 
 FIXTURE_DIR = "fixtures"
@@ -38,6 +39,7 @@ class TestMergerToIndex(TestCase):
     @patch("indexer.indexers.Indexer.fetch_objects")
     def index_objects(self, mock_fetch, mock_post):
         """Tests adding objects to index."""
+        fetches = 0
         for cron, fixture_dir in [
                 (IndexAgents, "agents"),
                 (IndexAgentsClean, "agents"),
@@ -51,7 +53,13 @@ class TestMergerToIndex(TestCase):
                 (IndexAllClean, "terms")]:
             mock_fetch.return_value = self.return_fixture_response(fixture_dir)
             out = cron().do()
+            if cron in [IndexAll, IndexAllClean]:
+                fetches += 4
+            else:
+                fetches += 1
             self.assertTrue(out)
+            self.assertEqual(len(IndexRun.objects.all()), fetches)
+            self.assertEqual(len(IndexRunError.objects.all()), 0)
 
     @patch("indexer.indexers.requests.post")
     def delete_objects(self, mock_post):
