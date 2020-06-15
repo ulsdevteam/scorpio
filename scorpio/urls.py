@@ -15,12 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, re_path
-from indexer.views import IndexDeleteView, IndexResetView
+from indexer.views import IndexDeleteView, IndexResetView, IndexRunViewSet
 from rest_framework.schemas import get_schema_view
 
 from .routers import ScorpioRouter
 
 router = ScorpioRouter()
+router.register(r'index-runs', IndexRunViewSet, 'indexrun')
+
 schema_view = get_schema_view(
     title="Scorpio API",
     description="Endpoints for Scorpio microservice application."

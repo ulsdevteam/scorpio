@@ -7,12 +7,13 @@ from django.urls import reverse
 from elasticsearch.exceptions import NotFoundError
 from elasticsearch_dsl import connections
 from rac_es.documents import BaseDescriptionComponent, DescriptionComponent
-from rest_framework.test import APIClient
+from rest_framework.test import APIClient, APIRequestFactory
 from scorpio import settings
 
 from .cron import (IndexAgents, IndexAgentsClean, IndexAll, IndexAllClean,
                    IndexCollections, IndexCollectionsClean, IndexObjects,
                    IndexObjectsClean, IndexTerms, IndexTermsClean)
+from .views import IndexRunViewSet
 
 FIXTURE_DIR = "fixtures"
 
@@ -20,6 +21,7 @@ FIXTURE_DIR = "fixtures"
 class TestMergerToIndex(TestCase):
     def setUp(self):
         self.client = APIClient()
+        self.factory = APIRequestFactory()
         connections.create_connection(hosts=settings.ELASTICSEARCH['default']['hosts'], timeout=60)
         try:
             BaseDescriptionComponent._index.delete()
@@ -60,6 +62,15 @@ class TestMergerToIndex(TestCase):
             self.assertEqual(request.status_code, 200, "Index delete error: {}".format(request.data))
         self.assertEqual(mock_post.call_count, expected_len)
         self.assertEqual(0, BaseDescriptionComponent.search().count())
+
+    def test_action_views(self):
+        for action in ["agents", "collections", "objects", "terms"]:
+            view = IndexRunViewSet.as_view({"get": action})
+            request = self.factory.get("fetchrun-list")
+            response = view(request)
+            self.assertEqual(
+                response.status_code, 200,
+                "View error:  {}".format(response.data))
 
     def test_process(self):
         self.index_objects()
