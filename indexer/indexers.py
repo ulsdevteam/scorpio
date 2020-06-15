@@ -107,13 +107,14 @@ class Indexer:
                     self.prepare_updates(obj_type, doc_cls, clean),
                     obj_type,
                     settings.MAX_OBJECTS)
+                current_run.status = IndexRun.FINISHED
+                current_run.save()
             except Exception as e:
+                print(e)
                 IndexRunError.objects.create(
                     message=e,
                     run=current_run)
         update_pisces(indexed_ids, "indexed")
-        current_run.status = IndexRun.FINISHED
-        current_run.save()
         return indexed_ids
 
     @silk_profile()
