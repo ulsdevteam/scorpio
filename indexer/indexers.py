@@ -51,6 +51,7 @@ class Indexer:
         for obj in self.fetch_objects(obj_type, clean):
             doc = doc_cls(**obj["data"])
             try:
+                print(obj["es_id"])
                 yield doc.prepare_streaming_dict(obj["es_id"], self.connection)
             except Exception as e:
                 raise Exception("Error preparing streaming dict: {}".format(e))
