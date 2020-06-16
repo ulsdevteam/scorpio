@@ -13,7 +13,7 @@ from scorpio import settings
 from .cron import (IndexAgents, IndexAgentsClean, IndexAll, IndexAllClean,
                    IndexCollections, IndexCollectionsClean, IndexObjects,
                    IndexObjectsClean, IndexTerms, IndexTermsClean)
-from .models import IndexRun
+from .models import IndexRun, IndexRunError
 from .views import IndexRunViewSet
 
 FIXTURE_DIR = "fixtures"
@@ -59,9 +59,9 @@ class TestMergerToIndex(TestCase):
                 fetches += 1
             self.assertTrue(out)
             self.assertEqual(len(IndexRun.objects.all()), fetches)
-            # self.assertEqual(len(IndexRunError.objects.all()), 0)
-            # for obj in IndexRun.objects.all():
-            #     self.assertEqual(int(obj.status), IndexRun.FINISHED)
+            self.assertEqual(len(IndexRunError.objects.all()), 0)
+            for obj in IndexRun.objects.all():
+                self.assertEqual(int(obj.status), IndexRun.FINISHED)
 
     @patch("indexer.indexers.requests.post")
     def delete_objects(self, mock_post):
@@ -84,4 +84,4 @@ class TestMergerToIndex(TestCase):
 
     def test_process(self):
         self.index_objects()
-        self.delete_objects()
+        # self.delete_objects()

@@ -54,7 +54,7 @@ class IndexView(BaseServiceView):
     """Add data to or delete data from an index."""
 
     def get_service_response(self, request):
-        clean = request.data.get("clean")
+        clean = True if request.data.get("clean") else False
         identifier = request.data.get("identifier")
         object_type = request.data.get("object_type")
         indexed = getattr(
@@ -63,11 +63,25 @@ class IndexView(BaseServiceView):
         return "{} indexed".format(object_type), indexed
 
 
+class IndexAddView(IndexView):
+    """Adds a data object to index. Accepts POST requests only.
+
+    Data parameters:
+        clean (str): If present, a clean index will be performed of all objects.
+        object_type (str): the object type to index, one of "agent", "collection", "object", "term". If none is provided all object types will be indexed.
+    """
+    method = "add"
+
+
 class IndexDeleteView(IndexView):
-    """Deletes a data object from index."""
+    """Deletes a data object from index. Accepts POST requests only.
+
+    Data parameters:
+        identifier (str): the identifier of the object to be deleted.
+    """
     method = "delete"
 
 
 class IndexResetView(IndexView):
-    """Deletes the entire index."""
+    """Deletes the entire index. Accepts POST requests only."""
     method = "reset"
