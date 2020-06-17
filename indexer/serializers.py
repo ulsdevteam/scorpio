@@ -10,7 +10,7 @@ class IndexRunErrorSerializer(serializers.ModelSerializer):
 
 
 class IndexRunSerializer(serializers.HyperlinkedModelSerializer):
-    errors = IndexRunErrorSerializer(source='fetchrunerror_set', many=True)
+    errors = IndexRunErrorSerializer(source='indexrunerror_set', many=True)
     status = serializers.SerializerMethodField()
 
     class Meta:
