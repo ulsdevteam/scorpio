@@ -18,6 +18,27 @@
       {% block branding %}
       <a class="navbar-brand" rel="nofollow" href="/">Scorpio</a>
       {% endblock %}
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a href="#" id="indexesDropdown" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Indexing Runs</a>
+          <div class="dropdown-menu" aria-labelledby="indexesDropdown">
+            <a class="dropdown-item" href="{% url 'indexrun-agents' %}">Agents</a>
+            <a class="dropdown-item" href="{% url 'indexrun-collections' %}">Collections</a>
+            <a class="dropdown-item" href="{% url 'indexrun-objects' %}">Objects</a>
+            <a class="dropdown-item" href="{% url 'indexrun-terms' %}">Terms</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{% url 'indexrun-list' %}">All</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" id="indexActionsDropdown" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Indexing Actions</a>
+          <div class="dropdown-menu" aria-labelledby="indexActionsDropdown">
+            <a class="dropdown-item" href="{% url 'index-add' %}">Add</a>
+            <a class="dropdown-item" href="{% url 'index-delete' %}">Delete</a>
+            <a class="dropdown-item" href="{% url 'index-reset' %}">Reset Index</a>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 {% endblock %}
