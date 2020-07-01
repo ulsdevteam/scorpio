@@ -36,6 +36,5 @@ urlpatterns = [
     re_path(r'^index/reset/', IndexResetView.as_view(), name='index-reset'),
     re_path(r'^status/', include('health_check.api.urls')),
     re_path(r'^schema/', schema_view, name='schema'),
-    re_path(r'^silk/', include('silk.urls', namespace='silk')),
     re_path(r'^', include(router.urls)),
 ]
