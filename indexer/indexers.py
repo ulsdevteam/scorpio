@@ -46,18 +46,25 @@ class Indexer:
         self.pisces_client = ElectronBond(baseurl=settings.PISCES['baseurl'])
 
     def prepare_updates(self, obj_type, doc_cls, clean):
+        """Prepares objects to be indexed"""
         for obj in self.fetch_objects(obj_type, clean):
             doc = doc_cls(**obj["data"])
             try:
-                yield doc.prepare_streaming_dict(obj["es_id"], self.connection)
+                yield doc.prepare_streaming_dict(obj["es_id"])
             except Exception as e:
                 raise Exception("Error preparing streaming dict: {}".format(e))
 
     def prepare_deletes(self, id_list):
+        """Prepares objects to be deleted.
+
+        Ignores documents which cannot be found in the index.
+        """
         for obj_id in id_list:
             try:
                 doc = BaseDescriptionComponent.get(id=obj_id)
-                yield doc.prepare_streaming_dict(obj_id, self.connection, "delete")
+                yield doc.prepare_streaming_dict(obj_id, "delete")
+            except NotFoundError:
+                pass
             except Exception as e:
                 print(e)
 
