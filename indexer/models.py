@@ -25,7 +25,7 @@ class IndexRun(models.Model):
     start_time = models.DateTimeField(auto_now_add=True)
     end_time = models.DateTimeField(blank=True, null=True)
     status = models.CharField(max_length=100, choices=STATUS_CHOICES)
-    object_type = models.CharField(max_length=100, choices=OBJECT_TYPE_CHOICES)
+    object_type = models.CharField(max_length=100, choices=OBJECT_TYPE_CHOICES, blank=True, null=True)
     object_status = models.CharField(max_length=100, choices=OBJECT_STATUS_CHOICES)
 
     @property

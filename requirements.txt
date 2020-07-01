@@ -12,7 +12,6 @@ django-cron==0.5.1
 django-elasticsearch-dsl==7.1.1
 django-elasticsearch-dsl-drf==0.20.5
 django-nine==0.2.3
-django-silk==4.0.0
 djangorestframework==3.11.0
 elasticsearch==7.5.1
 elasticsearch-dsl==7.1.0
@@ -33,7 +32,7 @@ Pygments==2.5.2
 python-dateutil==2.8.1
 pytz==2019.3
 PyYAML==5.3.1
-rac-es==0.4.5
+rac-es==0.5
 requests==2.23.0
 shortuuid==0.5.0
 six==1.12.0
