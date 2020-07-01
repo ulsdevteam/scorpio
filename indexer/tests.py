@@ -69,7 +69,7 @@ class TestMergerToIndex(TestCase):
         to_delete = []
         for obj in BaseDescriptionComponent.search().scan():
             to_delete.append(obj.meta.id)
-        request = self.client.post(reverse("index-delete"), {"identifiers": to_delete})
+        request = self.client.post(reverse("index-delete"), json.dumps({"identifiers": to_delete}), content_type="application/json")
         self.assertEqual(request.status_code, 200, "Index delete error: {}".format(request.data))
         self.assertEqual(mock_post.call_count, 1)
         self.assertTrue(mock_post.called_with({}))

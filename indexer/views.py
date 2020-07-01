@@ -55,7 +55,7 @@ class IndexView(BaseServiceView):
 
     def get_service_response(self, request):
         clean = True if request.data.get("clean") else False
-        identifiers = request.data.getlist("identifiers")
+        identifiers = request.data.get("identifiers")
         object_type = request.data.get("object_type")
         indexed = getattr(
             Indexer(), self.method)(
