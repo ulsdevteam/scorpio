@@ -6,7 +6,7 @@ from django.test import TestCase
 from django.urls import reverse
 from elasticsearch.exceptions import NotFoundError
 from elasticsearch_dsl import connections
-from rac_es.documents import BaseDescriptionComponent, DescriptionComponent
+from rac_es.documents import BaseDescriptionComponent
 from rest_framework.test import APIClient, APIRequestFactory
 from scorpio import settings
 
@@ -66,11 +66,13 @@ class TestMergerToIndex(TestCase):
     @patch("indexer.indexers.requests.post")
     def delete_objects(self, mock_post):
         """Tests object deletion from index."""
-        expected_len = DescriptionComponent.search().count()
-        for obj in DescriptionComponent.search().scan():
-            request = self.client.post(reverse("index-delete"), {"identifier": obj.meta.id})
-            self.assertEqual(request.status_code, 200, "Index delete error: {}".format(request.data))
-        self.assertEqual(mock_post.call_count, expected_len)
+        to_delete = []
+        for obj in BaseDescriptionComponent.search().scan():
+            to_delete.append(obj.meta.id)
+        request = self.client.post(reverse("index-delete"), json.dumps({"identifiers": to_delete}), content_type="application/json")
+        self.assertEqual(request.status_code, 200, "Index delete error: {}".format(request.data))
+        self.assertEqual(mock_post.call_count, 1)
+        self.assertTrue(mock_post.called_with({}))
         self.assertEqual(0, BaseDescriptionComponent.search().count())
 
     def test_action_views(self):
@@ -80,8 +82,8 @@ class TestMergerToIndex(TestCase):
             response = view(request)
             self.assertEqual(
                 response.status_code, 200,
-                "View error:  {}".format(response.data))
+                "View error: {}".format(response.data))
 
     def test_process(self):
         self.index_objects()
-        # self.delete_objects()
+        self.delete_objects()
