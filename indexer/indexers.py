@@ -1,12 +1,10 @@
 import requests
 from elasticsearch.exceptions import NotFoundError
-from elasticsearch.helpers import streaming_bulk
 from elasticsearch_dsl import Index, connections
 from electronbonder.client import ElectronBond
 from rac_es.documents import (Agent, BaseDescriptionComponent, Collection,
-                              DescriptionComponent, Object, Term)
+                              Object, Term)
 from scorpio import settings
-from silk.profiling.profiler import silk_profile
 
 from .models import IndexRun, IndexRunError
 
@@ -48,20 +46,28 @@ class Indexer:
         self.pisces_client = ElectronBond(baseurl=settings.PISCES['baseurl'])
 
     def prepare_updates(self, obj_type, doc_cls, clean):
+        """Prepares objects to be indexed"""
         for obj in self.fetch_objects(obj_type, clean):
             doc = doc_cls(**obj["data"])
             try:
-                yield doc.prepare_streaming_dict(obj["es_id"], self.connection)
+                yield doc.prepare_streaming_dict(obj["es_id"])
             except Exception as e:
                 raise Exception("Error preparing streaming dict: {}".format(e))
 
-    def prepare_deletes(self, obj):
-        for reference in list(obj.get_references()) + [obj]:
-            doc = reference.to_dict(True)
-            doc["_op_type"] = "delete"
-            yield doc
+    def prepare_deletes(self, id_list):
+        """Prepares objects to be deleted.
 
-    @silk_profile()
+        Ignores documents which cannot be found in the index.
+        """
+        for obj_id in id_list:
+            try:
+                doc = BaseDescriptionComponent.get(id=obj_id)
+                yield doc.prepare_streaming_dict(obj_id, "delete")
+            except NotFoundError:
+                pass
+            except Exception as e:
+                print(e)
+
     def fetch_objects(self, object_type, clean):
         """Returns data to be indexed."""
         try:
@@ -70,29 +76,8 @@ class Indexer:
         except Exception as e:
             raise Exception("Error fetching objects: {}".format(e))
 
-    def bulk_index_action(self, actions, completed_action):
-        indexed_ids = []
-        indexed_count = 0
-        try:
-            for ok, result in streaming_bulk(self.connection, actions, refresh=True):
-                action, result = result.popitem()
-                if not ok:
-                    update_pisces(indexed_ids, completed_action)
-                    raise ScorpioIndexError("Failed to {} document {}: {}".format(action, result["_id"], result))
-                else:
-                    indexed_ids.append(result["_id"])
-                    indexed_count += 1
-                if indexed_count == settings.MAX_OBJECTS:
-                    break
-        except Exception as e:
-            update_pisces(indexed_ids, completed_action)
-            print(e)
-        update_pisces(indexed_ids, completed_action)
-        return indexed_ids
-
-    @silk_profile()
     def add(self, object_type=None, clean=False, **kwargs):
-        """Adds documents to index. Uses ES bulk indexing."""
+        """Adds documents to index using ES bulk indexing."""
         object_types = [object_type] if object_type else OBJECT_TYPES
         indexed_ids = []
         for obj_type in object_types:
@@ -102,10 +87,9 @@ class Indexer:
                 object_status="indexed")
             doc_cls = OBJECT_TYPES[obj_type]
             try:
-                indexed_ids += doc_cls.bulk_save(
+                indexed_ids += doc_cls.bulk_action(
                     self.connection,
                     self.prepare_updates(obj_type, doc_cls, clean),
-                    obj_type,
                     settings.MAX_OBJECTS)
                 current_run.status = IndexRun.FINISHED
                 current_run.save()
@@ -117,14 +101,26 @@ class Indexer:
         update_pisces(indexed_ids, "indexed")
         return indexed_ids
 
-    @silk_profile()
-    def delete(self, identifier, **kwargs):
-        """
-        Deletes a DescriptionComponent from the index, along with all its
-        associated references. Uses ES bulk indexing.
-        """
-        obj = DescriptionComponent.get(id=identifier)
-        return self.bulk_index_action(self.prepare_deletes(obj), "deleted")
+    def delete(self, object_type=None, identifiers=[], **kwargs):
+        """Deletes documents from the index using ES bulk indexing."""
+        deleted_ids = []
+        current_run = IndexRun.objects.create(
+            status=IndexRun.STARTED,
+            object_type=object_type,
+            object_status="deleted")
+        try:
+            deleted_ids += BaseDescriptionComponent.bulk_action(
+                self.connection,
+                self.prepare_deletes(identifiers))
+            current_run.status = IndexRun.FINISHED
+            current_run.save()
+        except Exception as e:
+            print(e)
+            IndexRunError.objects.create(
+                message=e,
+                run=current_run)
+        update_pisces(deleted_ids, "deleted")
+        return deleted_ids
 
     def reset(self, **kwargs):
         try:

@@ -55,11 +55,11 @@ class IndexView(BaseServiceView):
 
     def get_service_response(self, request):
         clean = True if request.data.get("clean") else False
-        identifier = request.data.get("identifier")
+        identifiers = request.data.get("identifiers")
         object_type = request.data.get("object_type")
         indexed = getattr(
             Indexer(), self.method)(
-                clean=clean, object_type=object_type, identifier=identifier)
+                clean=clean, object_type=object_type, identifiers=identifiers)
         return "{} indexed".format(object_type), indexed
 
 
@@ -77,7 +77,7 @@ class IndexDeleteView(IndexView):
     """Deletes a data object from index. Accepts POST requests only.
 
     Data parameters:
-        identifier (str): the identifier of the object to be deleted.
+        identifiers (str): the identifiers of the object to be deleted.
     """
     method = "delete"
 
