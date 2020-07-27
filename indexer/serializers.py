@@ -15,7 +15,7 @@ class IndexRunSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = IndexRun
-        fields = ('url', 'status', 'object_type', 'error_count',
+        fields = ('url', 'status', 'object_type', 'object_status', 'error_count',
                   'errors', 'start_time', 'end_time', 'elapsed')
 
     def get_status(self, obj):
@@ -27,7 +27,7 @@ class IndexRunListSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = IndexRun
-        fields = ('url', 'status', 'object_type', 'error_count')
+        fields = ('url', 'status', 'object_type', 'object_status', 'error_count')
 
     def get_status(self, obj):
         return obj.STATUS_CHOICES[int(obj.status)][1]
