@@ -62,10 +62,12 @@ class TestMergerToIndex(TestCase):
             self.assertEqual(len(IndexRunError.objects.all()), 0)
             for obj in IndexRun.objects.all():
                 self.assertEqual(int(obj.status), IndexRun.FINISHED)
+                self.assertNotEqual(obj.end_time, None)
 
     @patch("indexer.indexers.requests.post")
     def delete_objects(self, mock_post):
         """Tests object deletion from index."""
+        IndexRun.objects.all().delete()
         to_delete = []
         for obj in BaseDescriptionComponent.search().scan():
             to_delete.append(obj.meta.id)
@@ -74,6 +76,10 @@ class TestMergerToIndex(TestCase):
         self.assertEqual(mock_post.call_count, 1)
         self.assertTrue(mock_post.called_with({}))
         self.assertEqual(0, BaseDescriptionComponent.search().count())
+        self.assertEqual(len(IndexRun.objects.all()), 1)
+        for obj in IndexRun.objects.all():
+            self.assertEqual(int(obj.status), IndexRun.FINISHED)
+            self.assertNotEqual(obj.end_time, None)
 
     def test_action_views(self):
         for action in ["agents", "collections", "objects", "terms"]:

@@ -1,4 +1,5 @@
 import requests
+from django.utils import timezone
 from elasticsearch.exceptions import NotFoundError
 from elasticsearch_dsl import Index, connections
 from electronbonder.client import ElectronBond
@@ -92,6 +93,7 @@ class Indexer:
                     self.prepare_updates(obj_type, doc_cls, clean),
                     settings.MAX_OBJECTS)
                 current_run.status = IndexRun.FINISHED
+                current_run.end_time = timezone.now()
                 current_run.save()
             except Exception as e:
                 print(e)
@@ -113,6 +115,7 @@ class Indexer:
                 self.connection,
                 self.prepare_deletes(identifiers))
             current_run.status = IndexRun.FINISHED
+            current_run.end_time = timezone.now()
             current_run.save()
         except Exception as e:
             print(e)
