@@ -1,5 +1,6 @@
 import json
 import os
+import random
 from unittest.mock import patch
 
 from django.test import TestCase
@@ -10,9 +11,10 @@ from rac_es.documents import BaseDescriptionComponent
 from rest_framework.test import APIClient, APIRequestFactory
 from scorpio import settings
 
-from .cron import (IndexAgents, IndexAgentsClean, IndexAll, IndexAllClean,
-                   IndexCollections, IndexCollectionsClean, IndexObjects,
-                   IndexObjectsClean, IndexTerms, IndexTermsClean)
+from .cron import (CleanUpCompleted, IndexAgents, IndexAgentsClean, IndexAll,
+                   IndexAllClean, IndexCollections, IndexCollectionsClean,
+                   IndexObjects, IndexObjectsClean, IndexTerms,
+                   IndexTermsClean)
 from .models import IndexRun, IndexRunError
 from .views import IndexRunViewSet
 
@@ -62,10 +64,12 @@ class TestMergerToIndex(TestCase):
             self.assertEqual(len(IndexRunError.objects.all()), 0)
             for obj in IndexRun.objects.all():
                 self.assertEqual(int(obj.status), IndexRun.FINISHED)
+                self.assertNotEqual(obj.end_time, None)
 
     @patch("indexer.indexers.requests.post")
     def delete_objects(self, mock_post):
         """Tests object deletion from index."""
+        IndexRun.objects.all().delete()
         to_delete = []
         for obj in BaseDescriptionComponent.search().scan():
             to_delete.append(obj.meta.id)
@@ -74,6 +78,10 @@ class TestMergerToIndex(TestCase):
         self.assertEqual(mock_post.call_count, 1)
         self.assertTrue(mock_post.called_with({}))
         self.assertEqual(0, BaseDescriptionComponent.search().count())
+        self.assertEqual(len(IndexRun.objects.all()), 1)
+        for obj in IndexRun.objects.all():
+            self.assertEqual(int(obj.status), IndexRun.FINISHED)
+            self.assertNotEqual(obj.end_time, None)
 
     def test_action_views(self):
         for action in ["agents", "collections", "objects", "terms"]:
@@ -83,6 +91,15 @@ class TestMergerToIndex(TestCase):
             self.assertEqual(
                 response.status_code, 200,
                 "View error: {}".format(response.data))
+
+    def test_cleanup(self):
+        for x in range(random.randint(5, 10)):
+            IndexRun.objects.create(
+                status=random.choice(IndexRun.STATUS_CHOICES)[0],
+                object_type=random.choice(IndexRun.OBJECT_TYPE_CHOICES)[0],
+                object_status=random.choice(IndexRun.OBJECT_STATUS_CHOICES)[0])
+        CleanUpCompleted().do()
+        self.assertEqual(len(IndexRun.objects.all()), 0)
 
     def test_process(self):
         self.index_objects()
