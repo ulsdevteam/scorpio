@@ -43,16 +43,16 @@ class TestMergerToIndex(TestCase):
         """Tests adding objects to index."""
         fetches = 0
         for cron, fixture_dir in [
-                (IndexAgents, "agents"),
-                (IndexAgentsClean, "agents"),
-                (IndexCollections, "collections"),
-                (IndexCollectionsClean, "collections"),
-                (IndexObjects, "objects"),
-                (IndexObjectsClean, "objects"),
-                (IndexTerms, "terms"),
-                (IndexTermsClean, "terms"),
-                (IndexAll, "terms"),
-                (IndexAllClean, "terms")]:
+                (IndexAgents, "agent"),
+                (IndexAgentsClean, "agent"),
+                (IndexCollections, "collection"),
+                (IndexCollectionsClean, "collection"),
+                (IndexObjects, "object"),
+                (IndexObjectsClean, "object"),
+                (IndexTerms, "term"),
+                (IndexTermsClean, "term"),
+                (IndexAll, "term"),
+                (IndexAllClean, "term")]:
             mock_fetch.return_value = self.return_fixture_response(fixture_dir)
             out = cron().do()
             if cron in [IndexAll, IndexAllClean]:
