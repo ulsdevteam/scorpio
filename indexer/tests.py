@@ -35,7 +35,7 @@ class TestMergerToIndex(TestCase):
         for f in os.listdir(os.path.join(FIXTURE_DIR, dir)):
             with open(os.path.join(FIXTURE_DIR, dir, f)) as jf:
                 data = json.load(jf)
-                yield {"data": data, "es_id": data["id"]}
+                yield {"data": data, "es_id": data["uri"].split("/")[-1]}
 
     @patch("indexer.indexers.requests.post")
     @patch("indexer.indexers.Indexer.fetch_objects")
