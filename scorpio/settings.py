@@ -163,9 +163,6 @@ ELASTICSEARCH = {
     },
 }
 
-# Silk Profiling
-SILKY_PYTHON_PROFILER = config.SILKY_PYTHON_PROFILER
-
 # Pisces Configs
 PISCES = {
     "baseurl": config.PISCES_BASEURL,
