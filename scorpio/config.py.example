@@ -14,4 +14,3 @@ ELASTICSEARCH_HOSTS = ["elasticsearch:9200"]
 ELASTICSEARCH_INDEX = "default"
 PISCES_BASEURL = "http://pisces-web:8007/"
 PISCES_POST_INDEX_PATH = "/index-complete/"
-SILKY_PYTHON_PROFILER = True
