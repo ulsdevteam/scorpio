@@ -91,7 +91,7 @@ class Indexer:
                 indexed_ids += doc_cls.bulk_action(
                     self.connection,
                     self.prepare_updates(obj_type, doc_cls, clean),
-                    settings.MAX_OBJECTS)
+                    None if clean else settings.MAX_OBJECTS)
                 current_run.status = IndexRun.FINISHED
                 current_run.end_time = timezone.now()
                 current_run.save()
