@@ -115,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/New_York'
 
 USE_I18N = True
 
@@ -162,9 +162,6 @@ ELASTICSEARCH = {
         'index': config.ELASTICSEARCH_INDEX
     },
 }
-
-# Silk Profiling
-SILKY_PYTHON_PROFILER = config.SILKY_PYTHON_PROFILER
 
 # Pisces Configs
 PISCES = {
