@@ -66,6 +66,6 @@ deploy:
   region: us-east-1
   on:
     repo: RockefellerArchiveCenter/${APPLICATION_NAME}
-    branch: development
+    branch: base
 notifications:
   email: false
