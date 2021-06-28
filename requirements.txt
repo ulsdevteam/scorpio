@@ -1,5 +1,5 @@
 asgiref==3.4.0
-asterism==0.5.2
+asterism==0.7.2
 bagit==1.8.1
 certifi==2021.5.30
 chardet==4.0.0
