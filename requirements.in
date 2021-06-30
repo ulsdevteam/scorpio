@@ -1,0 +1,12 @@
+asterism==0.7.2
+Django==3.2.4
+django-cron==0.5.1
+djangorestframework==3.12.4
+elasticsearch==7.13.1
+elasticsearch-dsl==7.3.0
+ElectronBonder==0.7.2
+health-check==3.4.1
+odin==1.7.0
+psycopg2-binary==2.9.1
+rac-es==0.17.2
+requests==2.25.1
