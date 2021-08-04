@@ -41,7 +41,7 @@ services:
     networks:
       - microservices
     ports:
-      - 9200:9200
+      - 9201:9201
 
 volumes:
   scorpiodbvolume:
