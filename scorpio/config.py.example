@@ -1,16 +1,16 @@
-DJANGO_CRON_LOCKFILE_PATH = "/tmp/scorpio_cron/"
-DJANGO_DEBUG = True
-DJANGO_PORT = 8007
-DJANGO_SECRET_KEY = "=j$8no%qg_k+70zk!1xkvjtr#k6mp-jhkvuz+%2_ccikd2+98*"
-DJANGO_ALLOWED_HOSTS = ["localhost", "scorpio-web"]
-MAX_OBJECTS = 1000
-SQL_ENGINE = "django.db.backends.postgresql"
-SQL_DATABASE = "postgres"
-SQL_USER = "postgres"
-SQL_PASSWORD = "postgres"
-SQL_HOST = "scorpio-db"
-SQL_PORT = 5432
-ELASTICSEARCH_HOSTS = ["elasticsearch:9200"]
-ELASTICSEARCH_INDEX = "default"
-PISCES_BASEURL = "http://pisces-web:8007/"
-PISCES_POST_INDEX_PATH = "/index-complete/"
+DJANGO_CRON_LOCKFILE_PATH = "/tmp/scorpio_cron/"  # absolute path to store lockfiles for running cron jobs (string)
+DJANGO_DEBUG = True  # run Django in debug mode, which outputs stack traces to the UI, set to False for production (boolean)
+DJANGO_PORT = 8007  # the port on which the Django development server will run (integer)
+DJANGO_SECRET_KEY = "=j$8no%qg_k+70zk!1xkvjtr#k6mp-jhkvuz+%2_ccikd2+98*"  # used by Django to create hashes (string)
+DJANGO_ALLOWED_HOSTS = ["localhost", "scorpio-web"]  # hosts Scorpio will respond to (list of strings)
+SQL_ENGINE = "django.db.backends.postgresql"  # the database engine used by Scorpio (string, one of django.db.backends)
+SQL_DATABASE = "postgres"  # name of the application database (string)
+SQL_USER = "postgres"  # name of the application database user (string)
+SQL_PASSWORD = "postgres"  # password for the application database (string)
+SQL_HOST = "scorpio-db"  # host for the application database (string)
+SQL_PORT = 5432  # port on which the application database can be reached (integer)
+ELASTICSEARCH_HOSTS = ["elasticsearch:9200"]  # hostnames (including ports, if applicable) at which Elasticsearch is available (list of strings)
+ELASTICSEARCH_INDEX = "default"  # name of Elasticsearch index to target
+MAX_OBJECTS = 1000  # maximum number of objects to be indexed at once (integer)
+PISCES_BASEURL = "http://pisces-web:8007/"  # base URL for an instance of Pisces (string)
+PISCES_POST_INDEX_PATH = "/index-complete/"  # path in Pisces which handles HTTP requests to indicate objects have been updated, default "/index-complete/" (string)
