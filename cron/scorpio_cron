@@ -1,0 +1,5 @@
+SCORPIO_ROOT=/code/scorpio
+00,30 * * * * $SCORPIO_ROOT/python -u $SCORPIO_ROOT/manage.py runcrons "indexer.cron.IndexAgents" >> /data/logs/cron/scorpio-agents.txt
+10,40 * * * * $SCORPIO_ROOT/python -u $SCORPIO_ROOT/manage.py runcrons "indexer.cron.IndexCollections" >> /data/logs/cron/scorpio-collections.txt
+20,50 * * * * $SCORPIO_ROOT/python -u $SCORPIO_ROOT/manage.py runcrons "indexer.cron.IndexObjects" >> /data/logs/cron/scorpio-objects.txt
+*/5 * * * * $SCORPIO_ROOT/python -u $SCORPIO_ROOT/manage.py runcrons "indexer.cron.CleanUpCompleted" >> /data/logs/cron/scorpio-cleanupcompleted.txt
