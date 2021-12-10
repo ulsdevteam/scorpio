@@ -48,18 +48,6 @@ deploy:
   region: us-east-1
   on:
     repo: RockefellerArchiveCenter/${APPLICATION_NAME}
-    branch: development
-- provider: codedeploy
-  bucket: $AWS_BUCKET_NAME
-  key: $DEPLOY_ZIP_NAME
-  bundle_type: zip
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
-  application: ${APPLICATION_NAME}
-  deployment_group: ${DEPLOYMENT_GROUP}
-  region: us-east-1
-  on:
-    repo: RockefellerArchiveCenter/${APPLICATION_NAME}
     all_branches: true
     condition: $TRAVIS_BRANCH =~ ^(base|development)$
 notifications:
