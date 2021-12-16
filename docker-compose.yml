@@ -10,12 +10,14 @@ services:
   scorpio-web:
     build: .
     entrypoint: /code/entrypoint.sh
+    environment:
+      - APPLICATION_PORT=${APPLICATION_PORT:-8008}
     volumes:
       - .:/code
     networks:
       - microservices
     ports:
-      - "8008:8008"
+      - "${APPLICATION_PORT:-8008}:${APPLICATION_PORT:-8008}"
     depends_on:
       - scorpio-db
 
