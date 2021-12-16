@@ -15,6 +15,8 @@ hooks:
   ApplicationStart:
     - location: deploy_scripts/restart_httpd.sh
       timeout: 20
+    - location: deploy_scripts/start_crond.sh
+      timeout: 20
   ValidateService:
     - location: deploy_scripts/curl_status_endpoint.sh
       timeout: 10
