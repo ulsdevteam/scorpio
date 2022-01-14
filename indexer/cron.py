@@ -92,7 +92,7 @@ class CleanUpCompleted(CronJobBase):
 
     def do(self):
         try:
-            return IndexRun.objects.filter(indexrunerror__isnull=True).delete()
+            return IndexRun.objects.filter(indexrunerror__isnull=True, status=IndexRun.FINISHED).delete()
         except Exception as e:
             print("Error cleaning up completed IndexRun objects: {}".format(e))
             return False
