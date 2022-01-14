@@ -11,13 +11,13 @@ services:
     build: .
     entrypoint: /code/entrypoint.sh
     environment:
-      - APPLICATION_PORT=${APPLICATION_PORT:-8008}
+      - APPLICATION_PORT=${APPLICATION_PORT:-8013}
     volumes:
       - .:/code
     networks:
       - microservices
     ports:
-      - "${APPLICATION_PORT:-8008}:${APPLICATION_PORT:-8008}"
+      - "${APPLICATION_PORT:-8013}:${APPLICATION_PORT:-8013}"
     depends_on:
       - scorpio-db
 
