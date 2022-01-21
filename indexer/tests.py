@@ -95,7 +95,7 @@ class TestMergerToIndex(TestCase):
     def test_cleanup(self):
         for x in range(random.randint(5, 10)):
             IndexRun.objects.create(
-                status=random.choice(IndexRun.STATUS_CHOICES)[0],
+                status=IndexRun.FINISHED,
                 object_type=random.choice(IndexRun.OBJECT_TYPE_CHOICES)[0],
                 object_status=random.choice(IndexRun.OBJECT_STATUS_CHOICES)[0])
         CleanUpCompleted().do()
