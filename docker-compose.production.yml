@@ -1,4 +1,4 @@
-version: '3'
+version: '3.1'
 
 services:
   scorpio-db:
@@ -6,18 +6,25 @@ services:
     volumes:
       - scorpiodbvolume:/var/lib/postgresql/data/
     networks:
-      - microservices
+      - scorpio
   scorpio-web:
-    build: .
-    entrypoint: /code/entrypoint.sh
-    volumes:
-      - .:/code
+    build: 
+      context: .
+      dockerfile: Dockerfile
     networks:
-      - microservices
+      - scorpio
     ports:
       - "8008:8008"
     depends_on:
       - scorpio-db
+  scorpio-cron:
+    build: 
+      context: .
+      dockerfile: Dockerfile.cron
+    volumes:
+      - /data/logs/cron:/var/log/scorpio-cron
+    networks:
+      - scorpio
 
   elasticsearch:
     image: elasticsearch:7.9.3
@@ -39,7 +46,7 @@ services:
     volumes:
       - elasticsearch:/usr/share/elasticsearch/data
     networks:
-      - microservices
+      - scorpio
     ports:
       - 9201:9201
 
@@ -48,4 +55,4 @@ volumes:
   elasticsearch:
 
 networks:
-  microservices:
+  scorpio:
