@@ -5,6 +5,7 @@ from elasticsearch_dsl import Index, connections
 from electronbonder.client import ElectronBond
 from rac_es.documents import (Agent, BaseDescriptionComponent, Collection,
                               Object, Term)
+
 from scorpio import settings
 
 from .models import IndexRun, IndexRunError
