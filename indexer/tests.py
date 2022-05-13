@@ -9,6 +9,7 @@ from elasticsearch.exceptions import NotFoundError
 from elasticsearch_dsl import connections
 from rac_es.documents import BaseDescriptionComponent
 from rest_framework.test import APIClient, APIRequestFactory
+
 from scorpio import settings
 
 from .cron import (CleanUpCompleted, IndexAgents, IndexAgentsClean, IndexAll,
@@ -104,3 +105,7 @@ class TestMergerToIndex(TestCase):
     def test_process(self):
         self.index_objects()
         self.delete_objects()
+
+    def test_ping_view(self):
+        response = self.client.get(reverse('ping'))
+        self.assertEqual(response.status_code, 200)
