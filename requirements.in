@@ -7,5 +7,5 @@ elasticsearch-dsl==7.4.0
 ElectronBonder==1.0
 odin==1.7.3
 psycopg2-binary==2.9.3
-rac-es==0.18
+rac-es==1.0.0
 requests==2.27.1
