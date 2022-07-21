@@ -4,19 +4,19 @@
 #
 #    pip-compile
 #
-asgiref==3.4.1
+asgiref==3.5.2
     # via django
-asterism==0.8
+asterism==0.9.0
     # via -r requirements.in
 bagit==1.8.1
     # via asterism
-certifi==2021.5.30
+certifi==2022.6.15
     # via
     #   elasticsearch
     #   requests
-charset-normalizer==2.0.12
+charset-normalizer==2.1.0
     # via requests
-django==4.0.4
+django==4.0.6
     # via
     #   -r requirements.in
     #   asterism
@@ -31,7 +31,7 @@ djangorestframework==3.13.1
     # via
     #   -r requirements.in
     #   asterism
-elasticsearch==7.17.0
+elasticsearch==7.17.4
     # via
     #   -r requirements.in
     #   elasticsearch-dsl
@@ -40,11 +40,11 @@ elasticsearch-dsl==7.4.0
     # via
     #   -r requirements.in
     #   rac-es
-electronbonder==1.0
+electronbonder==1.1
     # via -r requirements.in
-idna==2.10
+idna==3.3
     # via requests
-odin==1.7.3
+odin==1.8.1
     # via
     #   -r requirements.in
     #   asterism
@@ -54,11 +54,11 @@ psycopg2-binary==2.9.3
     #   asterism
 python-dateutil==2.8.2
     # via elasticsearch-dsl
-pytz==2021.1
+pytz==2022.1
     # via djangorestframework
 rac-es==1.0.0
     # via -r requirements.in
-requests==2.27.1
+requests==2.28.1
     # via
     #   -r requirements.in
     #   electronbonder
@@ -70,7 +70,7 @@ six==1.16.0
     #   python-dateutil
 sqlparse==0.4.2
     # via django
-urllib3==1.26.6
+urllib3==1.26.10
     # via
     #   elasticsearch
     #   requests
