@@ -40,7 +40,7 @@ elasticsearch-dsl==7.4.0
     # via
     #   -r requirements.in
     #   rac-es
-electronbonder==1.1
+electronbonder==1.0
     # via -r requirements.in
 idna==3.3
     # via requests
