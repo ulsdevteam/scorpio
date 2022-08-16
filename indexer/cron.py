@@ -21,12 +21,12 @@ class BaseCron(CronJobBase):
         print("{} indexing of {} records started at {}".format(action, object_type, start))
         try:
             indexed = Indexer().add(object_type=self.object_type, clean=self.clean)
+            end = datetime.now()
+            print("{} records indexed in {}".format(len(indexed), end - start))
+            result = "{} index of {} records complete at {}\n".format(action, object_type, end)
         except Exception as e:
             result = str(e)
             print(e)
-        end = datetime.now()
-        print("{} records indexed in {}".format(len(indexed), end - start))
-        result = "{} index of {} records complete at {}\n".format(action, object_type, end)
         print(result)
         return result
 
