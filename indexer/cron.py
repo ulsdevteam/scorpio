@@ -1,3 +1,4 @@
+import json
 from datetime import datetime
 
 from django_cron import CronJobBase, Schedule
@@ -5,7 +6,6 @@ from django_cron import CronJobBase, Schedule
 from .indexers import Indexer
 from .models import IndexRun
 
-import json
 
 class BaseCron(CronJobBase):
     RUN_EVERY_MINS = 0
@@ -100,4 +100,3 @@ class CleanUpCompleted(CronJobBase):
             result = "Error cleaning up completed IndexRun objects: {}".format(e)
             print(result)
         return result
-
