@@ -70,7 +70,7 @@ six==1.16.0
     #   python-dateutil
 sqlparse==0.4.3
     # via django
-urllib3==1.26.12
+urllib3==1.26.13
     # via
     #   elasticsearch
     #   requests
