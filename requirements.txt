@@ -10,7 +10,7 @@ asterism==0.9.0
     # via -r requirements.in
 bagit==1.8.1
     # via asterism
-certifi==2022.9.24
+certifi==2022.12.7
     # via
     #   elasticsearch
     #   requests
@@ -31,7 +31,7 @@ djangorestframework==3.14.0
     # via
     #   -r requirements.in
     #   asterism
-elasticsearch==7.17.7
+elasticsearch==7.17.8
     # via
     #   -r requirements.in
     #   elasticsearch-dsl
