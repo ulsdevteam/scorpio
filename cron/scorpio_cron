@@ -1,0 +1,7 @@
+# Don't remove empty line at end of file. It is required for cron to run.
+SCORPIO_ROOT=/code/scorpio
+00,30 * * * * $SCORPIO_ROOT/python -u /code/manage.py runcrons "indexer.cron.IndexAgents" >> /var/log/scorpio-cron/scorpio-agents.txt 2>&1
+10,40 * * * * $SCORPIO_ROOT/python -u /code/manage.py runcrons "indexer.cron.IndexCollections" >> /var/log/scorpio-cron/scorpio-collections.txt 2>&1
+20,50 * * * * $SCORPIO_ROOT/python -u /code/manage.py runcrons "indexer.cron.IndexObjects" >> /var/log/scorpio-cron/scorpio-objects.txt 2>&1
+5 0,12 * * * $SCORPIO_ROOT/python -u /code/manage.py runcrons "indexer.cron.CleanUpCompleted" >> /var/log/scorpio-cron/scorpio-cleanupcompleted.txt 2>&1
+
