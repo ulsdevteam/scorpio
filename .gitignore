@@ -13,8 +13,5 @@ media
 *config.py
 
 ### Configs ###
-*.conf
-*.production
-*.prod
 .env*
 env/*
