@@ -1,3 +1,4 @@
+import json
 from datetime import datetime
 
 from django_cron import CronJobBase, Schedule
@@ -12,7 +13,7 @@ class BaseCron(CronJobBase):
     clean = False
 
     def do(self):
-        result = False
+        result = ''
         start = datetime.now()
         action = "Full" if self.clean else "Incremental"
         object_type = self.object_type if self.object_type else "all"
@@ -20,12 +21,13 @@ class BaseCron(CronJobBase):
         print("{} indexing of {} records started at {}".format(action, object_type, start))
         try:
             indexed = Indexer().add(object_type=self.object_type, clean=self.clean)
+            end = datetime.now()
+            print("{} records indexed in {}".format(len(indexed), end - start))
+            result = "{} index of {} records complete at {}\n".format(action, object_type, end)
         except Exception as e:
+            result = str(e)
             print(e)
-        end = datetime.now()
-        print("{} records indexed in {}".format(len(indexed), end - start))
-        print("{} index of {} records complete at {}\n".format(action, object_type, end))
-        result = True
+        print(result)
         return result
 
 
@@ -92,7 +94,9 @@ class CleanUpCompleted(CronJobBase):
 
     def do(self):
         try:
-            return IndexRun.objects.filter(indexrunerror__isnull=True, status=IndexRun.FINISHED).delete()
+            retval = IndexRun.objects.filter(indexrunerror__isnull=True, status=IndexRun.FINISHED).delete()
+            result = json.dumps(retval)
         except Exception as e:
-            print("Error cleaning up completed IndexRun objects: {}".format(e))
-            return False
+            result = "Error cleaning up completed IndexRun objects: {}".format(e)
+            print(result)
+        return result
