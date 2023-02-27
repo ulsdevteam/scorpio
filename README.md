@@ -34,6 +34,8 @@ Scorpio configurations are stored in `/scorpio/config.py`. This file is excluded
 
 The first time the container is started, the example config file (`/scorpio/config.py.example`) will be copied to create the config file if it doesn't already exist.
 
+Deployment using the `Dockerfile.prod` file is intended to bring up a production image (based on Apache/WSGI) which is ready to be proxied by an apache, nginx, traefik or similar frontend. Dockerfile.prod expects two environment arguments to be available at build time: `SCORPIO_DNS` and `APPLICATION_PORT`. Apache will Listen on `${APPLICATION_PORT}` with a ServerName of `${SCORPIO_DNS}`.  If you don't anticipate exposing the Scorpio web UI publicly, a `SCORPIO_DNS` value of your container name or "localhost" is just fine.  Deployment of the `Dockerfile.cron` will launch a container which will run Scorpio tasks automatically, per `/cron/scorpio_cron`.
+
 
 ## Services
 

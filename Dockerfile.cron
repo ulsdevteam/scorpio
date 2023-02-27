@@ -1,10 +1,9 @@
-FROM python:3.9
+FROM python:3.10
 
 ENV PYTHONUNBUFFERED 1
 RUN apt-get update && apt-get install -y cron && which cron && rm -rf /etc/cron.*/*
 RUN apt-get -y install python3-pip
 RUN pip install --upgrade pip
-RUN pip install django
 
 RUN mkdir /code
 WORKDIR /code
