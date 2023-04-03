@@ -6,7 +6,7 @@
 #
 asgiref==3.6.0
     # via django
-asterism==0.9.0
+asterism==1.0.0
     # via -r requirements.in
 bagit==1.8.1
     # via asterism
@@ -16,7 +16,7 @@ certifi==2022.12.7
     #   requests
 charset-normalizer==3.1.0
     # via requests
-django==4.1.7
+django==4.2
     # via
     #   -r requirements.in
     #   asterism
@@ -45,13 +45,9 @@ electronbonder==1.1
 idna==3.4
     # via requests
 odin==1.8.1
-    # via
-    #   -r requirements.in
-    #   asterism
-psycopg2-binary==2.9.5
-    # via
-    #   -r requirements.in
-    #   asterism
+    # via -r requirements.in
+psycopg2==2.9.6
+    # via -r requirements.in
 python-dateutil==2.8.2
     # via elasticsearch-dsl
 pytz==2023.3
