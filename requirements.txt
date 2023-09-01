@@ -16,7 +16,7 @@ certifi==2023.7.22
     #   requests
 charset-normalizer==3.2.0
     # via requests
-django==4.2.3
+django==4.2.4
     # via
     #   -r requirements.in
     #   asterism
@@ -46,7 +46,7 @@ idna==3.4
     # via requests
 odin==1.8.1
     # via -r requirements.in
-psycopg2==2.9.6
+psycopg2==2.9.7
     # via -r requirements.in
 python-dateutil==2.8.2
     # via elasticsearch-dsl
