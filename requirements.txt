@@ -14,9 +14,9 @@ certifi==2023.7.22
     # via
     #   elasticsearch
     #   requests
-charset-normalizer==3.2.0
+charset-normalizer==3.3.0
     # via requests
-django==4.2.4
+django==4.2.5
     # via
     #   -r requirements.in
     #   asterism
@@ -46,11 +46,11 @@ idna==3.4
     # via requests
 odin==1.8.1
     # via -r requirements.in
-psycopg2==2.9.7
+psycopg2==2.9.8
     # via -r requirements.in
 python-dateutil==2.8.2
     # via elasticsearch-dsl
-pytz==2023.3
+pytz==2023.3.post1
     # via djangorestframework
 rac-es==1.0.0
     # via -r requirements.in
@@ -66,7 +66,7 @@ six==1.16.0
     #   python-dateutil
 sqlparse==0.4.4
     # via django
-typing-extensions==4.7.1
+typing-extensions==4.8.0
     # via asgiref
 urllib3==1.26.16
     # via
