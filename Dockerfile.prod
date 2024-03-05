@@ -1,8 +1,8 @@
 FROM python:3.10
 
 ENV PYTHONUNBUFFERED 1
-ARG SCORPIO_DNS
-ARG APPLICATION_PORT
+ARG SCORPIO_DNS=localhost
+ARG APPLICATION_PORT=8013
 RUN apt-get update
 RUN apt-get install --yes apache2 apache2-dev
 RUN apt-get install --yes postgresql
@@ -30,7 +30,6 @@ RUN a2enmod wsgi
 COPY . /var/www/scorpio
 WORKDIR /var/www/scorpio
 RUN pip install -r requirements.txt
-RUN ./manage.py collectstatic
 
 EXPOSE ${APPLICATION_PORT}
-CMD ["apache2ctl", "-D", "FOREGROUND"]
+CMD ["./entrypoint.sh"]
