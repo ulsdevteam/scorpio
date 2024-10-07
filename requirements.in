@@ -1,4 +1,4 @@
-asterism~=0.9
+asterism~=1.0
 Django~=4.1
 django4-cron~=0.5
 djangorestframework~=3.13
@@ -6,6 +6,6 @@ elasticsearch~=7.17
 elasticsearch-dsl~=7.4
 ElectronBonder~=1.1
 odin~=1.7
-psycopg2-binary~=2.9
-rac-es~=1.0
+psycopg2~=2.9
+rac-es~=1.1
 requests~=2.28
