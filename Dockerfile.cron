@@ -19,4 +19,3 @@ RUN chmod 644 /etc/cron.d/scorpio_cron
 RUN crontab /etc/cron.d/scorpio_cron
 RUN mkdir -p /var/log/scorpio-cron
 ENTRYPOINT ["./entrypoint.sh"]
-CMD ["cron","-f","-l","2"]
