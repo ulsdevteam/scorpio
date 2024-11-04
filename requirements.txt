@@ -14,7 +14,7 @@ certifi==2024.8.30
     # via
     #   elasticsearch
     #   requests
-charset-normalizer==3.3.2
+charset-normalizer==3.4.0
     # via requests
 django==4.2.16
     # via
@@ -46,7 +46,7 @@ idna==3.10
     # via requests
 odin==1.8.1
     # via -r requirements.in
-psycopg2==2.9.9
+psycopg2==2.9.10
     # via -r requirements.in
 python-dateutil==2.9.0.post0
     # via elasticsearch-dsl
