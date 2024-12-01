@@ -62,7 +62,7 @@ six==1.16.0
     #   electronbonder
     #   odin
     #   python-dateutil
-sqlparse==0.5.1
+sqlparse==0.5.2
     # via django
 typing-extensions==4.12.2
     # via asgiref
