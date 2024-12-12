@@ -163,6 +163,9 @@ ELASTICSEARCH = {
     },
 }
 
+if config.ELASTICSEARCH_AUTHENTICATION:
+    ELASTICSEARCH['default']['api_key'] = config.ELASTICSEARCH_API_KEY
+
 # Pisces Configs
 PISCES = {
     "baseurl": config.PISCES_BASEURL,
