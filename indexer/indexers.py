@@ -40,7 +40,7 @@ class Indexer:
     """
 
     def __init__(self):
-        if settings.ELASTICSEARCH['default']['api_key']:
+        if settings.ELASTICSEARCH.get('default', []).get('api_key'):
             self.connection = connections.create_connection(
                 hosts=settings.ELASTICSEARCH['default']['hosts'],
                 api_key=settings.ELASTICSEARCH['default']['api_key'],
