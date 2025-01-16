@@ -160,7 +160,7 @@ ELASTICSEARCH = {
     'default': {
         'hosts': config.ELASTICSEARCH_HOSTS,
         'index': config.ELASTICSEARCH_INDEX,
-        'api_key': config.get('ELASTICSEARCH_API_KEY')
+        'api_key': getattr(config, 'ELASTICSEARCH_API_KEY', None)
     },
 }
 
