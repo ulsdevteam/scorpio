@@ -40,17 +40,10 @@ class Indexer:
     """
 
     def __init__(self):
-        if settings.ELASTICSEARCH.get('default', []).get('api_key'):
-            self.connection = connections.create_connection(
-                hosts=settings.ELASTICSEARCH['default']['hosts'],
-                api_key=settings.ELASTICSEARCH['default']['api_key'],
-                timeout=60
-            )
-        else:
-            self.connection = connections.create_connection(
-                hosts=settings.ELASTICSEARCH['default']['hosts'],
-                timeout=60
-            )
+        connection_args = {'hosts': settings.ELASTICSEARCH['default']['hosts'], 'timeout': 60}
+        if settings.ELASTICSEARCH['default'].get('api_key'):
+            connection_args['api_key'] = settings.ELASTICSEARCH['default']['api_key']
+        self.connection = connections.create_connection(**connection_args)
         if not Index(settings.ELASTICSEARCH['default']['index']).exists():
             BaseDescriptionComponent.init()
         self.pisces_client = ElectronBond(baseurl=settings.PISCES['baseurl'])

@@ -159,12 +159,10 @@ DJANGO_CRON_LOCKFILE_PATH = config.DJANGO_CRON_LOCKFILE_PATH
 ELASTICSEARCH = {
     'default': {
         'hosts': config.ELASTICSEARCH_HOSTS,
-        'index': config.ELASTICSEARCH_INDEX
+        'index': config.ELASTICSEARCH_INDEX,
+        'api_key': config.get('ELASTICSEARCH_API_KEY')
     },
 }
-
-if config.ELASTICSEARCH_AUTHENTICATION:
-    ELASTICSEARCH['default']['api_key'] = config.ELASTICSEARCH_API_KEY
 
 # Pisces Configs
 PISCES = {
