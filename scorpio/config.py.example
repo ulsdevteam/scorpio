@@ -10,6 +10,7 @@ SQL_HOST = "scorpio-db"  # host for the application database (string)
 SQL_PORT = 5432  # port on which the application database can be reached (integer)
 ELASTICSEARCH_HOSTS = ["elasticsearch:9200"]  # hostnames (including ports, if applicable) at which Elasticsearch is available (list of strings)
 ELASTICSEARCH_INDEX = "default"  # name of Elasticsearch index to target (string)
+ELASTICSEARCH_API_KEY = None # String of encoded API Key provided by Elasticsearch. Use None if not authenticating
 MAX_OBJECTS = 1000  # maximum number of objects to be indexed at once (integer)
 PISCES_BASEURL = "http://pisces-web:8007/"  # base URL for an instance of Pisces (string)
 PISCES_POST_INDEX_PATH = "/index-complete/"  # path in Pisces which handles HTTP requests to indicate objects have been updated, default "/index-complete/" (string)
