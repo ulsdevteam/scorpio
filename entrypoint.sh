@@ -27,8 +27,8 @@ else
       echo "Collecting static files"
       python manage.py collectstatic
 
-      chmod 775 /var/www/html/scorpio/static
-      chown www-data:www-data /var/www/html/scorpio/static
+      chmod 775 /var/www/scorpio/static
+      chown www-data:www-data /var/www/scorpio/static
       apache2ctl -D FOREGROUND
   else
       python manage.py runserver 0.0.0.0:${APPLICATION_PORT}
